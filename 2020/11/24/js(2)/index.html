@@ -6,21 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yixiangxiao.github.io">
-  <title>html入门 | yixiangxiao</title>
+  <title>js运算符 | yixiangxiao</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="入门准备web前端学习路线：  web网页开发：主要学习HTML、DIV+CSS、javascript基础应用，通过该阶段的学习，我们能够最终实现一个静态但是具备动画交互效果的网站。 动态网站：具有数据交互功能，例如 用户可以在网页或者网站上进行留言、评论、注册、登陆等等 静态网站：不具备数据交互功能，但通过会有动画效果（特效），例如：下拉菜单、页面弹框、轮播图   javascript高级编程：">
+  <meta name="description" content="加载javascript两种方式： 1. 内部嵌入式 ：&#96;&lt;script type&#x3D;&quot;text&#x2F;javascript&quot;&gt;&lt;&#x2F;script&gt;&#96;，其中type属性可以不设置  2. 外链的文件：&#96;&lt;script src&#x3D;&quot;~&#x2F;foo.js&quot;&gt;&lt;&#x2F;script&gt;&#96; 页面中的任意都可以引入javascript代码，但不">
 <meta property="og:type" content="article">
-<meta property="og:title" content="html入门">
-<meta property="og:url" content="http://yixiangxiao.github.io/2020/11/24/HTML(1)/index.html">
+<meta property="og:title" content="js运算符">
+<meta property="og:url" content="http://yixiangxiao.github.io/2020/11/24/js(2)/index.html">
 <meta property="og:site_name" content="yixiangxiao">
-<meta property="og:description" content="入门准备web前端学习路线：  web网页开发：主要学习HTML、DIV+CSS、javascript基础应用，通过该阶段的学习，我们能够最终实现一个静态但是具备动画交互效果的网站。 动态网站：具有数据交互功能，例如 用户可以在网页或者网站上进行留言、评论、注册、登陆等等 静态网站：不具备数据交互功能，但通过会有动画效果（特效），例如：下拉菜单、页面弹框、轮播图   javascript高级编程：">
+<meta property="og:description" content="加载javascript两种方式： 1. 内部嵌入式 ：&#96;&lt;script type&#x3D;&quot;text&#x2F;javascript&quot;&gt;&lt;&#x2F;script&gt;&#96;，其中type属性可以不设置  2. 外链的文件：&#96;&lt;script src&#x3D;&quot;~&#x2F;foo.js&quot;&gt;&lt;&#x2F;script&gt;&#96; 页面中的任意都可以引入javascript代码，但不">
 <meta property="og:locale">
-<meta property="article:published_time" content="2020-11-24T04:22:22.000Z">
-<meta property="article:modified_time" content="2020-11-24T11:32:53.326Z">
+<meta property="article:published_time" content="2020-11-24T14:32:52.000Z">
+<meta property="article:modified_time" content="2020-11-24T12:57:20.146Z">
 <meta property="article:author" content="yixiang xiao">
-<meta property="article:tag" content="html">
+<meta property="article:tag" content="javascript">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="yixiangxiao" type="application/atom+xml">
@@ -258,14 +258,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-HTML(1)" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-js(2)" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class=" article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      html入门
+      js运算符
     </h1>
   
 
@@ -277,8 +277,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2020/11/24/HTML(1)/" class="archive-article-date">
-        <time datetime="2020-11-24T04:22:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-24</time>
+<a href="/2020/11/24/js(2)/" class="archive-article-date">
+        <time datetime="2020-11-24T14:32:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-24</time>
 </a>
 
   
@@ -291,7 +291,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">3.9k字</span>
+      <span class="post-count">4.8k字</span>
     </span>
   </span>
 
@@ -300,7 +300,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">14分</span>
+      <span class="post-count">19分</span>
     </span>
   </span>
 </div>
@@ -311,327 +311,281 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h1 id="入门准备"><a href="#入门准备" class="headerlink" title="入门准备"></a>入门准备</h1><p>web前端学习路线：</p>
+    <h2 id="加载javascript"><a href="#加载javascript" class="headerlink" title="加载javascript"></a>加载javascript</h2><p>两种方式：</p>
+<pre><code>1. 内部嵌入式 ：`&lt;script type=&quot;text/javascript&quot;&gt;&lt;/script&gt;`，其中type属性可以不设置
+ 2. 外链的文件：`&lt;script src=&quot;~/foo.js&quot;&gt;&lt;/script&gt;`</code></pre>
+<p>页面中的任意都可以引入javascript代码，但不同的位置决定了它们的执行顺序，代码都是自上而下的去执行。</p>
+<h2 id="document-write"><a href="#document-write" class="headerlink" title="document.write()"></a>document.write()</h2><ul>
+<li>document.write()是用来向HTML文档中写入内容，因此它支持带标签的写入。其中的内容必须是要用引号括起来的字符串形式。</li>
+<li>一行语句由内容和分号组成，其中分号可以省略。javascript解释器（js环境）会在一行结束之后 自动帮你补全分号，这会带来一个问题 如果内容被放在多行中设置 那么就会被截断，结果是语法错误。</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.write(<span class="string">&quot;&lt;p&gt;</span></span><br><span class="line"><span class="string">    some text</span></span><br><span class="line"><span class="string">&lt;/p&gt;&quot;</span>);<span class="comment">//第一二行 js解释器会自动补全分号</span></span><br><span class="line">               </span><br><span class="line"><span class="comment">//正确的写法</span></span><br><span class="line"><span class="built_in">document</span>.write(<span class="string">&quot;&lt;p&gt;&quot;</span>);</span><br><span class="line"><span class="built_in">document</span>.write(<span class="string">&quot;some text&quot;</span>);</span><br><span class="line"><span class="built_in">document</span>.write(<span class="string">&quot;&lt;/p&gt;&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<p><strong>关于注释</strong></p>
 <ul>
-<li>web网页开发：主要学习HTML、DIV+CSS、javascript基础应用，通过该阶段的学习，我们能够最终实现一个静态但是具备动画交互效果的网站。<ul>
-<li>动态网站：具有<strong>数据交互</strong>功能，例如 用户可以在网页或者网站上进行留言、评论、注册、登陆等等</li>
-<li>静态网站：不具备数据交互功能，但通过会有动画效果（特效），例如：下拉菜单、页面弹框、轮播图</li>
-</ul>
-</li>
-<li>javascript高级编程：一门客户端语言，该阶段主要是深度研究该语言，使用更为高级的技术更好的实现动画效果，具体来说包括：面向对象编程、es6+、插件开发等等。</li>
-<li>Nodejs全栈开发：nodejs是一门基于js(es)语法的服务端语言，用来进行服务端开发 目的是为了实现动态数据交互的网站，它里面主要是一些核心模块的API以及一些基础应用，最后是MVC模型的框架开发。<ul>
-<li>通过node阶段学习 使得我们的网站即有前台 也有后端 是一个完整的应用，所以我们成为”全栈开发”</li>
-<li>关于全栈，它最早来自国外，就是国外的程序员基本上都是具备前后端开发能力的，前后端通吃的程序员称为”全栈工程师”。</li>
-<li>该阶段学习目标是对整个网站开发的体系和流程有所了解并且能够独立网站中小型网站的搭建，最终来说是为了在面试的时候能吹出来牛逼。</li>
-</ul>
-</li>
-<li>框架开发实战：是企业级的开发模式，使用框架来实现<strong>快速开发</strong>，目前企业使用较多的是<code>Vuejs</code>、<code>ReactJS</code>。它们都是MVVM模式的框架。基本上来说 学完框架之后 在前端部分你已经到达葵花宝典的境界。</li>
-<li>移动轻应用开发：其实也属前端领域，只是单独拿出来讲解，这里移动端轻应用开发 是指使用H5技术 实现移动APP的开发。全栈开发 = PC端 + 移动端 + 服务端。</li>
+<li>行注释：    <code>//</code></li>
+<li>块注释：   <code>/* 多行内容 */</code></li>
+<li>文档注释：<code>/** 标准的格式 */</code> 生成项目或者文件的文档</li>
 </ul>
 <a id="more"></a>
 
-
-
-<h1 id="关于网页和网站"><a href="#关于网页和网站" class="headerlink" title="关于网页和网站"></a>关于网页和网站</h1><p>通常在口语中，网站和网页的概念是几乎一致，只不过更精确的描述，网页是组成网站的一个个的个体。从技术上来说 网页是可以由浏览器直接打开的静态文件。而网站是用来被访问的 具有服务功能 也就说它被搭建在服务器上面。</p>
-<p>或者说 ，凡是具有域名和IP的才能称为网站，自己在电脑上写的页面 只能称为网页。</p>
-<p>网站包括了各个页面 ，它们之间是通过a链接来结合。</p>
-<h2 id="网页开发组成"><a href="#网页开发组成" class="headerlink" title="网页开发组成"></a>网页开发组成</h2><p>要实现网页开发，需要使用HTML来编码，HTML是实现<code>网页结构</code>开发的标记语言，它好比是建造房子的骨架和砖块，接下来还需要使用<code>DIV+CSS</code>来排版、装饰和美化。以及javascript用来实现动画交互效果。</p>
-<h2 id="网站的组成"><a href="#网站的组成" class="headerlink" title="网站的组成"></a>网站的组成</h2><p>网站相比网页技术上的区别是网站具有服务功能，也就是有服务器。这里要明白就是一个完整的网站必须有前端（前台）和服务端（后台）组成：</p>
+<h2 id="代码调试与输出"><a href="#代码调试与输出" class="headerlink" title="代码调试与输出"></a>代码调试与输出</h2><p>js代码的执行错误 在页面中不显示，但是它会在浏览器的控制台抛出一个错误对象。可以使用F12进入控制台查看。控制台还可以用于输出内容 帮助我们调试代码，js BOM扩展中 设置专门的接口方法来访问控制台，执行输出：</p>
 <ul>
-<li>前端：也叫客户端，用看来提供给用户使用，主要是浏览展示的功能</li>
-<li>服务端：也叫服务器，提供服务的，主要用来管理网站的 例如：添加新闻、审核评论等等</li>
+<li><code>console.log()</code>：打印一条日志信息，备份数据</li>
+<li><code>console.info()</code>：打印提示信息，就是用来帮助的调试的</li>
+<li><code>console.warn()</code>：打印警告信息，就是代码有异常  语法能通过 但结果可能超出预期</li>
+<li><code>console.error()</code>：打印错误信息，通常是SyntaxError、ReferenceError、TypeError会中断脚本的执行</li>
 </ul>
-<h1 id="html初步"><a href="#html初步" class="headerlink" title="html初步"></a>html初步</h1><h2 id="html简介"><a href="#html简介" class="headerlink" title="html简介"></a>html简介</h2><p>HTML：<code>Hyper Text Markup Language</code>（超文本标记语言），标记语言就是一种纯碎的解释性的语言，它没有什么逻辑 只有一些基本的格式。</p>
-<p>是一种文件格式，后缀： <code>.html</code> 或 <code>.htm</code></p>
-<ul>
-<li><p>文本：就是普通的文字内容，它以存储内容为主，不能排版 也不能进行内容的多样化显示</p>
-</li>
-<li><p>超文本：就是“超级的文本”，显得很厉害的样子。其实就是写出来后，具有一定的”视觉效果”的代码内容，</p>
-<p>它能够进行<strong>排版</strong>、以及<strong>嵌入资源文件</strong>（图片、视频、音频等等）</p>
-</li>
-</ul>
-<h2 id="html规范"><a href="#html规范" class="headerlink" title="html规范"></a>html规范</h2><p>如上所述，html网页是由html标签按一定的规则组织起来的文件。</p>
-<p>这个规则就是html语法规则，是我们需要遵循的标准（规范）。</p>
-<blockquote>
-<p>谁制定的html标准？</p>
-</blockquote>
-<p>w3c组织——一个非营利组织，全名叫<code> world wide website combine</code>(万维网联合会)</p>
-<p>w3c组织制定了非常多的互联网技术标准（规范）。</p>
-<blockquote>
-<p>谁领导w3c？</p>
-</blockquote>
-<p>Tim Berners-Lee， 蒂姆·伯纳斯-李——互联网之父，也是HTML创始人。</p>
-<p>HTML迄今为止共有5个版本，现在老的项目中 使用HTML4较多，新项目基本都使用HTML5来开发。HTML5相比较HTML4主要是新增了一些功能标签以及对移动端的支持较好。实际上HTML5最早是由WHATWG（web hypertext application tech work group）。</p>
-<h1 id="标签规范"><a href="#标签规范" class="headerlink" title="标签规范"></a>标签规范</h1><p>html是由标签组成，就是用尖括号（“&lt;”和”&gt;”）括起来的一种特殊的代码形式，例如：<code>&lt;br&gt;</code>。浏览器在解释标签时 是以&lt;&gt;为开始和结束的。如果写成&lt;&lt;我的梦&gt;&gt;，需要对尖括号进行转义<code>&amp;lt;&amp;lt;</code>我的梦<code>&amp;gt;&amp;gt;</code></p>
-<p>标签也叫“元素”，”选择器”，“标记”，其实就是预先规定好的一些代码，具有某些特定的含义和作用以及外观表现。</p>
-<p>举例：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">br</span>&gt;</span>、<span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span>、<span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>标签基本形式：</p>
-<p>==<strong>&lt;标签名  属性名1=“值1”  属性名2=“值2”  …&gt;内容&lt;/标签名&gt;</strong>==</p>
-<p>一个完整标签，可能有包含的内容，以及标签的属性：</p>
-<ul>
-<li><p>内容：是存储的信息，提供给用户查看，例如：<code>&lt;a href=&quot;&quot;&gt;百度&lt;/a&gt;</code></p>
-</li>
-<li><p>属性：修饰标签的，它可以是辅助的内容或者是包含样式：</p>
-<ul>
-<li><code>&lt;img src=&quot;&quot;  alt=&quot;泽林的logo&quot; /&gt;</code>alt属性就是提供辅助内容 表示该图片表达的含义</li>
-<li><code>&lt;font size=&quot;+1&quot; color=&quot;red&quot;&gt;some text&lt;/font&gt;</code>size和color属性用来控制样式</li>
-</ul>
-</li>
-<li><p>注意事项：</p>
-<ul>
-<li>标签名是一个“单词”（有的单词可能只有一个字母）。不能写成：&lt;123&gt;&lt;我的梦&gt;</li>
-<li>属性名也是一个“单词”，表示对该标签的进一步“修饰”（设定）。</li>
-<li>有的标签没有“内容部分”，则后面的结尾标签部分不用写——这种称为“<strong>单标签</strong>”。<ul>
-<li><code>&lt;br /&gt; &lt;img /&gt; &lt;link /&gt; &lt;hr /&gt;。。。。</code></li>
-</ul>
-</li>
-</ul>
-<p>——绝大多数标签都是“<strong>双标签</strong>”，只有很少几个是单标签。</p>
-</li>
-</ul>
-<ul>
-<li><p>不同的标签有不同的属性，不同的属性有不同的含义（或作用）。</p>
-</li>
-<li><p>有的属性可以出现在所有标签上——叫做通用属性，例如：ｔｉｔｌｅ</p>
-</li>
-<li><p>标签可以嵌套，但是一定是对称的嵌套：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>这是合法的嵌套标签<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>这是非法的嵌套<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>（×）</span><br></pre></td></tr></table></figure>
+<p>除此以外，在早期 还会使用到地址栏的javascript伪协议 来帮助我们调试一小段代码。javascript伪协议的一个重要使用场景 是将它用a链接作href属性的值，用来执行一段js代码。以此去模拟button按钮的点击事件的执行效果</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span>=<span class="string">&quot;点我&quot;</span> <span class="attr">onclick</span>=<span class="string">&quot;alert(&#x27;hello world&#x27;);&quot;</span>/&gt;</span></span><br><span class="line"><span class="comment">&lt;!--将a链接 用作按钮的功能 主要目的是为了借用一下a标签的样式--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;javascript:alert(&#x27;hello world&#x27;)&quot;</span>&gt;</span>点我<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--当js执行代码较多时 会使用事件来执行，此时为了避免a链接默认的跳转行为被触发 可以使用javascript:void 0--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;javascript:void 0;&quot;</span> <span class="attr">onclick</span>=<span class="string">&quot;f();&quot;</span>&gt;</span>点我<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 
 
-</li>
-</ul>
-<h1 id="网页结构标签"><a href="#网页结构标签" class="headerlink" title="网页结构标签"></a>网页结构标签</h1><p>网页结构标签就是组成网页最基本的结构，所有的网页都必须有的部分：</p>
-<ul>
-<li>html 声明标签：声明HTML文档类型</li>
-<li>head头标签：存储网页或者基本信息，例如：页面标题、说明的关键字、外部链接等等，实际上head是给搜索引擎。</li>
-<li>body主体标签：网页主体内容，所以页面可视 提供给用户看的内容 都写在body里面。</li>
-</ul>
-<h1 id="站点准备"><a href="#站点准备" class="headerlink" title="站点准备"></a>站点准备</h1><p>在文件系统中，设置一个www或者web文件夹作为你的站点或者代码的根地址，切记该目录的地址中 尽量不要使用中文。</p>
-<p>接下来 选择一款适配自己习惯的编辑器来开发网页，推荐的有：Sumlime、Vs code、nodepad++等等。目前位为止  不建议使用像 Webstrom、Hubilder、等等一些IDE（集成开发环境），这些都是做项目比较合适的软件，如果仅仅是平时联系代码 还是选用轻量级的编辑器即可。</p>
-<h2 id="关于Vs-Code使用"><a href="#关于Vs-Code使用" class="headerlink" title="关于Vs Code使用"></a>关于Vs Code使用</h2><p>它是微软推出的一款专用、智能、高效的、优雅的、牛逼的开发软件，对常规的语言支持较好，尤其是<code>typescript</code>。它是工作区的形式展开的：</p>
-<ul>
-<li>添加工作区：在界面左侧的空白区域 鼠标右键选择”将文件夹添加到工作区“，你可以将你的www目录整体添加进来。在最近的vs code初始化会工作区中生成<code>first project</code>，你可以删除，也可以用起来。我们主要是在站点www下 新建目录和文件：</li>
-<li>安装中文包：进入扩展，输入<code>chinese</code>，然后点击安装，重启VS Code后能自动切换中文界面</li>
-</ul>
-<h2 id="html体验"><a href="#html体验" class="headerlink" title="html体验"></a>html体验</h2><p>html文件是以<code>.html</code>或者<code>.htm</code>结尾。其实 很多的文件类型 它的后缀名都是三个字母：word文件后缀是<code>.doc</code>,excel是<code>.xls</code>，text记事本文件是<code>.txt</code>等等。</p>
-<ul>
-<li>代码的缩进：代码要使用<code>TAB</code>键来缩进（排版），一个TAB是四个空格</li>
-<li>代码的预览：在VS Code中 通过鼠标右键选择<code>open in browser</code> 在浏览器中打开，如果没有该选项 那需要去商店下载：</li>
-</ul>
-<p>下载完毕后，即可在鼠标右键看到该菜单。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>这是网页标题<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        网页的正文内容，写完后 使用ctrl + s来保存，</span><br><span class="line">        接下来 使用浏览器来预览（看效果）。鼠标右键，选择`open in browser`</span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="使用代码模板"><a href="#使用代码模板" class="headerlink" title="使用代码模板"></a>使用代码模板</h2><p>使用编辑器能够实现快速开发，在vs code中，新建一个html文件 然后进入页面 输入<code>!</code>，按TAB 能够帮助我们自动生成一个标准的HTML模板文件内容：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;ie=edge&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><h3 id="声明变量"><a href="#声明变量" class="headerlink" title="声明变量"></a>声明变量</h3><p>变量使用var声明，声明的同时 可以给变量赋予一个初始值：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> num;</span><br><span class="line">num = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">var</span> num = <span class="number">1</span>;</span><br><span class="line"><span class="comment">//同时声明多个变量</span></span><br><span class="line"><span class="keyword">var</span> a,b;</span><br><span class="line"><span class="keyword">var</span> a, b = <span class="number">2</span>;	<span class="comment">//var a 以及 var b = 1</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>, b = <span class="number">2</span>;</span><br><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>,</span><br><span class="line">    b = <span class="number">2</span>;		<span class="comment">//规范写法</span></span><br></pre></td></tr></table></figure>
+
+<p>对于只有声明，但没有赋值的变量，它还有一个默认的初始值是<code>undefined</code>。</p>
+<p>其实，变量也可以不用var去声明，但它的作用域不一样 会产生意料之外的结果。除非你明确自己的目标 否则都要使用var来定义。</p>
+<h3 id="变量规范"><a href="#变量规范" class="headerlink" title="变量规范"></a>变量规范</h3><ul>
+<li>js中的变量名是严格区分大小写的，例如 a和A，div和Div都是完全不同的两个变量</li>
+<li>js变量名是由数字、字母、_、$组成的，其中 数字不能用作开头，$通常有特定的含义 也不要去随便使用：<ul>
+<li>$是jQuery中的全局变量、全局对象</li>
+<li>$是es6 模板字符串中的解析语法</li>
+</ul>
+</li>
+<li>js命名要见名知意，通常推荐使用驼峰法，css中推荐下划线法</li>
+<li>变量名 不要和语法关键字冲突，避免解析出现问题</li>
+</ul>
+<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><p>js是弱类型的语言，是值定义变量时 无需声明它的类型。但是它的值是有不同类型的：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//c语言中的变量类型 - 强类型（静态类型）</span></span><br><span class="line">int num = <span class="number">1</span>;</span><br><span class="line">char s = <span class="string">&quot;a&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//js中的值类型 - 弱类型（动态类型）</span></span><br><span class="line"><span class="keyword">var</span> foo = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">var</span> foo = <span class="string">&quot;a&quot;</span>;</span><br></pre></td></tr></table></figure>
 
 <ul>
-<li><p>doctype 用来声明文档类型，是H5支持的文档类型</p>
-</li>
-<li><p>head中 除了title以外 还有三个基础的meta标签：</p>
+<li><p>常见的几种数据类型：</p>
 <ul>
-<li><p><code>&lt;meta charset=&quot;utf-8&quot;&gt;</code> 用来声明当前文档的编码类型，常用的是”utf-8”和”gbk”。主要是让浏览器来识别当前文档以何种形式解码，避免出现乱码，尤其是中文。建议统一使用”utf-8”，这就需要在你编辑器中设置默认编码为utf-8。</p>
+<li><p>number：数值类型数据</p>
 </li>
-<li><p><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</code>该行代码用来设置视口，主要为了兼容移动端，在后面H5中会详细介绍</p>
+<li><p>string：字符型数据，也就是字符串，只要一个内容被单双引号括起来 它就是字符串的值</p>
+</li>
+<li><p>boolean：布尔值类型，它是用来表示一个判断或者比较运算的结果。它有两个值true/false</p>
+</li>
+<li><p>null：空值，空对象占位符 ，因此打印它的类型 返回的是object</p>
+</li>
+<li><p>undefined：未定义的值</p>
+</li>
+<li><p>object：复合类型的数据值 - 对象，命名的数据值的集合， {}来表示</p>
+<ul>
+<li><pre><code class="js">//对象是抽象一个实体的特征，包含多个维度的属性
+var student = &#123;
+    name : &quot;董全&quot;,
+    nickname : &quot;周星星&quot;,
+    sex : &quot;男&quot;,
+    age : 80,
+    sno : 9527
+&#125;
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">+ array：复合类型的数据值 - 数组，编号的数据值的集合， []来表示</span><br><span class="line"></span><br><span class="line">  + &#96;&#96;&#96;js</span><br><span class="line">    var web0815 &#x3D; [&quot;毛朋&quot;, &quot;蔡伦&quot;, &quot;巍忠贤&quot;, &quot;赵高&quot;, &quot;蔡徐kun&quot;, &quot;li宇春&quot;]</span><br></pre></td></tr></table></figure>
+
+
+</code></pre>
 </li>
 </ul>
 </li>
-<li><p><code>&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;</code>设置浏览器的兼容性，让IE以最新模式来加载。</p>
+</ul>
 </li>
 </ul>
-<h1 id="头标签"><a href="#头标签" class="headerlink" title="头标签"></a>头标签</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">标签名说明<span class="tag">&lt;<span class="name">meta</span>&gt;</span>定义对页面的描述：</span><br><span class="line">网页描述和关键字<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">br</span> /&gt;</span><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;keywords&quot;</span> <span class="attr">content</span>=<span class="string">&quot;HTML, CSS, XML, XHTML, JavaScript&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;description&quot;</span> <span class="attr">content</span>=<span class="string">&quot;免费的 web 技术教程。&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;refresh&quot;</span> <span class="attr">content</span>=<span class="string">&quot;5&quot;</span>/&gt;</span>每5秒刷新一次页面</span><br><span class="line"><span class="tag">&lt;<span class="name">link</span>&gt;</span>标签定义两个连接文档之间的关系。href ,rel ,type</span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span>标签定义一段脚本，比如 JavaScript。type,src</span><br><span class="line"><span class="handlebars"><span class="xml"><span class="tag">&lt;<span class="name">style</span>&gt;</span>标签定义文档中的样式。</span></span></span><br><span class="line"><span class="handlebars"><span class="xml">type,media<span class="tag">&lt;<span class="name">title</span>&gt;</span>标签定义文档的标题。</span></span></span><br></pre></td></tr></table></figure>
+<p> 可以使用<code>typeof</code>运算符查看一个值（变量、表达式结果）：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typeof</span> <span class="string">&quot;abc123&quot;</span>;	<span class="comment">//string</span></span><br><span class="line"><span class="keyword">typeof</span> num;	<span class="comment">//number</span></span><br><span class="line"><span class="keyword">typeof</span> (<span class="number">1</span> + <span class="string">&quot;a&quot;</span>);	<span class="comment">//string 此时需要给表达式使用() 提升运算的优先级</span></span><br></pre></td></tr></table></figure>
 
 
 
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;ie=edge&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;keywords&quot;</span> <span class="attr">content</span>=<span class="string">&quot;泽林教育、计算机培训、前端高薪就业&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;description&quot;</span> <span class="attr">content</span>=<span class="string">&quot;泽林教育 专注IT培训 高薪就业&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;refresh&quot;</span> <span class="attr">content</span>=<span class="string">&quot;3,url=http://www.baidu.com&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">    	<span class="comment">//表示js代码的标签 让js和页面中的html分离</span></span></span><br><span class="line"><span class="javascript">        alert(<span class="string">&#x27;hello 0812&#x27;</span>);</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>数据类型之间的转化</p>
+<p>最常见的数值、字符串、、布尔值之间的转化，它有两种形式：</p>
+<ul>
+<li>显式的转化：利用js中一些工具方法 强硬的去转化它们的类型 以更好适应不同环境中的运算</li>
+</ul>
+<ol>
+<li>parseInt()/parseFloat()：将一个数据值转化成整型或者浮点型（小数）</li>
+<li>String()：将一个数据值转化成字符串类型</li>
+<li>Boolean()：将一个值转化成布尔值类型</li>
+<li>Number()：也可以将值转化成数值，它对值的要求更高，必须是纯数值的字符串 才能转化称为数字</li>
+</ol>
+</li>
+</ul>
+<ul>
+<li>隐式的转化：js运行环境中设置的规则 ，它能够对特定场景下的值 进行自动转化 </li>
+</ul>
+<ol>
+<li>当一个字符串 被用于<code>-运算</code>环境时，它会将字符串转化成数值。我们可以利用<code>- 0</code>来转化字符串为一个数值</li>
+<li>当一个数值 用于<code>+运算</code>环境时，它会将数值转化成字符串 ，然后执行字符的连接。</li>
+</ol>
+<h1 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h1><h2 id="算术运算"><a href="#算术运算" class="headerlink" title="算术运算"></a>算术运算</h2><p>“<strong>+**、</strong>-*<em>、****</em>、**/<strong>、</strong>%<strong>“ 等 用来进行数学或者算数相关运算的符号 称为”算数运算符”，常用的运算有</strong>：**</p>
+<p>+ ： 执行数值<strong>加法</strong>运算的运算符</p>
+<p>- ： 执行<strong>减法</strong>运算的符号</p>
+<p>* ： 执行<strong>乘法</strong>运算的符号</p>
+<p>/ ： 执行<strong>除法</strong>运算的符号 </p>
+<p>% ： 取除法运算结果的<strong>余数</strong> 例如 5 % 3=  1…2  2是余数</p>
+<ul>
+<li>为抵抗洪水，战士连续作战89小时，编程计算共多少天零多少小时？</li>
+</ul>
+<ul>
+<li>小明要到美国旅游，可是那里的温度是以华氏度为单位记录的。它需要一个程序将华氏温度（80度）转换为摄氏度，并以华氏度和摄氏度为单位分别显示该温度。 转换公式为：摄氏度 = 5/9.0*(华氏度-32)， 对结果保留3位小数。</li>
+</ul>
+<h4 id="特殊的＋运算"><a href="#特殊的＋运算" class="headerlink" title="特殊的＋运算"></a>特殊的＋运算</h4><p>JS中的”+”除了用作<strong>数值相加</strong>的运算外，更侧重字符串的连接，例如 “hello” + “world”的结果为”helloworld”，”**+”**的具体执行动作视其所在的代码环境，数值环境中执行算数运算，字符串环境则作为连接符。当字符串和数值相加混合环境中，JS会隐式的将数值转化成字符串，最终执行字符串连接。</p>
+<h2 id="赋值运算"><a href="#赋值运算" class="headerlink" title="赋值运算"></a>赋值运算</h2><p>“=、*<em>+<strong>=、</strong>-<strong>=、**</strong></em>=、**/<strong>=、</strong>%<strong>=” 等含有”</strong>=<strong>“赋值的运算符，称为”赋值运算符”。基本的”=”赋值运算除了给变量写入值外，还可以与算数运算符一起使用。</strong>先执行算数运算** 再将结果重新<strong>赋值</strong>给变量。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> num = <span class="number">10</span>;</span><br><span class="line">num *= <span class="number">5</span>;	<span class="comment">//num = num * 5;</span></span><br></pre></td></tr></table></figure>
 
 
 
-<h1 id="html注释"><a href="#html注释" class="headerlink" title="html注释"></a>html注释</h1><p>注释的含义：</p>
-<p>就是不作为有效代码的内容，目的主要是给“人”看，帮助人们记录和理解代码的解释性文字。</p>
-<p>各种语言都有自己的注释语法形式。</p>
-<p>关于注释：最重要的是养成写注释的习惯！</p>
-<p>其实，很多时候 注释可能比代码本身更重要，例如：<code>&lt;水经注&gt;</code></p>
-<h1 id="文本标签"><a href="#文本标签" class="headerlink" title="文本标签"></a>文本标签</h1><table>
-<thead>
-<tr>
-<th><strong>标签名</strong></th>
-<th><strong>描述</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong><p></p></strong></td>
-<td>标签定义段落</td>
-</tr>
-<tr>
-<td><strong><b></b></strong></td>
-<td>标签定义了文本中的部分比其余的部分更重要，并呈现为粗体</td>
-</tr>
-<tr>
-<td><strong><strong></strong></strong></td>
-<td>定义重要的文本。</td>
-</tr>
-<tr>
-<td><strong><hn></hn></strong></td>
-<td><h1> - <h6> 标签可定义标题。<h1> 定义最大的标题。<h6> 定义最小的标题</h6></h1></h6></h1></td>
-</tr>
-<tr>
-<td><strong><em></em></strong></td>
-<td>呈现为被强调的文本。</td>
-</tr>
-<tr>
-<td><strong><i></i></strong></td>
-<td>标签呈现斜体的文本。</td>
-</tr>
-<tr>
-<td><strong><cite></cite></strong></td>
-<td>定义引用。</td>
-</tr>
-<tr>
-<td><strong><sub></sub></strong></td>
-<td>标签可定义下标文本。</td>
-</tr>
-<tr>
-<td><strong><sup></sup></strong></td>
-<td>可定义上标文本。</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th><strong><bdo></bdo></strong></th>
-<th>标签覆盖默认的文本方向。属性dir =<code>ltr/rtl</code></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong><q></q></strong></td>
-<td>标签定义一个短的引用。使用cite表示引用源</td>
-</tr>
-<tr>
-<td><strong><abbr></abbr></strong></td>
-<td>表示一个缩写形式，比如 “Inc.”、”etc.”。通过对缩写词语进行标记，您就能够为浏览器、拼写检查程序、翻译系统以及搜索引擎分度器提供有用的信息。<abbr title="etcetera">etc.</abbr></td>
-</tr>
-<tr>
-<td><strong><del></del></strong></td>
-<td>标签定义文档中已删除的文本。</td>
-</tr>
-<tr>
-<td><strong><time></time></strong></td>
-<td>标签定义日期或时间，或者两者。属性：datetime=’2012-12-12’</td>
-</tr>
-<tr>
-<td><strong><summary></summary></strong></td>
-<td>标签包含 details 元素的标题，”details” 元素用于描述有关文档或文档片段的详细信息。<details><summary>Copyright 1999-2011.</summary><p> - by Refsnes Data. All Rights Reserved.</p><p>All content and graphics on this web site are the property of the company Refsnes Data.</p></details></td>
-</tr>
-<tr>
-<td><strong><details></details></strong></td>
-<td>标签定义元素的细节，用户可进行查看，或通过点击进行隐藏。</td>
-</tr>
-<tr>
-<td><strong><dialog></dialog></strong></td>
-<td>表示对话<dialog><dt>角色</dt><dd>说话内容</dd></dialog></td>
-</tr>
-</tbody></table>
-<h1 id="字符实体"><a href="#字符实体" class="headerlink" title="字符实体"></a>字符实体</h1><p>在HTML标签中，&lt;&gt;’ “等有特殊含义，它们被视作标签的组成部分，那如果想要表示字符本身，那就需要使用字符实体来代替，它们都是固定写法。</p>
-<p>特殊字符（实体）：用数值码和引用实体两种方式表示<br>例如：<br>  <code>&amp;#169;</code>     <code>&amp;copy;</code>      <code> &amp;nbsp;</code></p>
-<table>
-<thead>
-<tr>
-<th><strong>代码</strong></th>
-<th><strong>效果</strong></th>
-<th><strong>代码</strong></th>
-<th><strong>效果</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>&quot;</td>
-<td><strong>“</strong></td>
-<td>&amp;</td>
-<td><strong>&amp;</strong></td>
-</tr>
-<tr>
-<td>&lt;</td>
-<td><strong>&lt;</strong></td>
-<td>&gt;</td>
-<td><strong>&gt;</strong></td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td><strong>空格</strong></td>
-<td>&copy;</td>
-<td><strong>©</strong></td>
-</tr>
-<tr>
-<td>&sect;</td>
-<td><strong>§</strong></td>
-<td>&curren;</td>
-<td><strong>¤</strong></td>
-</tr>
-</tbody></table>
-<h1 id="列表标签"><a href="#列表标签" class="headerlink" title="列表标签"></a>列表标签</h1><table>
-<thead>
-<tr>
-<th><strong>标签名</strong></th>
-<th><strong>说明</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>ul</td>
-<td>标签定义无序列表</td>
-</tr>
-<tr>
-<td>li</td>
-<td>标签定义列表项，有序列表和无序列表中都使用 <li> 标签。</li></td>
-</tr>
-<tr>
-<td>ol</td>
-<td>标签定义有序列表。</td>
-</tr>
-<tr>
-<td>dl</td>
-<td>标签定义一个定义列表。</td>
-</tr>
-<tr>
-<td>dt</td>
-<td>标签定义一个定义列表中的一个项目，以及 dialog 中的角色。</td>
-</tr>
-<tr>
-<td>dd</td>
-<td>标签定义一个定义列表中对项目的描述</td>
-</tr>
-<tr>
-<td>pre</td>
-<td>原格式输出</td>
-</tr>
-<tr>
-<td>br</td>
-<td>换行标签</td>
-</tr>
-</tbody></table>
-<h1 id="链接标签"><a href="#链接标签" class="headerlink" title="链接标签"></a>链接标签</h1><table>
-<thead>
-<tr>
-<th><strong>标签名</strong></th>
-<th><strong>注释</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><strong><a></a></strong></td>
-<td>标签定义超链接，它用于从一个页面连接到另一个页面。href,target,meida,ping,type</td>
-</tr>
-<tr>
-<td><strong>锚点</strong></td>
-<td><a id="ab"></a><a href="#ab">跳到锚点</a></td>
-</tr>
-<tr>
-<td><strong>mailto</strong></td>
-<td><a href="mailto:zhangtao@lampbrother.net">Email地址</a></td>
-</tr>
-</tbody></table>
-<p>  颜色：单词，RGB，#FFF,#FFFFFF<br>  单位：px,em&lt;一个文字的大小&gt;<br>  绝对地址与相对地址：</p>
-<h1 id="表格标签"><a href="#表格标签" class="headerlink" title="表格标签"></a>表格标签</h1><h1 id="表单标签"><a href="#表单标签" class="headerlink" title="表单标签"></a>表单标签</h1>
+<h4 id="自增自减"><a href="#自增自减" class="headerlink" title="自增自减"></a>自增自减</h4><p>对于算数运算中 最常见的操作数”<strong>1</strong>“，例如： +1、-1等。在使用 <strong>num += 1</strong>或者<strong>num -= 1</strong>时 还有更为简洁的表达式 <code>num++</code>和<code>num--</code>的自增自减。</p>
+<h2 id="比较运算"><a href="#比较运算" class="headerlink" title="比较运算"></a>比较运算</h2><p>“&gt;、&lt;、**==**、**===**、&gt;=、&lt;=”等用来比较两个<strong>值大小</strong>的运算符 称为”比较运算符”；比较运算符 除了用来比较数值的大小外，还用作<strong>字符串大</strong>小的比较。它是<strong>逐个比较字符串中字符的大小</strong>，按照字符对应的ASCII码值。比较运算的结果是布尔值：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;hello&quot;</span> &lt; <span class="string">&quot;hi&quot;</span> <span class="comment">//因为 e &lt; i</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="关于等于"><a href="#关于等于" class="headerlink" title="关于等于"></a><strong>关于等于</strong></h4><p>js中用来表示等价关系的是”<strong>==</strong>“和”<strong>===</strong>“，其中”===”也叫<strong>全等</strong>，全等要求除了值以外 数据的类型也要相同。而普通的”==”比较 只要求<strong>值相等</strong>就可以。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;123&quot;</span> == <span class="number">123</span> <span class="comment">//值相等 结果为true</span></span><br><span class="line"><span class="string">&quot;123&quot;</span> === <span class="number">123</span> <span class="comment">//值相等 但类型不相等 结果为false</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="逻辑运算"><a href="#逻辑运算" class="headerlink" title="逻辑运算"></a>逻辑运算</h2><h3 id="amp-amp"><a href="#amp-amp" class="headerlink" title="&amp;&amp;"></a>&amp;&amp;</h3><p>“&amp;&amp;”称为”<strong>逻辑与</strong>“运算，它表示当有多个条件存在时 必须<strong>满足所有的规则条件</strong> 结果才成立，有一个规则不成立则结果不成立。例如：<code>条件1 &amp;&amp; 条件2</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">true</span> &amp;&amp; <span class="literal">true</span> 	<span class="comment">//true</span></span><br><span class="line"><span class="literal">true</span> &amp;&amp; <span class="literal">false</span> 	<span class="comment">//false</span></span><br><span class="line"><span class="literal">false</span> &amp;&amp; <span class="literal">true</span> 	<span class="comment">//false</span></span><br><span class="line"><span class="literal">false</span> &amp;&amp; <span class="literal">false</span> 	<span class="comment">//false</span></span><br></pre></td></tr></table></figure>
+
+<p>“与运算”中只有当所有的条件都为true 结果才为true；这个条件往往是 <strong>比较运算的结果：</strong></p>
+<p><code>1 &gt; 2 (false) &amp;&amp; 3 &lt; 4 (true) =&gt;  false</code></p>
+<h3 id><a href="#" class="headerlink" title="||"></a>||</h3><p>“||”称为”逻辑或”，它表示有多个条件存在时 只要<strong>任意满足其一</strong>，结果就成立。例如：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">true</span> || <span class="literal">true</span> <span class="comment">//true</span></span><br><span class="line"><span class="literal">true</span> || <span class="literal">false</span> <span class="comment">//true</span></span><br><span class="line"><span class="literal">false</span> || <span class="literal">true</span> <span class="comment">//true</span></span><br><span class="line"><span class="literal">false</span> || <span class="literal">false</span> <span class="comment">//false</span></span><br><span class="line"><span class="number">123</span> == <span class="number">123</span> || <span class="string">&quot;123&quot;</span> === <span class="number">123</span> <span class="comment">//相当于true||false 最后结果为false</span></span><br></pre></td></tr></table></figure>
+
+<p>或运算中 只有当所有的条件都为false  结果才为false；当表达式左边为true 则不用执行右边；</p>
+<p>当表达式左边为false时 会执行右边，右边是true结果为true，右边是false结果为false。</p>
+<h3 id="-1"><a href="#-1" class="headerlink" title="!"></a>!</h3><p>!叫做”逻辑非”，也就是取反的意思 ：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">!<span class="literal">true</span><span class="comment">//false</span></span><br><span class="line">!<span class="string">&quot;hello&quot;</span> =&gt; <span class="literal">false</span></span><br><span class="line">!(<span class="number">1</span> &gt; <span class="number">2</span>);<span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="进制转换"><a href="#进制转换" class="headerlink" title="进制转换"></a>进制转换</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> num = <span class="number">123</span>;	<span class="comment">//十进制数</span></span><br><span class="line"><span class="keyword">var</span> num= <span class="number">072</span>;	 <span class="comment">//以0开头 0-7组成的数为八进制数 转化为十进制数是 `7*8 + 2 = 58`</span></span><br><span class="line"><span class="keyword">var</span> num= <span class="number">079</span>; 	<span class="comment">//非八进制</span></span><br><span class="line"><span class="keyword">var</span> num= <span class="number">0xa</span>;		<span class="comment">//以0x开头 以0-9 a-f（10-15）组成的为十六进制</span></span><br><span class="line"><span class="keyword">var</span> num = <span class="number">4.12e9</span>;  <span class="comment">//科学计数法也叫作e表示法，4.12*10的9次幂</span></span><br><span class="line"><span class="number">0123</span>;	<span class="comment">//八进制 转化为十进制值是	188 + 2*8 + 3 = 83</span></span><br><span class="line"><span class="number">0x2d</span>; 	<span class="comment">//十六进制 转化为十进制值是	2*16 + 13 = 45</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="流程控制"><a href="#流程控制" class="headerlink" title="流程控制"></a>流程控制</h1><p>计算机指令在执行代码流程时 一般遵循三种结构：</p>
+<p>顺序结构：顺序结构是一种<strong>线性结构</strong>，它是<strong>从上至下</strong>的顺序，来逐行执行代码中的语句。</p>
+<p>选择结构：选择结构是一种<strong>分支结构</strong>，它通过条件的<strong>判定结果来决定选择</strong>可执行的分支部分。</p>
+<p>循环结构：循环结构，就是重复执行某一段代码。其目的是<strong>减少代码重复书写的工作量</strong>。</p>
+<h1 id="选择语句"><a href="#选择语句" class="headerlink" title="选择语句"></a>选择语句</h1><h2 id="if语句"><a href="#if语句" class="headerlink" title="if语句"></a>if语句</h2><h3 id="基本结构"><a href="#基本结构" class="headerlink" title="基本结构"></a>基本结构</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (条件） &#123;</span><br><span class="line">	<span class="comment">//当条件结果为true时 执行花括号里的内容</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>if语句是用来判断 当条件成立时 执行的动作；一般条件是变量或者表达式的结果；如果该结果是true或者<strong>能够被转化成true</strong>的值 则表示条件成立 执行花括号里面的内容：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">	<span class="comment">//执行</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (<span class="string">&quot;hello&quot;</span>) &#123;</span><br><span class="line">	<span class="comment">//执行</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (<span class="number">100</span>) &#123;</span><br><span class="line">	<span class="comment">//执行</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (<span class="literal">null</span> || <span class="literal">undefined</span> || <span class="string">&quot;&quot;</span> || <span class="number">0</span> || <span class="literal">false</span>) &#123;</span><br><span class="line">	<span class="comment">//不执行</span></span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="条件分支"><a href="#条件分支" class="headerlink" title="条件分支"></a>条件分支</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (条件） &#123;</span><br><span class="line">	<span class="comment">//表达式结果为true时 执行花括号里的内容</span></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">	<span class="comment">//不成立的时候 执行该部分</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>除了基本的if规定满足条件时执行动作外，还可以在其后加入else语句 规定不满足条件时的执行动作，那么就意味着至少会执行if或者else其中一段代码。纯粹的if是可执行 也可不执行。</p>
+<p>if/else是把一个业务或逻辑划分成两种情况，将其一作为条件来判断 反之则是剩下的结果：</p>
+<ul>
+<li><p>判断一个整数是偶数还是奇数，并输出判断结果</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> num = <span class="number">327</span>;</span><br><span class="line"><span class="keyword">if</span> (num % <span class="number">2</span> == <span class="number">0</span>) &#123;<span class="comment">//能被2整除</span></span><br><span class="line">    <span class="built_in">console</span>.log(num + <span class="string">&quot;是偶数&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(num + <span class="string">&quot;是奇数&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li><p>比较两个数值a,b的大小，并输出判断结果</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">5</span>,</span><br><span class="line">    b = <span class="number">4</span>;</span><br><span class="line"><span class="keyword">if</span> (a &gt; b) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&quot;a大&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&quot;b大&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h3 id="多条件分支"><a href="#多条件分支" class="headerlink" title="多条件分支"></a>多条件分支</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//当判断条件较多时  可以使用多个条件分支语句</span></span><br><span class="line"><span class="keyword">if</span> (条件<span class="number">1</span>) &#123;</span><br><span class="line"> </span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (条件<span class="number">2</span>) &#123;</span><br><span class="line"></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;条件<span class="number">3</span></span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li><p>判断一个数的范围：大于0显示”<strong>正数</strong>“，小于0 显示”<strong>负数</strong>“ 或 显示”<strong>0</strong>“    </p>
+ <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (num &gt; <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(num + <span class="string">&quot;是正数&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (num == <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(num + <span class="string">&quot;是0&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(num + <span class="string">&quot;是负数&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li><p>根据学生的考试成绩来划分TA的等级，90-100 为”优秀” 、80-90”优良”、 70-80 “良好” 、70-60”较差”、 60以下”不及格”：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> score = <span class="number">39</span>;</span><br><span class="line"><span class="keyword">if</span> (score &gt;= <span class="number">90</span> &amp;&amp; score &lt; <span class="number">100</span>) &#123;<span class="comment">//90 &lt; score &lt; 100 写的不合法</span></span><br><span class="line">    <span class="comment">//优秀</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&quot;优秀&quot;</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (score &gt;= <span class="number">80</span>) &#123;<span class="comment">//else已经限定了score&lt;90</span></span><br><span class="line">    <span class="comment">//优良</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&quot;优良&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (score &gt;= <span class="number">70</span>) &#123;</span><br><span class="line">    <span class="comment">//良好</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&quot;良好&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (score &gt;= <span class="number">60</span>) &#123;</span><br><span class="line">    <span class="comment">//较差</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&quot;较差&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;<span class="comment">//score &lt; 60</span></span><br><span class="line">    <span class="comment">//不及格</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&quot;不及格&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li><p>开发一款软件，根据公式（身高-108）*0.9 = 标准体重，判断一个人的身形 并输出结果（可以有5公斤左右的浮动）:</p>
+ <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">id</span>=<span class="string">&quot;height&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;请输入你的身高CM&quot;</span> <span class="attr">value</span>=<span class="string">&quot;175&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">id</span>=<span class="string">&quot;weight&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;请输入你的体重KG&quot;</span> <span class="attr">value</span>=<span class="string">&quot;163&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span>=<span class="string">&quot;开始计算&quot;</span> <span class="attr">onclick</span>=<span class="string">&quot;cal();&quot;</span>/&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">&quot;result&quot;</span>&gt;</span><span class="comment">&lt;!--存放结果--&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">cal</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">//获取用户的身高和体重</span></span><br><span class="line">    <span class="comment">// console.log(height.value, weight.value);</span></span><br><span class="line">    <span class="keyword">var</span> w = weight.value,</span><br><span class="line">        h = height.value;</span><br><span class="line">    <span class="comment">//（身高-108）*0.9 = 标准体重</span></span><br><span class="line">    <span class="keyword">var</span> ref = (h - <span class="number">108</span>) * <span class="number">0.9</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (w &gt; ref + <span class="number">5</span>) &#123;</span><br><span class="line">        <span class="comment">//胖</span></span><br><span class="line">        result.innerHTML = <span class="string">&quot;你彪了&quot;</span></span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (w &lt; ref - <span class="number">5</span>) &#123;</span><br><span class="line">        <span class="comment">//瘦</span></span><br><span class="line">        result.innerHTML = <span class="string">&quot;你飘了&quot;</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="comment">//标准</span></span><br><span class="line">        result.innerHTML = <span class="string">&quot;你赢了&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+</li>
+</ul>
+<h3 id="条件的嵌套"><a href="#条件的嵌套" class="headerlink" title="条件的嵌套"></a>条件的嵌套</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> ( num &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (num &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        </span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>判断某个年份否是否是闰年？年份能被4整除；年份若是100的整数倍的话 还需能被400整除，否则是平年。例如：</p>
+<p>1900年能被4 整除，但是因为其是100的整数倍，却不能被400整除，所以是平年；而2000年就是闰年；1904和2004、2008等直接能被4整除且不倍100整除,都是闰年。</p>
+</li>
+</ul>
+<p>​              </p>
+<h2 id="switch语句"><a href="#switch语句" class="headerlink" title="switch语句"></a>switch语句</h2><p><strong>switch</strong>开关语句与if语句紧密相关，if是对条件的模糊匹配 ，只要条件表达式 最终能被转化成true即可执行；  而switch是对值的<strong>精准匹配</strong> 只有当switch表达式里面的值和case值 <strong>完全相等时</strong> 才会进入代码的入口。switch的结构：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span> (表达式) &#123;</span><br><span class="line">    <span class="keyword">case</span> 值<span class="number">1</span> ： 执行代码<span class="number">1</span>；</span><br><span class="line">    <span class="keyword">case</span> 值<span class="number">2</span> ： 执行代码<span class="number">2</span>；</span><br><span class="line">    <span class="keyword">case</span> 值<span class="number">3</span> ： 执行代码<span class="number">3</span>；</span><br><span class="line">    <span class="keyword">default</span> :  都不匹配时 执行代码<span class="number">4</span>；</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>表达式的值会<strong>依次与case值比对</strong>，如果相等 则进入<strong>该case入</strong>口 执行后面的代码 直到switch最后。如果case值 与表达式值 都不匹配，还可以通过default来设置默认的执行动作，也可以不默认。</p>
+<h3 id="1-break语句"><a href="#1-break语句" class="headerlink" title="1) break语句"></a>1) break语句</h3><p>如果只希望执行入口处的代码 可以在其后加上一个break 终止switch继续往下执行；一般习惯性会为每个case加上break，但要结合实际业务需要；</p>
+<h3 id="2-严格的匹配"><a href="#2-严格的匹配" class="headerlink" title="2) 严格的匹配"></a>2) 严格的匹配</h3><p>switch表达式的值要和case值严格匹配， 除了值以外 数据类型也要相同 才能匹配上：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> num = <span class="number">5</span>;</span><br><span class="line"><span class="keyword">switch</span> (num) &#123;</span><br><span class="line">        <span class="comment">/*case值和表达式值需要全等 才能匹配上*/</span></span><br><span class="line">    <span class="keyword">case</span> <span class="number">5</span>:</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&quot;匹配数值5&quot;</span>);</span><br><span class="line">        <span class="comment">/*当匹配某个case入口时 它会一直往下执行 除非遇到break才停止*/</span></span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&quot;5&quot;</span>:</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&quot;匹配字符串5&quot;</span>);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&quot;都不匹配&quot;</span>);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="3-综合案例演示"><a href="#3-综合案例演示" class="headerlink" title="3) 综合案例演示"></a>3) 综合案例演示</h3><ul>
+<li><p>根据数值日期返回中文日期，例如：1=&gt;”今天是星期一” 如果输入不是有效的数值 则输出”无效的日期值”。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> day = <span class="number">5</span>;</span><br><span class="line"><span class="keyword">switch</span> (day) &#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">1</span> : <span class="built_in">console</span>.log(<span class="string">&quot;星期一&quot;</span>);<span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">2</span> : <span class="built_in">console</span>.log(<span class="string">&quot;星期二&quot;</span>);<span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">3</span> : <span class="built_in">console</span>.log(<span class="string">&quot;星期三&quot;</span>);<span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">4</span> : <span class="built_in">console</span>.log(<span class="string">&quot;星期四&quot;</span>);<span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">5</span> : <span class="built_in">console</span>.log(<span class="string">&quot;星期五&quot;</span>);<span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">6</span> : <span class="built_in">console</span>.log(<span class="string">&quot;星期六&quot;</span>);<span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">7</span> : <span class="built_in">console</span>.log(<span class="string">&quot;星期日&quot;</span>);<span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>用户在网页中 按下方向键，显示出按键方向的信息， 例如：按 ↑ 输出 “向上运动”，按 → 输出 “向右运动”</p>
+<ul>
+<li>在页面可以通过document.onkeyup来监听按键的动作：</li>
+<li>捕获到按键动作后 使用event.keyCode来查看按键的值：</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>网页版计算器</strong>：简单的计算器功能，实现 + - * / 的数学计算</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">id</span>=<span class="string">&quot;m&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;请输入第一个数&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">id</span>=<span class="string">&quot;n&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;请输入第二个数&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">id</span>=<span class="string">&quot;cont&quot;</span> <span class="attr">disabled</span> <span class="attr">value</span>=<span class="string">&quot;结果是：&quot;</span> <span class="attr">size</span>=<span class="string">30</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">select</span> <span class="attr">name</span>=<span class="string">&quot;&quot;</span> <span class="attr">id</span>=<span class="string">&quot;type&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;&quot;</span>&gt;</span>请选择<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;+&quot;</span>&gt;</span>+<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;-&quot;</span>&gt;</span>-<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;*&quot;</span>&gt;</span>*<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;/&quot;</span>&gt;</span>/<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;%&quot;</span>&gt;</span>%<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;button&quot;</span> <span class="attr">value</span>=<span class="string">&quot;开始计算&quot;</span> <span class="attr">onclick</span>=<span class="string">&quot;fn();&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">//先获取所有的用户输入值 需要转化成整型</span></span><br><span class="line">    <span class="keyword">var</span> dm = <span class="built_in">Number</span>(m.value),</span><br><span class="line">        dn = <span class="built_in">Number</span>(n.value),</span><br><span class="line">        dt = type.value;</span><br><span class="line">    <span class="comment">// console.log(dm, dn, dt);</span></span><br><span class="line">    <span class="comment">// 判断运算符类型 执行不同的操作</span></span><br><span class="line">    <span class="keyword">var</span> result;</span><br><span class="line">    <span class="keyword">switch</span> (dt) &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&quot;+&quot;</span> : </span><br><span class="line">            result = dm + dn;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&quot;-&quot;</span> :</span><br><span class="line">            result = dm - dn;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&quot;*&quot;</span> : </span><br><span class="line">            result = dm * dn;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&quot;/&quot;</span> :</span><br><span class="line">            result = dm / dn;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&quot;%&quot;</span> :</span><br><span class="line">            result = dm % dn;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cont.value = <span class="string">&quot;结果为：&quot;</span> + dm + dt + dn + <span class="string">&quot;=&quot;</span> + result;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="三目运算"><a href="#三目运算" class="headerlink" title="三目运算"></a>三目运算</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (条件表达式) &#123;</span><br><span class="line">	执行代码<span class="number">1</span>；</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">	执行代码<span class="number">2</span>；</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>以上if结构 可以简化成<strong>三目（元）运算符</strong>：</p>
+<p><code>条件表达式 ? 执行代码1 ：执行代码2</code></p>
+<p>它的优点主要是：结构更紧凑 代码的阅读性好</p>
+<h1 id="面试练习题"><a href="#面试练习题" class="headerlink" title="面试练习题"></a>面试练习题</h1><ul>
+<li> 以下代码输出的结果为：</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(++a--);			             </span><br><span class="line"><span class="keyword">if</span> (a || <span class="number">0</span>) &#123;</span><br><span class="line">	a = a + <span class="string">&quot;1&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(a);		<span class="comment">//结果为：	                  </span></span><br><span class="line"><span class="built_in">console</span>.log(a &gt; <span class="number">2</span>);	<span class="comment">//结果为：	                  </span></span><br><span class="line"><span class="keyword">switch</span> (a) &#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">11</span>: <span class="built_in">console</span>.log(<span class="number">11</span>);</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&quot;11&quot;</span>: <span class="built_in">console</span>.log(<span class="string">&quot;11&quot;</span>）;</span><br><span class="line">    <span class="keyword">default</span> :  <span class="built_in">console</span>.log(<span class="string">&quot;以上都不是&quot;</span>);</span><br><span class="line">&#125; <span class="comment">//结果为：</span></span><br></pre></td></tr></table></figure>
+
+
     
 
     
@@ -677,8 +631,8 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="http://yixiangxiao.github.io/2020/11/24/HTML(1)/" title="html入门"
-            target="_blank">http://yixiangxiao.github.io/2020/11/24/HTML(1)/</a>
+          <a href="http://yixiangxiao.github.io/2020/11/24/js(2)/" title="js运算符"
+            target="_blank">http://yixiangxiao.github.io/2020/11/24/js(2)/</a>
         </li>
         
         <li>
@@ -700,7 +654,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
         		</li>
       		
 		</ul>
@@ -767,7 +721,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://yixiangxiao.github.io/2020/11/24/HTML(1)/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://yixiangxiao.github.io/2020/11/24/js(2)/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -782,18 +736,18 @@
 
 <nav id="article-nav">
   
-    <a href="/2020/11/24/HTML(2)/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/11/24/js(3)%20/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          html规范
+          js函数
         
       </div>
     </a>
   
   
-    <a href="/2020/11/22/jingli/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">金立布局</div>
+    <a href="/2020/11/24/js(1)/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">初识javascript</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -834,9 +788,9 @@
     <script src="/lib/gitment.js"></script>
   
   <script>
-    <!-- id: "html入门" -->
+    <!-- id: "js运算符" -->
     var gitment = new Gitment({
-      id: "20201124122222",
+      id: "20201124223252",
       owner: 'yixiangxiao',
       repo: 'yixiangxiao.github.io',
       oauth: {
