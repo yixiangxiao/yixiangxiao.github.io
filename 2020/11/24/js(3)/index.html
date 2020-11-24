@@ -6,20 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yixiangxiao.github.io">
-  <title>Category: web前端 | yixiangxiao</title>
+  <title>js函数 | yixiangxiao</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="yixiangxiao_技术博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="yixiangxiao">
-<meta property="og:url" content="http://yixiangxiao.github.io/categories/web%E5%89%8D%E7%AB%AF/index.html">
+  <meta name="description" content="快速入门函数简介语法中的函数（function）是一段完成指定功能的命名代码块。将一段可实现目标的代码整合到一个函数块中并且标记上名字，然后使用名字来执行该段程序，称为“函数调用（call）”。 函数的特点：1）函数是一段代码，并且标记了名字   这段代码也就是函数，它完成一个功能、业务、任务等  通过对常用功能进行封装，然后直接调用避免反复重写一段代码。函数是只定义一次，但可以被多调用的语法。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js函数">
+<meta property="og:url" content="http://yixiangxiao.github.io/2020/11/24/js(3)/index.html">
 <meta property="og:site_name" content="yixiangxiao">
-<meta property="og:description" content="yixiangxiao_技术博客">
+<meta property="og:description" content="快速入门函数简介语法中的函数（function）是一段完成指定功能的命名代码块。将一段可实现目标的代码整合到一个函数块中并且标记上名字，然后使用名字来执行该段程序，称为“函数调用（call）”。 函数的特点：1）函数是一段代码，并且标记了名字   这段代码也就是函数，它完成一个功能、业务、任务等  通过对常用功能进行封装，然后直接调用避免反复重写一段代码。函数是只定义一次，但可以被多调用的语法。">
 <meta property="og:locale">
+<meta property="og:image" content="http://yixiangxiao.github.io/.io//1.png">
+<meta property="article:published_time" content="2020-11-24T15:32:52.000Z">
+<meta property="article:modified_time" content="2020-11-24T14:20:38.771Z">
 <meta property="article:author" content="yixiang xiao">
-<meta property="article:tag" content="yixiangxiao,yixiangxiao_技术博客">
+<meta property="article:tag" content="javascript">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yixiangxiao.github.io/.io//1.png">
   
     <link rel="alternative" href="/atom.xml" title="yixiangxiao" type="application/atom+xml">
   
@@ -256,41 +260,349 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-js(3)" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class=" article-header">
   
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+    <h1 class="article-title" itemprop="name">
+      js函数
+    </h1>
+  
+
+
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
 <a href="/2020/11/24/js(3)/" class="archive-article-date">
         <time datetime="2020-11-24T15:32:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-24</time>
 </a>
 
+  
+  
+  
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">3.5k字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">12分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="快速入门"><a href="#快速入门" class="headerlink" title="快速入门"></a>快速入门</h1><h2 id="函数简介"><a href="#函数简介" class="headerlink" title="函数简介"></a>函数简介</h2><p>语法中的函数（function）是一段完成指定功能的<strong>命名代码块</strong>。将一段可实现目标的代码整合到一个函数块中并且标记上名字，然后使用名字来执行该段程序，称为“函数调用（call）”。</p>
+<p>函数的特点：<br>1）函数是一段代码，并且标记了名字</p>
+<ol>
+<li> 这段代码也就是函数，它完成一个功能、业务、任务等</li>
+</ol>
+<p>通过对常用功能进行封装，然后直接调用避免反复重写一段代码。函数是只<strong>定义一次</strong>，但可以被<strong>多调用的</strong>语法<strong>。</strong></p>
+<p>function sum(x, y) {</p>
+<p>document.write(x + y);</p>
+<p>}</p>
+<p>sum(1, 2); //3</p>
+<p>sum(2, 8);</p>
+<p>编程中（思想维度）的函数是显现程序<strong>模块</strong>的基本单元，可以将一个大型的功能实现按照<strong>子组件</strong>的形态划分成多个函数单元以此降低代码的<strong>耦合度。</strong>这样呈现出的代码结构更加清晰，利于维护和扩展。对于函数部分的学习，主要有以下几个方面：</p>
+<p>1）函数相关的语法，例如 参数、返回值、作用域、this指向等。</p>
+<p>2）封装常用功能的函数，所谓封装（wrap）是指抽象一个业务或者功能实现为函数的过程。</p>
+<p>3）掌握常用的<strong>系统</strong>函数：为了便于功能实现，js内建好的函数称为“系统函数”。</p>
+<p>4）理解函数编程和模块化编程的思想</p>
+<a id="more"></a>
+
+<h2 id="定义函数"><a href="#定义函数" class="headerlink" title="定义函数"></a>定义函数</h2><p>函数使用<strong>function</strong>声明，一个完整的函数定义包括：<br><strong>函数名</strong>、<strong>参数列表</strong>和<strong>返回值</strong>；语法结构如下，</p>
+<p><strong>function</strong> 函数名 ([参数列表]<strong>)</strong> {</p>
+<blockquote>
+<p>  //业务或者功能实现的代码;</p>
+</blockquote>
+<blockquote>
+<p>  [<strong>return</strong> 返回值]</p>
+</blockquote>
+<p>}</p>
+<p>其中参数列表和返回值是可选的，你可以不设置。但参数列表必须留出位置，也就是函数名后得有**()**</p>
+<p>function f**()** {}</p>
+<p>函数的执行需要使用函数名来引用，注意: 必须在函数名后加上();</p>
+<p>f**()**;</p>
+<ul>
+<li>  定义一个执行用户登陆的函数，模拟点击弹出登陆框的效果</li>
+</ul>
+<p>function login() {</p>
+<p>var content = “&lt;form&gt;“;</p>
+<p>content += “&lt;p&gt;账号：&lt;input type=’text’ name=’usrname’ value=’输入账号’<br>/&gt;&lt;/p&gt;“;</p>
+<p>content += “&lt;p&gt;密码：&lt;input type=’password’ name=’password’ value=’’<br>/&gt;&lt;/p&gt;“;</p>
+<p>content += “&lt;p&gt;&lt;input type=’submit’ value=’登陆’ /&gt;&lt;/p&gt;“;</p>
+<p>content += “&lt;/form&gt;“;</p>
+<p>document.write(content);</p>
+<p>}</p>
+<p>//定义好的函数是静态程序，必须调用才会执行</p>
+<p>login();</p>
+<h3 id="函数名"><a href="#函数名" class="headerlink" title="函数名"></a>函数名</h3><p>函数名是函数在程序中的识别名称，需要通过名字来区分函数，然后调用。就如同变量定义后要使用变量名来引用它的值；函数的命名同变量一样，遵循标识符命名规范且<strong>不可与内建函数同名</strong>，如定义Number函数。</p>
+<p>function Number() {}; //不可以</p>
+<h3 id="参数列表"><a href="#参数列表" class="headerlink" title="参数列表"></a>参数列表</h3><p>函数在实现时为了最大限度的发挥代码重用性的效果，我们需要对函数功能中的某些<strong>不确定的内容</strong>使用变量来代替，相当于<strong>占位符</strong>的功能，等执行时再传入具体的值；函数中用于占位符的变量，需要声明在<strong>参数列表</strong>上，称为“<strong>形参</strong>”。而调用时传入给形参的值称为“<strong>实参</strong>”。函数的调用执行是将有具体值的实参传递给形参，然后用在函数体中。例如：</p>
+<p>&lt;script&gt;</p>
+<p>//定义函数str的动态内容 作为参数 需要在参数列表上声明该形式参数</p>
+<p>function hello(str) {</p>
+<p>document.write(“hello” + str + “&lt;br /&gt;“);</p>
+<p>}</p>
+<p>//执行时传入一个具体的值叫“实参”</p>
+<p>hello(“world”);</p>
+<p>hello(“javascript”);</p>
+<p>&lt;/script&gt;</p>
+<h3 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h3><p>函数体内运算完成的数据可以直接<strong>输出</strong>到页面，也可以返回到<strong>主程序</strong>中用以交互，返回的数据需要使用<strong>return</strong><br>来声明。</p>
+<p>function f() {</p>
+<blockquote>
+<p>  var a,b,c;</p>
+</blockquote>
+<blockquote>
+<p>  //将b的值使用return返回给主程序</p>
+</blockquote>
+<blockquote>
+<p>  return b; //没有return的数据 在函数执行完毕都会被销毁 外部不可访问</p>
+</blockquote>
+<p>}</p>
+<p>//主程序中调用函数并定义变量接收结果</p>
+<p>var result = f();</p>
+<p>console.log(result); //result为b的值</p>
+<p>一个完整的函数执行过程应该是：<strong>调用时传入参数到函数体内，函数体内深加工后返回到主程序中，</strong>函数体就是对数据重新运算的过程；</p>
+<ul>
+<li>  定义一个求和函数，需要传入两个数（参数），将结果返回主程序（返回值）</li>
+</ul>
+<p>function sum(x, y) {</p>
+<blockquote>
+<p>  return x + y;</p>
+</blockquote>
+<p>}</p>
+<h2 id="执行过程"><a href="#执行过程" class="headerlink" title="执行过程"></a>执行过程</h2><p>当函数存在时，我们将整个文件中的代码分为：“<strong>主程序</strong>执行代码”和“<strong>函数体</strong>代码”；当主程序调用函数时，JS会暂停主程序代码的运行，并传递必要的参数给目标函数使用，以执行函数代码片段。在函数执行结束后，函数会回传执行结果，并将执行流程转回原主程序中断的地方继续运行。</p>
+<p>主程序代码</p>
+<blockquote>
+<p>  //函数体代码</p>
+</blockquote>
+<blockquote>
+<p>  return x + y;</p>
+</blockquote>
+<p><strong>传入参数</strong></p>
+<p><strong>函数体内代码</strong></p>
+<p>var result = f(1, 2);</p>
+<p><strong>返回值</strong></p>
+<p>主程序获得result</p>
+<p>这里参数和返回值的意义是：完成主程序和函数体内数据的交互。</p>
+<h2 id="封装函数"><a href="#封装函数" class="headerlink" title="封装函数"></a>封装函数</h2><ul>
+<li><p>定义比较两个数a,b大小的函数：<strong>max</strong></p>
+<p>  function max(a, b) {</p>
+<p>  var m; //存放最大值的变量 作为返回值</p>
+<p>  if (a &gt; b) {</p>
+<p>  m = a;</p>
+<p>  } else {</p>
+<p>  m = b;</p>
+<p>  }</p>
+<p>  return m;</p>
+<p>  }</p>
+<p>  //调用并输出返回的结果</p>
+<p>  console.log(_max(1,2)); //2</p>
+</li>
+<li><p>定义一个计算1到n之和的函数：<strong>sum</strong></p>
+<p>  function sum(n) {</p>
+<p>  var sum = 0; //存放和结果也作为返回值</p>
+<p>  //1….n</p>
+<p>  for (var i = 1; i &lt;= n; i++) {</p>
+<p>  sum += i;</p>
+<p>  }</p>
+<p>  return sum;</p>
+<p>  }</p>
+<p>  console.log(sum(100)); //5050</p>
+</li>
+<li><p>求1到n(参数)的阶乘和（返回值）的函数：<strong>fn</strong></p>
+<p>  &lt;script&gt;</p>
+<p>  //1! + 2! + 3!… + n!</p>
+<p>  function fn(n) {</p>
+<p>  var sum = 0,</p>
+<p>  num = 1; //初始化1！</p>
+<p>  for (var i = 1; i &lt;= n; i++) {</p>
+<p>  num = num * i;</p>
+<p>  sum += num;</p>
+<p>  }</p>
+<p>  return sum;</p>
+<p>  }</p>
+<p>  var result = fn(10);</p>
+<p>  console.log(result); //4037913</p>
+<p>  &lt;/script&gt;</p>
+</li>
+</ul>
+<h1 id="函数参数"><a href="#函数参数" class="headerlink" title="函数参数"></a>函数参数</h1><h2 id="参数声明"><a href="#参数声明" class="headerlink" title="参数声明"></a>参数声明</h2><h3 id="不严格匹配"><a href="#不严格匹配" class="headerlink" title="不严格匹配"></a>不严格匹配</h3><p>通常函数调用时传入的实参个数要和定义时的形参个数相等并按照顺序传递；JS中函数调用时传入的实参个数可以和形参不严格的匹配：</p>
+<p>当传入的实参个数<strong>多于</strong>定义时的形参个数时，多出的实参值会被省略；</p>
+<p>当传入的实参个数<strong>少于</strong>定义时的形参时，缺省值默认为undefined。</p>
+<p>function foo(a, b) {</p>
+<p>//查看形参接收到的值</p>
+<p>console.log(a, b);</p>
+<p>}</p>
+<p>//正常使用</p>
+<p>foo(1, 2);</p>
+<p>//实参多于形参</p>
+<p>foo(1, 2, 3); //1, 2</p>
+<p>//实参少于形参</p>
+<p>foo(1); //1, undefined</p>
+<h3 id="参数默认值"><a href="#参数默认值" class="headerlink" title="参数默认值"></a>参数默认值</h3><p>当形参缺省时，除了使用默认值undefined外，还可以自定义值。ES6中，通过在形参后面赋值来设置它的默认值。带有默认值的形参必须放在参数列表最后的位置。</p>
+<p>function foo(a, b = 2) {</p>
+<p>}</p>
+<p><img src="/.io//1.png"></p>
+<h2 id="可变参数"><a href="#可变参数" class="headerlink" title="可变参数"></a>可变参数</h2><h3 id="arguments对象"><a href="#arguments对象" class="headerlink" title="arguments对象"></a>arguments对象</h3><p>通常用户定义函数时，参数列表是明确的。如果希望函数可以接受任意数目的参数，那么就需要解决一个问题：如何建立形参和实参之间的映射关系。</p>
+<p>不确定参数个数的函数，也叫“可变长度”函数。这样就无法准确的定义形参列表来接收传入的实参值。js内置了名为arguments的局部变量，它是所有实参集合的对象。可以使用arguments[0],<br>arguments[1]….arguments[n]来获取某个实参。</p>
+<p>更加有效的使用arguments还需要明确实参的个数，arguments.length记录了实参的个数。接下来，定义一个计数器，按照数组编号来依次遍历实参值：</p>
+<ul>
+<li>  求一组不确定数量的数字，它们之中最大的数：max()</li>
+</ul>
+<h3 id="剩余参数语法糖"><a href="#剩余参数语法糖" class="headerlink" title="剩余参数语法糖"></a>剩余参数语法糖</h3><p>剩余参数（rest）是另一种用来处理不定参数的方法。该语法允许我们将那些不定的参数表示为一个数组，然后通过数组的方式提取。其语法形式如下：</p>
+<p>function(a, b, …theArgs) {</p>
+<p>// …</p>
+<p>}</p>
+<p>在上述形参列表中，如果最后一个命名参数以“…”为前缀，则它代表一个由余下参数组成的真数组。通过定义一个仅包含剩余参数的形参列表，我们可以获取到所有函数调用传入的实参值。</p>
+<ul>
+<li><p>  使用剩余参数计算一组数的最大值</p>
+</li>
+<li><p>  剩余参数可以被解构，这意味着实参列表可以被分配到不同的变量中</p>
+</li>
+</ul>
+<p>&lt;script&gt;</p>
+<p>//相当于var [a,b,c] = …args</p>
+<p>function f(…[a, b, c]) {</p>
+<p>return a + b + c;</p>
+<p>}</p>
+<p>//由于析构时固定了接收变量 相当于形参列表</p>
+<p>console.log(f(1, 2)); //NaN c未定义</p>
+<p>console.log(f(1, 2, 3)) // 6</p>
+<p>&lt;/script&gt;</p>
+<p>事实上剩余参数是ES6+的语法，用来替代之前的arguments对象，缘由某些场合下arguments会失效（主要是箭头函数没有自己的arguments）。因此，推荐大家更多的使用rest语法。</p>
+<h2 id="函数重载"><a href="#函数重载" class="headerlink" title="函数重载"></a>函数重载</h2><p>函数的“<strong>重载”</strong>是指：可以定义多个同名的函数，通过设置不同的参数（参数类型或者个数不同）来区分使用，这样的操作就叫“<strong>重载</strong>”。在js中函数不能重载，定义的同名函数会产生覆盖，就如同变量的覆盖：</p>
+<p>function f() { … } //相当于 var f = function () {}</p>
+<p>//再次定义函数f时会覆盖上面的函数</p>
+<p>function f(a) { … }</p>
+<p>function f(a, b) { … }</p>
+<ul>
+<li>  借助于剩余参数或arguments对象 模拟函数重载的执行效果</li>
+</ul>
+<p>虽然语法层面 js不支持重载 但剩余参数可以实现类似的功能 模拟重载的效果：</p>
+<p>function f(…args) {</p>
+<p>if (args.length == 1) { //一个参数的函数调用入口</p>
+<p>} else if (args.length == 2) { //两个参数的函数调用入口</p>
+<p>}</p>
+<p>}</p>
+<p>f(1); //1</p>
+<p>f(1, 2); //1,2</p>
+<h1 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h1><h2 id="变量范围"><a href="#变量范围" class="headerlink" title="变量范围"></a>变量范围</h2><p>变量的作用域，也叫<strong>变量的能见度</strong>，意指变量在程序中的可作用区域。大致来说变量会依据声明的局部分为下列两种：<strong>局部变量</strong>和<strong>全局变量。</strong></p>
+<p>在函数之中声明的变量就是局部变量，并且该变量只有在函数范围之中才能加以使用。如果其它程序局部需要使用该变量值时，必须透过「return」指令，来将其传回至主程序区块以作后续处理。</p>
+<p>在函数范围之外所声明的变量就是<strong>全局变量</strong>，全局变量不仅可以在主程序中使用，还可以作用于函数体内。但如果函数体内已有该变量，则优先使用函数体内的变量。简单来说，函数体内引用一个变量时会先从函数体内查找，如果没有则使用全局中的变量。</p>
+<h2 id="静态变量"><a href="#静态变量" class="headerlink" title="静态变量"></a>静态变量</h2><p>在通常的编程语言中，<br>存在语法层面的静态定义，即static声明。而js直到es6才出现使用static定义的静态“成员”，而非静态“变量”的语法。尽管如此却丝毫不影响我们“设置”静态变量的操作。静态变量是可以静态保存的变量，它不会因为函数调用结束而销毁<br>这样函数体内的数据得以维持。正常的函数体内的局部变量 在函数执行结束后 就删除了<br>因此数据无法维持。</p>
+<p>在js中的<strong>函数可以给它绑定变量</strong>，这个变量的值不会随<strong>函数执行完毕而消亡</strong>，它在每次调用时都被共享。给函数绑定变量的效果<br>可以模拟出 静态变量的实现。</p>
+<h1 id="嵌套和递归"><a href="#嵌套和递归" class="headerlink" title="嵌套和递归"></a>嵌套和递归</h1><h2 id="函数嵌套"><a href="#函数嵌套" class="headerlink" title="函数嵌套"></a>函数嵌套</h2><p>可以在一个函数体中再定义一个子函数，称为“<strong>嵌套函数</strong>”。作为宿主的函数称为“包含函数”或者“外围函数”，嵌套函数可能会触发闭包特性，后续论证。</p>
+<h2 id="函数递归"><a href="#函数递归" class="headerlink" title="函数递归"></a>函数递归</h2><p>函数中<strong>自身调用自身</strong>的编程技巧叫做递归。所谓的递归，就是函数可以在其声明的执行叙述之中调用执行自己。函数递归调用最大的好处在于可以精简程序中繁杂重复调用程序，并且能以这种特性来执行一些较为复杂的运算动作。</p>
+<p>function f() {</p>
+<blockquote>
+<p>  f(); //反复不断的调用自身</p>
+</blockquote>
+<p>}</p>
+<p><strong>工作流程：</strong></p>
+<p>通常在此类型的函数之中会附加一个条件判断叙述，以判断是否需要执行递归调用，并且在特定条件下终止函数的递归调用动作，把目前流程的主控权交回上一层函数执行。因此当某个执行递归调用的函数，没有附加条件判断叙述时可能会造成无限循环的错误情形。</p>
+<p><strong>实现过程：</strong></p>
+<p>递归一定要有出口条件能够跳出递归，也就是说出口条件满足时递归返回，不满足时前进。</p>
+<p>优势：递归用于解决一些具有相同处理过程的问题，从而减少开发人员的工作量。</p>
+<p>劣势：由于递归执行过程中在快速的调用函数，若处理大量数据，或递归次数过多会造成内存溢出的问题，也就是说递归是很消耗内存的。</p>
+<p>递归快算法：1、出口 2、规律 3、趋势 4、return</p>
+<ul>
+<li>  定义函数f：求1-n之间所有数的和</li>
+</ul>
+<h1 id="面试练习题"><a href="#面试练习题" class="headerlink" title="面试练习题"></a>面试练习题</h1><ul>
+<li><p>  定义函数sort，给数组[1,10,5,3,7,2,8]从大到小排列</p>
+</li>
+<li><p>  分别使用arguments和剩余参数，计算一组数的平均值</p>
+</li>
+<li><p>  使用递归求1 + 2! + 3! + 4! + …. + 20!的和</p>
+</li>
+</ul>
+
+    
+
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/alipay.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/weixinpay.png">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/11/24/js(3)/" target="_blank">js函数</a>
-  
-    </h1>
-  
+      </a>
+    </div>
+    
 
-
-        <div class="article-info info-on-right">
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          yixiang xiao
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="http://yixiangxiao.github.io/2020/11/24/js(3)/" title="js函数"
+            target="_blank">http://yixiangxiao.github.io/2020/11/24/js(3)/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
           
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -302,7 +614,7 @@
 		</ul>
 	</div>
 
-          
+    
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -315,465 +627,127 @@
 	</div>
 
 
+    
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://yixiangxiao.github.io/2020/11/24/js(3)/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/11/24/js(2)/" class="archive-article-date">
-        <time datetime="2020-11-24T14:32:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-24</time>
-</a>
 
+
+<nav id="article-nav">
+  
+  
+    <a href="/2020/11/24/js(2)/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">js运算符</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="gitment-ctn"></div>
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/11/24/js(2)/" target="_blank">js运算符</a>
+    <!-- 中文 -->
+    <link rel="stylesheet" href="/lib/gitment.css">
+    <script src="/lib/gitment.js"></script>
   
-    </h1>
-  
+  <script>
+    <!-- id: "js函数" -->
+    var gitment = new Gitment({
+      id: "20201124233252",
+      owner: 'yixiangxiao',
+      repo: 'yixiangxiao.github.io',
+      oauth: {
+        client_id: '33599c64285c4edbc8e6',
+        client_secret: '3e5f2f5ee6a1ccae9a732694d477b2f1089c8bf9',
+      },
+    })
+    gitment.render('gitment-ctn')
+  </script>
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/11/24/js(1)/" class="archive-article-date">
-        <time datetime="2020-11-24T13:32:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-24</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/11/24/js(1)/" target="_blank">初识javascript</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/11/24/css(3)/" class="archive-article-date">
-        <time datetime="2020-11-24T12:32:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-24</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/11/24/css(3)/" target="_blank">div+css布局</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/11/24/css(2)/" class="archive-article-date">
-        <time datetime="2020-11-24T12:12:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-24</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/11/24/css(2)/" target="_blank">浮动</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/11/24/css(1)/" class="archive-article-date">
-        <time datetime="2020-11-24T05:32:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-24</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/11/24/css(1)/" target="_blank">html,css选择器</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/11/24/HTML(3)/" class="archive-article-date">
-        <time datetime="2020-11-24T04:40:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-24</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/11/24/HTML(3)/" target="_blank">html标签,css</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/11/24/HTML(2)/" class="archive-article-date">
-        <time datetime="2020-11-24T04:30:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-24</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/11/24/HTML(2)/" target="_blank">html规范</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/11/24/HTML(1)/" class="archive-article-date">
-        <time datetime="2020-11-24T04:22:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-24</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/11/24/HTML(1)/" target="_blank">html入门</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -814,10 +788,10 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
-		isCategory: true,
+		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
