@@ -6,19 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yixiangxiao.github.io">
-  <title>Category: 后端 | yixiangxiao</title>
+  <title>html,css选择器 | yixiangxiao</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="yixiangxiao_技术博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="yixiangxiao">
-<meta property="og:url" content="http://yixiangxiao.github.io/categories/%E5%90%8E%E7%AB%AF/index.html">
+  <meta name="description" content="表单控件在HTML中使用form来创建一个表单，表单中包含各式各样的输入控件、选框以及按钮。最终表单要提交到服务器，这就需要在form标签上面设置method&#x3D;&#39;post&#39;和action&#x3D;&#39;index.php&#39;。表单中 可以使用fieldset来区分不同的类型的输入信息，使用&lt;legend&gt;&lt;&#x2F;legend&gt;。 123456789101112">
+<meta property="og:type" content="article">
+<meta property="og:title" content="html,css选择器">
+<meta property="og:url" content="http://yixiangxiao.github.io/2020/11/24/css(1)/index.html">
 <meta property="og:site_name" content="yixiangxiao">
-<meta property="og:description" content="yixiangxiao_技术博客">
+<meta property="og:description" content="表单控件在HTML中使用form来创建一个表单，表单中包含各式各样的输入控件、选框以及按钮。最终表单要提交到服务器，这就需要在form标签上面设置method&#x3D;&#39;post&#39;和action&#x3D;&#39;index.php&#39;。表单中 可以使用fieldset来区分不同的类型的输入信息，使用&lt;legend&gt;&lt;&#x2F;legend&gt;。 123456789101112">
 <meta property="og:locale">
+<meta property="article:published_time" content="2020-11-24T05:32:52.000Z">
+<meta property="article:modified_time" content="2020-11-24T04:39:39.035Z">
 <meta property="article:author" content="yixiang xiao">
-<meta property="article:tag" content="yixiangxiao,yixiangxiao_技术博客">
+<meta property="article:tag" content="html">
+<meta property="article:tag" content="css">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="yixiangxiao" type="application/atom+xml">
@@ -256,76 +259,598 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-css(1)" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/11/22/new-post/" class="archive-article-date">
-        <time datetime="2020-11-22T10:11:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-22</time>
-</a>
-
-        </div>
-    	 
+      <header class=" article-header">
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/11/22/new-post/" target="_blank">new_post</a>
   
+    <h1 class="article-title" itemprop="name">
+      html,css选择器
     </h1>
   
 
 
-        <div class="article-info info-on-right">
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/2020/11/24/css(1)/" class="archive-article-date">
+        <time datetime="2020-11-24T05:32:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-24</time>
+</a>
+
+  
+  
+  
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">4.2k字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">16分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h2 id="表单控件"><a href="#表单控件" class="headerlink" title="表单控件"></a>表单控件</h2><p>在HTML中使用form来创建一个表单，表单中包含各式各样的输入控件、选框以及按钮。最终表单要提交到服务器，这就需要在form标签上面设置<code>method=&#39;post&#39;</code>和<code>action=&#39;index.php&#39;</code>。表单中 可以使用<code>fieldset</code>来区分不同的类型的输入信息，使用<code>&lt;legend&gt;&lt;/legend&gt;</code>。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">method</span>=<span class="string">&quot;post&quot;</span> <span class="attr">action</span>=<span class="string">&quot;index.php&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">fieldset</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">legend</span>&gt;</span></span><br><span class="line">            基本信息</span><br><span class="line">        <span class="tag">&lt;/<span class="name">legend</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--一些输入控件---&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">fieldset</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">fieldset</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">legend</span>&gt;</span></span><br><span class="line">            详细信息</span><br><span class="line">        <span class="tag">&lt;/<span class="name">legend</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--一些输入控件---&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">fieldset</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>输入控件主要是input标签，不同类型的输入控件，它的type属性值不一样：</p>
+<ul>
+<li><p>type=’text’ 普通文本框 可以输入一行信息 一般是短内容的输入，它支持的属性：</p>
+<ul>
+<li>size：文本框的长度</li>
+<li>maxlength：可输入的最大字元</li>
+<li>value：初始化的默认值</li>
+<li>placeholder：初始化的提示信息 它以灰色且不阻塞输入的方式呈现</li>
+<li>readonly：只读属性，该输入框 不支持修改 该控件可以提交到服务器</li>
+<li>disbabled ：禁用的控件是指服务端无法接收该文本框的值，一般用户展示信息</li>
+</ul>
+<p>文本框还可以配合datalist标签一起使用，datalist用来输入提示信息，每个提示项放在<code>&lt;option&gt;</code>标签中，然后在文本框里面使用list属性关联该datalist列表：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&#x27;text&#x27;</span> <span class="attr">name</span>=<span class="string">&#x27;username&#x27;</span> <span class="attr">list</span>=<span class="string">&#x27;rel&#x27;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">datalist</span> <span class="attr">id</span>=<span class="string">&#x27;rel&#x27;</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;Wang&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&quot;Hey Gor&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">&#x27;lautin&#x27;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">datalist</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+</li>
+<li><p>type=’password’ 密码框，输入内容不可见，它的属性同文本框相似</p>
+</li>
+<li><p>type=’number’ 数值输入框，指定输入数值以及控制它的范围，属性如下：</p>
+<ul>
+<li>min：可输入的最小值</li>
+<li>max：可输入的最大值</li>
+<li>value：初始化的值</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>type=’date’ 它可以生成一个日历控制面板 供用户选择一个日期 避免输入格式的混乱</p>
+<ul>
+<li>value：默认的日期时间 该日期的格式必须是<code>2019-08-12</code></li>
+<li>实际上 除了date日期外，还支持time、datetime、week、month类型的日历。目前FF不完全支持，谷歌都支持</li>
+</ul>
+</li>
+<li><p>type=’color’ 它可以一个颜色面板 供用户选择</p>
+</li>
+<li><p>type=’url’ 支持输入一个url地址，在提交时 会验证格式中是否包含<code>http(s)://</code>协议</p>
+</li>
+<li><p>type=’email’ 支持输入一个邮箱地址，同样在提交时 会自动严格它的格式 至少写成<code>a@b</code></p>
+</li>
+</ul>
+<p>表单中的按钮选框也是使用input，它有几种类型：</p>
+<ul>
+<li>type=’radio’ 单选框 同一个选项它的name值必须一致，否则无法实现单选<ul>
+<li>checked属性 设置默认选中项</li>
+</ul>
+</li>
+<li>type=’checkbox’ 多选框，支持同时选择多个值 它的name值必须使用数组形式，否则服务端只能接收到选中的第一个值。同样的使用checked来默认选中项</li>
+<li>select定义下拉框：</li>
+</ul>
+<p>表单中 必须的控件还有按钮，按钮也分为几种：</p>
+<ul>
+<li>type=”button” 普通按钮 它没有默认行为 需要配合javascript来实现交互</li>
+<li>type=”reset” 重置按钮 清空表单内容 重新输入</li>
+<li>type=”submit” 提交按钮 触发表单的提交行为</li>
+</ul>
+<p><strong>特别强调</strong></p>
+<p>所有的表单控件（输入控件、选框等）都必须声明它的<code>name</code>属性，用于服务端接收数据</p>
+<h2 id="CSS入门"><a href="#CSS入门" class="headerlink" title="CSS入门"></a>CSS入门</h2><h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">    选择器 &#123;</span><br><span class="line"><span class="css">        <span class="comment">/*声明列表*/</span></span></span><br><span class="line">        属性1:值1;</span><br><span class="line">        属性2:值2；</span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="引入方式"><a href="#引入方式" class="headerlink" title="引入方式"></a>引入方式</h2><p>在HTML中嵌入css样式 有三种方式：</p>
+<ul>
+<li>内联样式： 在HTML中 使用style标签嵌入的样式</li>
+<li>外联样式：当样式较多的时候 创建单独的css文件来定义样式，接下来在HTML头中使用link引入该文件</li>
+<li>行内样式：在标签中通过style属性给该元素定义样式</li>
+</ul>
+<p>当对同一元素 使用了不同的方式定义了同一个属性，会存在优先级，采用就近原则。</p>
+<h2 id="基本选择器"><a href="#基本选择器" class="headerlink" title="基本选择器"></a>基本选择器</h2><ul>
+<li>标签/元素名选择器：直接通过标签名来选择相应的元素</li>
+<li>class类选择器：通过给标签添加类名 然后在css中使用<code>.类名</code>来选中元素。class可以同时标记多个元素</li>
+<li>ID选择器：给标签设定ID名称，然后在css中使用<code>#ID</code>来选中该元素，ID名不能重复</li>
+</ul>
+<h2 id="常用的属性"><a href="#常用的属性" class="headerlink" title="常用的属性"></a>常用的属性</h2><ul>
+<li>文本相关的属性设置：<ul>
+<li>color :</li>
+<li>font : 缩写形式，它包含 font-weight,font-style|font-size,font-family</li>
+<li>text-align :</li>
+<li>text-decoration ：</li>
+</ul>
+</li>
+<li>border ：缩写形式，它包含：border-width,border-style,border-color</li>
+<li>background ：缩写形式，它包含：background-color,background-image,background-repeat,background-position</li>
+<li>width和height：它只对块级（整行）元素有效，行内元素无意义</li>
+</ul>
+<h1 id="选择器详解"><a href="#选择器详解" class="headerlink" title="选择器详解"></a>选择器详解</h1><h2 id="关系选择器"><a href="#关系选择器" class="headerlink" title="关系选择器"></a>关系选择器</h2><p>关系选择器是通过元素之间的关联关系来查找元素，例如：父子关系、兄弟关系、邻里关系</p>
+<ul>
+<li>后代选择器：<code>S1 S2</code>，匹配S1内部的所有后代S2，不限于某一级</li>
+<li>子选择器：<code>S1&gt;S2</code>，匹配S1中的下一级S2，也就是“子级”元素。</li>
+<li>相邻选择器：<code>S1+S2 </code>，匹配S1后面<strong>紧挨</strong>着的同级（兄弟）元素S2</li>
+<li>兄弟选择器：<code>S1~S2</code> ，匹配S1后面的所有<strong>同级</strong>（兄弟）元素S2</li>
+</ul>
+<p>在书写时 关系符号和元素之间 可以有空白符，但不建议加，可以使用格式化去除。</p>
+<h2 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h2><p>根据HTML标签的属性特征来选择元素，它有几种匹配的方式：</p>
+<ul>
+<li><code>[attr]</code>：[]表示匹配具有attr属性的元素 ，不要求值</li>
+<li><code>[attr=&quot;aa&quot;]</code> 表示具有attr属性且为定值==aa==的元素</li>
+<li><code>[attr*=&quot;aa&quot;]</code> 表示具有attr属性，值==包含==aa关键字即可</li>
+<li><code>[attr~=&quot;aa&quot;]</code> 表示具有attr属性，值中包含aa==单词==，aa必须作为一个单词出现</li>
+<li><code>[attr^=&quot;aa&quot;]</code>表示具有attr属性，值以aa==开头==即可</li>
+<li><code>[attr$=&quot;aa&quot;]</code>表示具有attr属性，值以aa==结尾==即可</li>
+</ul>
+<h2 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器"></a>伪类选择器</h2><p>伪类选择器是通过单冒号（：）和<strong>特定的具有某种含义的单词</strong>来确定所选元素。</p>
+<p>所谓伪类选择器，是相对于“类选择器”来说的，对比如下：</p>
+<ul>
+<li><p>类选择器：</p>
+<p>说明：类的名称是由我们程序员来设定的，符合命名规范就行。</p>
+<p>形式：<code>.类名称&#123; ... &#125;</code></p>
+</li>
+<li><p>伪类选择器：</p>
+<p>说明：伪类的名称是CSS标准中所<strong>预先设定</strong>的，我们不能自己设定。可用的伪类名不多。</p>
+<p>形式：<code>:伪类名称&#123; ... &#125;</code></p>
+</li>
+</ul>
+<h3 id="a链接伪类"><a href="#a链接伪类" class="headerlink" title="a链接伪类"></a>a链接伪类</h3><p>这4个伪类主要用于表示一个链接（也就是a标签）的<strong>4种不同状态</strong>。</p>
+<p>它们可以设定一个链接在不同状态下的外观表现（样式表现）。</p>
+<p><code>:link</code>        ——表示一个链接<strong>初始</strong>时候的状态。</p>
+<p><code>:visited</code>    ——表示一个链接在<strong>访问（点击）过之后</strong>的状态。</p>
+<p><code>:hover</code>    ——表示一个链接在<strong>鼠标移上去</strong>（鼠标悬停）的时候的状态。</p>
+<p><code>:active</code>    ——表示一个链接在<strong>活动状态</strong>的时候的状态，通常就是点击的瞬间（按住不放能看到）。</p>
+<p> ==注意==：</p>
+<ol>
+<li>这几个伪类选择器主要用于a标签，形式类似这样： a:link{ … },  a:visited{ … }等。</li>
+<li>:hover也经常用于其它标签，表示鼠标放上去的时候的样式表现。</li>
+<li>对于a链接的这4个状态，他们有顺序问题，<em>必须按上述顺序才有合理效果</em>（lvha，Lv哈）</li>
+</ol>
+<h3 id="E-focus"><a href="#E-focus" class="headerlink" title="E:focus"></a>E:focus</h3><p>表示一个元素在成为<strong>可输入状态</strong>（获得焦点）的时候，主要用于<strong>表单元素</strong>。</p>
+<p>其中“E”表示某个元素（或某个选择器所选中的元素）。</p>
+<p>前缀元素E是表示该元素在获得焦点的时候，其样式表现如何。</p>
+<p>也可以不用前面写“E”，而是直接用“:<strong>focus</strong>”，但实际应用中，一般会在前面有这个限定。</p>
+<p>比如：</p>
+<p>input:focus{ …. }            /<em>表示input元素在获得焦点的时候</em>/</p>
+<p>也可以不用input，如下所示：</p>
+<p>:focus{ …. }</p>
+<p>但此时其实所选择的范围扩大了（不仅仅针对input元素）。</p>
+<h3 id="子元素伪类"><a href="#子元素伪类" class="headerlink" title="子元素伪类"></a>子元素伪类</h3><p>这几个伪类用于表示（或选中）“具有某种特征的子元素E”，它有如下几种形式：</p>
+<ul>
+<li><p><code>E:first-child</code>    ——匹配作为父元素的第一个子元素E。</p>
+</li>
+<li><p><code>E:last-child</code>    ——匹配作为父元素的最后一个子元素E。</p>
+</li>
+<li><p><code>E:only-child</code>    ——匹配作为父元素的唯一一个子元素E。</p>
+</li>
+<li><p><code>E:nth-child(n)</code>    ——匹配作为父元素的第n个子元素E。括号中的n是一个具体数字</p>
+</li>
+<li><p><code>E:nth-last-child(n)</code> –匹配作为父元素的倒数第n个子元素E，n的值从1开始</p>
+</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">li:first-child&#123; ... &#125;	/*表示作为第一个子元素的li标签*/</span><br><span class="line">td:last-child&#123; ... &#125;	/*表示作为最后一个子元素的td标签*/</span><br><span class="line">p:only-child&#123; ... &#125;		/*表示作为父元素中只有一个子元素且为p标签*/</span><br><span class="line">li:nth-child(2)&#123; ... &#125;	/*表示作为第2个子元素的li标签*/</span><br></pre></td></tr></table></figure>
+
+<p>子元素选择器中 一些特殊的用法：</p>
+<ul>
+<li><code>:nth-child(2n+1)</code>在表达式2n+1中，n的值从0开始，代表0,1,2,3,,,,n这样的值。它表示每2个中的第1个元素，也就是所有子元素中编号为奇数的那些。编号为偶数的即是<code>2n</code>或者<code>2n+2</code></li>
+<li><code>nth-last-child(-n+3)</code> 表达式中n的值也是0,1,2,，，n，随着n值的改变 <code>-n+3</code>表达式的值是<code>3,2,1</code>，对应的倒数前3个元素。也就是说<code>-n+x</code>可以用来选择连续倒数的x个元素。</li>
+</ul>
+<p>注意：上述也可以单用（不要冒号前面的部分），但一般较少这样用。</p>
+<h3 id="其他伪类"><a href="#其他伪类" class="headerlink" title="其他伪类"></a>其他伪类</h3><ul>
+<li>E:empty：选择<strong>内容为空</strong>的E元素，就是标签内什么都没有，空格也不能有。毋庸置疑 所有的单标签一定符合</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">li</span><span class="selector-pseudo">:empty</span> &#123;</span></span><br><span class="line">        color : red;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>item1<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span> <span class="tag">&lt;/<span class="name">li</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>	/*它会变红*/</span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>E:checked：作为选中项的E元素 它针对<code>radio和checkbox</code></li>
+<li>E:enabled：作为有效控件的E元素，不能含有disabled属性</li>
+<li>E:disabled：作为无效控件的E元素，也就是含有disabled属性的输入控件</li>
+</ul>
+<h2 id="伪元素选择器"><a href="#伪元素选择器" class="headerlink" title="伪元素选择器"></a>伪元素选择器</h2><p>伪元素选择器是通过双冒号（：：）和特定的具有某种含义的单词来确定所选元素。</p>
+<p>伪元素选择器通常是”本没有这个元素（标签）”，但会创建出一个<strong>隐性元素</strong>并对其进行样式设定。</p>
+<p>伪元素选择器又称为“伪对象选择器”。</p>
+<ul>
+<li><p>E::before</p>
+<ul>
+<li><p>表示会创建一个新元素并添加到元素E的内部的最前面（伪元素）。</p>
+<p>其中必须写上一个属性：<code>content:&quot;内容&quot;</code>; 当然，内容可以为空。</p>
+</li>
+</ul>
+</li>
+<li><p>E::after</p>
+<ul>
+<li><p>表示会创建一个新元素并添加到元素E的内部的最后面（伪元素）。</p>
+<p>其中必须写上一个属性：content:”内容”;</p>
+</li>
+</ul>
+</li>
+<li><p>E::selection</p>
+<ul>
+<li>表示给元素E内容中“选中的部分”创建一个伪元素并设置它的样式。</li>
+</ul>
+</li>
+<li><p>E::first-line</p>
+<ul>
+<li>表示给元素E中的“第一行内容”创建一个伪元素并设置它的样式。</li>
+</ul>
+</li>
+<li><p>E::first-letter</p>
+<ul>
+<li>表示元素E中的“第一个字符”可以单独作为一个元素（伪元素）。</li>
+</ul>
+</li>
+</ul>
+<h1 id="选择器组合"><a href="#选择器组合" class="headerlink" title="选择器组合"></a>选择器组合</h1><p>选择器的组合是将多个不同形式的选择器组合起来以确定所选元素，它主要有以下几种形式：</p>
+<ul>
+<li>E(Element)：元素选择器</li>
+<li>E.class：表示选择E元素 同时它的类名是class</li>
+<li>E#id：表示选择E元素 同时ID是id</li>
+<li>E[attr]：表示选择E元素 且属性为attr</li>
+<li>并列选择器：表示同时选中这些元素，例如：<code>div , p</code> 选择div和p</li>
+</ul>
+<h1 id="CSS样式特性"><a href="#CSS样式特性" class="headerlink" title="CSS样式特性"></a>CSS样式特性</h1><h2 id="层叠性"><a href="#层叠性" class="headerlink" title="层叠性"></a>层叠性</h2><p>所谓层叠性，是指对同一元素同一属性的设定，后设定的某个样式（属性）会覆盖之前设定的样式。例如：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.d1</span> &#123; <span class="attribute">color</span>: red; &#125;</span><br><span class="line"><span class="selector-class">.d1</span> &#123;<span class="attribute">color</span>: blue; &#125;</span><br><span class="line">&lt;div class=&quot;d1&quot;&gt;文字内容&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>则此时文字颜色就是blue，即后者覆盖了前者的设定。</p>
+<p>事实上它分为两种情况：</p>
+<ol>
+<li>两个相同的选择器选中了相同的元素，并设置了同样的属性，后者覆盖前者。</li>
+<li>两个同级别的不同选择器选中了相同的元素，并设置了同样的属性，也是后者覆盖前者。</li>
+</ol>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> <span class="selector-class">.d1</span> &#123; <span class="attribute">color </span>: red; &#125;</span><br><span class="line"><span class="selector-tag">div</span><span class="selector-class">.d1</span> &#123; <span class="attribute">color </span>: blue; &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="继承性"><a href="#继承性" class="headerlink" title="继承性"></a>继承性</h2><p>所谓继承性，是指对某个元素所设定的样式，不但影响该元素本身，还==影响该元素的后代==元素。例如：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.d1 &#123;color:red;&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>  <span class="attr">class</span>=<span class="string">&quot;d1&quot;</span>&gt;</span></span><br><span class="line">	文字1</span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>文字2<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>则此时文字1和文字2实际都是红色。</p>
+<p>实际上继承性不是普遍情况，而只是少数一些属性才具有继承性（即能够影响后代元素）。</p>
+<p>应用中继承性通常用在==有关文字==属性上。</p>
+<h1 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h1><p>所谓盒子，就是将HTML网页中的标签在网页版面中所占据的<strong>平面范围</strong>，抽象出来的一个“视觉形状”。</p>
+<p>一个简单的理解就是：<strong>几乎所有标签，都可以看做是一个“矩形盒子”，具有一定的宽高（区域）</strong>。</p>
+<p>总体上来说，一个盒子是由若干个部分构成的，从内到外依次包括：</p>
+<p>​            盒子内容区，内边距区，边框，外边距区</p>
+<ul>
+<li><p>content：内容</p>
+</li>
+<li><p>padding：内边距，又称为内补白，是一片空白区域</p>
+</li>
+<li><p>border：边框</p>
+</li>
+<li><p>margin：外边距，又称为外补白，也是一片空白区域</p>
+<p>top，right，bottom，left：上，右，下，左</p>
+</li>
+</ul>
+<p>特别注意：</p>
+<ol>
+<li><p>一般情况下，给容器设置的width和height是指内容区的大小，不包括边框和内边距。事实上盒子模型有两种，可以通过<code>box-sizing</code>来设置：</p>
+<p>​    1.1 外扩型：内容区大小不变 当设置内边距和边框时  盒子模型放大</p>
+<p>​    1.2 内减型：盒子的总大小不变 当设置内边距和边框时 内容区减小</p>
+</li>
+<li><p>平常我们看不到内边距，边框和外边距，是因为他们默认都是0（宽度，或厚度）。</p>
+</li>
+</ol>
+<h1 id="盒子属性"><a href="#盒子属性" class="headerlink" title="盒子属性"></a>盒子属性</h1><p>与盒子模型相关的属性有：</p>
+<h3 id="border"><a href="#border" class="headerlink" title="border"></a>border</h3><p>边框可以使用border缩写形式，它包含三个属性：border-width，border-style，border-color。这里使用border是给盒子整体设置的边框，还可以分别设置某一侧的边框：</p>
+<ul>
+<li>border-left ：左边框</li>
+<li>border-right：右边框</li>
+<li>border-bottom：下边框 </li>
+<li>border-top：上边框</li>
+</ul>
+<p>css中 合成词 都是以”-“作为逻辑断点的</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">	<span class="attribute">border-bottom</span>:<span class="number">1px</span> solid red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">	<span class="attribute">border-bottom-width </span>: <span class="number">1px</span>;</span><br><span class="line">	<span class="attribute">border-bottom-color </span>: red;</span><br><span class="line">	<span class="attribute">border-bottom-style </span>: solid;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="outline"><a href="#outline" class="headerlink" title="outline"></a>outline</h3><p>outline是边框以外的轮廓设置，它有四个属性：</p>
+<ul>
+<li>outline-width：轮廓的宽度</li>
+<li>outline-style：轮廓样式 可选值和边框是一样的</li>
+<li>outline-color：轮廓的颜色</li>
+<li>outline-offset：轮廓距离边框的偏移值</li>
+<li>outline：以上四个属性的缩写形式</li>
+</ul>
+<h3 id="background"><a href="#background" class="headerlink" title="background"></a>background</h3><ul>
+<li><p>基本使用：</p>
+<ul>
+<li>background-color :</li>
+<li>background-image：</li>
+<li>background-repeat：</li>
+<li>background-position：</li>
+<li>background：背景图片的几个属性写一起，颜色现在它们的前面或后面都行</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>:  <span class="built_in">url</span>() no-repeat left top  red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li><p>精灵图（spirit）设计</p>
+<ul>
+<li>精灵图也叫雪碧图，它是一种CSS图像合并技术，该方法是将小图标和背景图像合并到一张图片上，然后利用css的==背景定位==来显示需要显示的图片部分。</li>
+<li>雪碧图被运用在众多使用了很多小图标的网站上。相对于把每张小图标以.png格式文件的形式引用到页面上，==使用雪碧图只需要引用一张图片，对内存和带宽更好，并且可以减小图片的总大小==。</li>
+</ul>
+</li>
+</ul>
+<h3 id="width"><a href="#width" class="headerlink" title="width"></a>width</h3><p>width和height设置盒子<strong>内容区</strong>的尺寸，重点：只有==块级元素== 才有盒子模型的概念以及尺寸大小。</p>
+<ul>
+<li>min-width</li>
+<li>max-width</li>
+</ul>
+<h3 id="padding"><a href="#padding" class="headerlink" title="padding"></a>padding</h3><p>css中使用padding给盒子或者元素 添加内补白（内间距），它是元素和边框之间的距离，有四个方向：</p>
+<ul>
+<li><p>左边距：padding-left</p>
+</li>
+<li><p>右边距：padding-right</p>
+</li>
+<li><p>上边距：padding-top</p>
+</li>
+<li><p>下边距：padding-bottom</p>
+</li>
+<li><p>缩写形式：padding，书写时要遵循固定的顺序（顺时针）：<code>↑→↓←</code></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="attribute">padding-top </span>: <span class="number">5px</span>;</span><br><span class="line">    <span class="attribute">padding-right </span>: <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">padding-bottom </span>: <span class="number">15px</span>;</span><br><span class="line">    <span class="attribute">padding-left </span>: <span class="number">20px</span>;</span><br><span class="line">    <span class="attribute">padding </span>: <span class="number">5px</span> <span class="number">10px</span> <span class="number">15px</span> <span class="number">20px</span>;</span><br><span class="line">   </span><br><span class="line">    <span class="attribute">padding </span>: <span class="number">8px</span>;<span class="comment">/*四个方向都是8px*/</span></span><br><span class="line">    <span class="attribute">padding </span>: <span class="number">8px</span> <span class="number">18px</span>;	<span class="comment">/*上下8px 左右18px*/</span></span><br><span class="line">    <span class="attribute">padding </span>: <span class="number">8px</span> <span class="number">18px</span> <span class="number">25px</span>;<span class="comment">/*缺省的第四个值 取第二个*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h3 id="margin"><a href="#margin" class="headerlink" title="margin"></a>margin</h3><p>margin是外补白，也就是外边距，它的设置和padding是一样的：</p>
+<ul>
+<li>margin-top</li>
+<li>margin-right</li>
+<li>margin-bottom</li>
+<li>margin-left</li>
+<li>margin：</li>
+</ul>
+
+    
+
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/alipay.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/weixinpay.png">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
+        </div>
+      </a>
+    </div>
+    
+
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          yixiang xiao
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="http://yixiangxiao.github.io/2020/11/24/css(1)/" title="html,css选择器"
+            target="_blank">http://yixiangxiao.github.io/2020/11/24/css(1)/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
           
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+    
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/后端//" class="article-tag-list-link color3">后端</a>
+        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+    
 
     
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://yixiangxiao.github.io/2020/11/24/css(1)/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2020/11/24/html(3)/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">html标签,css</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="gitment-ctn"></div>
+  
+    <!-- 中文 -->
+    <link rel="stylesheet" href="/lib/gitment.css">
+    <script src="/lib/gitment.js"></script>
+  
+  <script>
+    <!-- id: "html,css选择器" -->
+    var gitment = new Gitment({
+      id: "20201124133252",
+      owner: 'yixiangxiao',
+      repo: 'yixiangxiao.github.io',
+      oauth: {
+        client_id: '33599c64285c4edbc8e6',
+        client_secret: '3e5f2f5ee6a1ccae9a732694d477b2f1089c8bf9',
+      },
+    })
+    gitment.render('gitment-ctn')
+  </script>
+
+
+
 
 
           </div>
@@ -366,10 +891,10 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
-		isCategory: true,
+		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
@@ -462,7 +987,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">java</a>
+                <a href="javascript:void(0)" class="js-tag color4">css</a>
               </li>
             
             <div class="clearfix"></div>
