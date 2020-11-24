@@ -6,19 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yixiangxiao.github.io">
-  <title>Category: web前端 | yixiangxiao</title>
+  <title>div+css布局 | yixiangxiao</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="yixiangxiao_技术博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="yixiangxiao">
-<meta property="og:url" content="http://yixiangxiao.github.io/categories/web%E5%89%8D%E7%AB%AF/index.html">
+  <meta name="description" content="浮动应用制作导航栏 设置文本或者内容 在一个盒子中间位置的两种方式：  给盒子一个上下相同，左右相同的内边距 使内容在盒子的中间。这种方式适用盒子大小不固定的场景。 当盒子有固定的尺寸时，水平方向设置text-align:center使内容居中。垂直方向使得行高&#x3D;盒子高度 以达到文本或内容居中的效果。    页面的布局经典布局 最外面的是版心容器：&lt;div class&#x3D;&quot;main&amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="div+css布局">
+<meta property="og:url" content="http://yixiangxiao.github.io/2020/11/24/css(3)/index.html">
 <meta property="og:site_name" content="yixiangxiao">
-<meta property="og:description" content="yixiangxiao_技术博客">
+<meta property="og:description" content="浮动应用制作导航栏 设置文本或者内容 在一个盒子中间位置的两种方式：  给盒子一个上下相同，左右相同的内边距 使内容在盒子的中间。这种方式适用盒子大小不固定的场景。 当盒子有固定的尺寸时，水平方向设置text-align:center使内容居中。垂直方向使得行高&#x3D;盒子高度 以达到文本或内容居中的效果。    页面的布局经典布局 最外面的是版心容器：&lt;div class&#x3D;&quot;main&amp;">
 <meta property="og:locale">
+<meta property="article:published_time" content="2020-11-24T12:32:52.000Z">
+<meta property="article:modified_time" content="2020-11-24T12:17:14.261Z">
 <meta property="article:author" content="yixiang xiao">
-<meta property="article:tag" content="yixiangxiao,yixiangxiao_技术博客">
+<meta property="article:tag" content="html">
+<meta property="article:tag" content="css">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="yixiangxiao" type="application/atom+xml">
@@ -256,41 +259,265 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-css(3)" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class=" article-header">
   
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+    <h1 class="article-title" itemprop="name">
+      div+css布局
+    </h1>
+  
+
+
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
 <a href="/2020/11/24/css(3)/" class="archive-article-date">
         <time datetime="2020-11-24T12:32:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-24</time>
 </a>
 
+  
+  
+  
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">1.7k字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">6分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="浮动应用"><a href="#浮动应用" class="headerlink" title="浮动应用"></a>浮动应用</h1><h2 id="制作导航栏"><a href="#制作导航栏" class="headerlink" title="制作导航栏"></a>制作导航栏</h2><ul>
+<li><p>设置文本或者内容 在一个盒子中间位置的两种方式：</p>
+<ul>
+<li>给盒子一个上下相同，左右相同的内边距 使内容在盒子的中间。这种方式适用盒子大小不固定的场景。</li>
+<li>当盒子有固定的尺寸时，水平方向设置<code>text-align:center</code>使内容居中。垂直方向使得<code>行高=盒子高度</code> 以达到文本或内容居中的效果。</li>
+</ul>
+</li>
+</ul>
+<h2 id="页面的布局"><a href="#页面的布局" class="headerlink" title="页面的布局"></a>页面的布局</h2><h3 id="经典布局"><a href="#经典布局" class="headerlink" title="经典布局"></a>经典布局</h3><ul>
+<li>最外面的是版心容器：<code>&lt;div class=&quot;main&quot;&gt;&lt;/main&gt;</code><ul>
+<li>页面布局首先需要设置版心（版面的中心区域）的大小，一般是”1000px居中” 。</li>
+</ul>
+</li>
+<li>垂直的上中下的布局：</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;main&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;header&quot;</span>&gt;</span></span><br><span class="line">        头部</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;center&quot;</span>&gt;</span></span><br><span class="line">        中间</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;footer&quot;</span>&gt;</span></span><br><span class="line">        底部</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>中间区域 分为侧边栏和内容区</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;center&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;left&quot;</span>&gt;</span></span><br><span class="line">        侧边栏</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;right&quot;</span>&gt;</span></span><br><span class="line">        右边内容</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h3 id="圣杯布局"><a href="#圣杯布局" class="headerlink" title="圣杯布局"></a>圣杯布局</h3><p>圣杯布局是最早出现在国外网站上的一个说法。在西方，圣杯是表达“渴求之物”的意思；它是一种两栏或者三栏的布局方式，其中核心点是 主体内容区宽度可变，也就是自适应页面大小。</p>
+<h4 id="两栏布局"><a href="#两栏布局" class="headerlink" title="两栏布局"></a>两栏布局</h4><ul>
+<li><p>方案一：</p>
+<p>设置父容器为一个固定宽度，让左右盒子都浮动，右边盒子的大小为计算值</p>
+</li>
+</ul>
+<ul>
+<li>方案一：</li>
+</ul>
+<ol>
+<li>设置HTML结构：父容器中包含左边和右边区域</li>
+<li>CSS初始化盒子总大小为一个或者`min-width值以自适应页面的宽度</li>
+<li>设置左边区域和右边区域的大小，添加可视背景</li>
+<li>设置左边区域左浮动，右边区域外边距为（盒子宽度+间距）</li>
+<li>清除父容器的浮动</li>
+</ol>
+<h4 id="三栏布局"><a href="#三栏布局" class="headerlink" title="三栏布局"></a>三栏布局</h4><ul>
+<li>方案一：</li>
+</ul>
+<ol>
+<li>设置HTML结构，显示左边盒子，然后右边盒子 最后中间盒子</li>
+<li>初始化整个容器自适应宽度，三栏垂直分布 分别设置它们的大小以及可视背景</li>
+<li>让左边区域左浮动，右边区域右浮动 中间区域设置左右边距为（盒子宽度+间距）</li>
+<li>清除父容器的浮动</li>
+</ol>
+<ul>
+<li>方案二：</li>
+</ul>
+<ol>
+<li>设置HTML结构，出现顺序依次是中间内容区，然后是左边区域，再是右边区域</li>
+<li>CSS初始化让整个容器自适应宽度，三栏垂直分布。分别设置中间区域、左右两边的大小和可视背景。中间区域宽度100%比较合适，但不能小于(父盒子宽度 - 左右盒子)</li>
+<li>三栏同时左浮动，设置左边区域外边距为<code>-中间区域宽度%</code>，右边区域的外边距为<code>-盒子宽度</code>，清除父盒子浮动</li>
+<li>给中间区域嵌套子盒子，设置其外边距为（左右盒子宽度+间距）</li>
+</ol>
+<h1 id="定位属性"><a href="#定位属性" class="headerlink" title="定位属性"></a>定位属性</h1><p>网页中的一个元素（盒子），其在网页上的位置，有如下三种方式来确定：</p>
+<ul>
+<li><p>标准模式：普通文档流</p>
+<p>标准模式就是元素没有进行浮动也没有进行明确定位时的“默认模式”，这也被称为<strong>标准流</strong>。</p>
+</li>
+<li><p>浮动模式：浮动层的元素</p>
+<p>浮动模式就是使用float属性使其往左边或右边进行浮动而表现出来的位置。这被称为<strong>脱标流</strong>。</p>
+</li>
+<li><p>定位模式：定位元素 可以在普通文档流中 也可以是定位层</p>
+<p>就是使用明确的“位置设定”信息来让一个盒子定位到指定的位置。</p>
+<p>定位模式中，有的是标准流的，有的是脱标流的。</p>
+</li>
+</ul>
+<p>定位设定可以确定一个盒子在下述两个方面的位置：</p>
+<ol>
+<li>在（x,y）平面上所处位置。</li>
+<li>在高度（z轴）方向的位置（层次）。</li>
+</ol>
+<p>在css中 使用position属性 设置元素的定位方式：</p>
+<ul>
+<li>static：默认静态非定位的元素</li>
+<li>absolute：绝对定位，相对于父元素设置坐标，前提是该父元素 拥有定位属性，如果没有定位 依次向上查找 直到body。absolute绝对定位或脱离普通文档流，后续元素可以补充它的位置</li>
+</ul>
+<p>​    </p>
+<ul>
+<li>relative：相对定位，它是相对于自己原先在网页中的位置来设置坐标。并且它定位之后 会保留原先的位置</li>
+</ul>
+<ul>
+<li>fixed：固定位置，是相对浏览器窗口来设置坐标，它也脱离文档流，一般使用fixed来实现吸顶效果。</li>
+</ul>
+<h1 id="零碎和补遗"><a href="#零碎和补遗" class="headerlink" title="零碎和补遗"></a>零碎和补遗</h1><ul>
+<li>pre：格式化输出标签，它能让以代码编辑的格式在页面中显示。</li>
+</ul>
+<ul>
+<li>cursor：设置鼠标在某个盒子上的时候的光标形状。</li>
+</ul>
+<ul>
+<li>box-shadow：设置盒子的阴影效果</li>
+</ul>
+<ul>
+<li>text-shadow：设置文本的阴影效果</li>
+</ul>
+<ul>
+<li>border-radius：设置圆角边框</li>
+</ul>
+<ul>
+<li><p>text-overflow：当一行的文字在一行中放不下，但又不适宜（不允许）换行时（通常是标题性质的文字）。</p>
+<ul>
+<li><p>该属性的设置有三个前提：</p>
+</li>
+<li><p>1）盒子的overflow为非visible，通常为hidden；</p>
+<p>2）盒子的width为非auto，通常是设定为固定宽度；</p>
+<p>3）文字的换行特性white-space为不允许换行（nowrap）；</p>
+</li>
+</ul>
+</li>
+<li><p>box-sizing：设置盒子内容区的大小。默认的盒子模型中，width和height设置的是内容区的大小。也可以通过该属性 设置width和height所包含的区域：</p>
+<ul>
+<li>content-box：默认值，width和height只是内容区大小</li>
+<li>border-box：width和height是包括了边框+内边距+内容的总的大小，实际的内容区域只有<code>width/height-边距-边框</code>的大小</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>vertical-align：垂直方向对齐</li>
+</ul>
+<p>vertical-align  这个看上去很美好的一个属性， 实际有着不可捉摸的脾气，否则我们也不会这么晚来讲解。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vertical-align : baseline |top |middle |bottom </span><br></pre></td></tr></table></figure>
+
+<p>设置或检索对象内容的垂直对其方式。 </p>
+<p>vertical-align 不影响块级元素中的内容对齐，它只针对于 行内元素或者行内块级元素，特别是行内块元素， <strong>通常用来控制图片/表单与文字的对齐</strong>。</p>
+<ul>
+<li>vertial-align有一个特别的应用 是用来去除3px bug</li>
+</ul>
+<p>图片或者表单等行内块元素，他的底线会和父级盒子的基线对齐。这样会造成一个问题，就是图片底侧会有一个空白缝隙。</p>
+<p>解决的方法就是：  </p>
+<ol>
+<li><p>给img vertical-align:middle | top等等。  让图片不要和基线对齐。</p>
+</li>
+<li><p>给img 添加 display：block; 转换为块级元素就不会存在问题了。</p>
+</li>
+<li><p>设置父盒子的font-size:0。</p>
+</li>
+</ol>
+
+    
+
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/alipay.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/weixinpay.png">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/11/24/css(3)/" target="_blank">div+css布局</a>
-  
-    </h1>
-  
+      </a>
+    </div>
+    
 
-
-        <div class="article-info info-on-right">
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          yixiang xiao
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="http://yixiangxiao.github.io/2020/11/24/css(3)/" title="div+css布局"
+            target="_blank">http://yixiangxiao.github.io/2020/11/24/css(3)/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
           
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -306,7 +533,7 @@
 		</ul>
 	</div>
 
-          
+    
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -319,299 +546,127 @@
 	</div>
 
 
+    
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://yixiangxiao.github.io/2020/11/24/css(3)/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/11/24/css(2)/" class="archive-article-date">
-        <time datetime="2020-11-24T12:12:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-24</time>
-</a>
 
+
+<nav id="article-nav">
+  
+  
+    <a href="/2020/11/24/css(2)/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">浮动</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="gitment-ctn"></div>
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/11/24/css(2)/" target="_blank">浮动</a>
+    <!-- 中文 -->
+    <link rel="stylesheet" href="/lib/gitment.css">
+    <script src="/lib/gitment.js"></script>
   
-    </h1>
-  
+  <script>
+    <!-- id: "div+css布局" -->
+    var gitment = new Gitment({
+      id: "20201124203252",
+      owner: 'yixiangxiao',
+      repo: 'yixiangxiao.github.io',
+      oauth: {
+        client_id: '33599c64285c4edbc8e6',
+        client_secret: '3e5f2f5ee6a1ccae9a732694d477b2f1089c8bf9',
+      },
+    })
+    gitment.render('gitment-ctn')
+  </script>
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/11/24/css(1)/" class="archive-article-date">
-        <time datetime="2020-11-24T05:32:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-24</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/11/24/css(1)/" target="_blank">html,css选择器</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/11/24/HTML(3)/" class="archive-article-date">
-        <time datetime="2020-11-24T04:40:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-24</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/11/24/HTML(3)/" target="_blank">html标签,css</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/11/24/HTML(2)/" class="archive-article-date">
-        <time datetime="2020-11-24T04:30:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-24</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/11/24/HTML(2)/" target="_blank">html规范</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2020/11/24/HTML(1)/" class="archive-article-date">
-        <time datetime="2020-11-24T04:22:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-24</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2020/11/24/HTML(1)/" target="_blank">html入门</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -652,10 +707,10 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
-		isCategory: true,
+		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
