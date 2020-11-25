@@ -17,13 +17,27 @@
 <meta property="og:site_name" content="yixiangxiao">
 <meta property="og:description" content="快速入门函数简介语法中的函数（function）是一段完成指定功能的命名代码块。将一段可实现目标的代码整合到一个函数块中并且标记上名字，然后使用名字来执行该段程序，称为“函数调用（call）”。 函数的特点：1）函数是一段代码，并且标记了名字   这段代码也就是函数，它完成一个功能、业务、任务等  通过对常用功能进行封装，然后直接调用避免反复重写一段代码。函数是只定义一次，但可以被多调用的语法。">
 <meta property="og:locale">
-<meta property="og:image" content="http://yixiangxiao.github.io/images/js(3)/1.jpg">
+<meta property="og:image" content="http://yixiangxiao.github.io/2020/11/24/js(3)/1.jpg">
+<meta property="og:image" content="http://yixiangxiao.github.io/2020/11/24/js(3)/2.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2020/11/24/js(3)/3.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2020/11/24/js(3)/4.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2020/11/24/js(3)/5.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2020/11/24/js(3)/6.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2020/11/24/js(3)/7.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2020/11/24/js(3)/8.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2020/11/24/js(3)/9.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2020/11/24/js(3)/10.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2020/11/24/js(3)/11.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2020/11/24/js(3)/12.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2020/11/24/js(3)/13.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2020/11/24/js(3)/14.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2020/11/24/js(3)/15.png">
 <meta property="article:published_time" content="2020-11-24T15:32:52.000Z">
-<meta property="article:modified_time" content="2020-11-24T15:52:29.645Z">
+<meta property="article:modified_time" content="2020-11-25T00:52:33.209Z">
 <meta property="article:author" content="yixiang xiao">
 <meta property="article:tag" content="javascript">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yixiangxiao.github.io/images/js(3)/1.jpg">
+<meta name="twitter:image" content="http://yixiangxiao.github.io/2020/11/24/js(3)/1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="yixiangxiao" type="application/atom+xml">
   
@@ -340,10 +354,10 @@
 <p>  [<strong>return</strong> 返回值]</p>
 </blockquote>
 <p>}</p>
-<p>其中参数列表和返回值是可选的，你可以不设置。但参数列表必须留出位置，也就是函数名后得有**()**</p>
-<p>function f**()** {}</p>
+<p>其中参数列表和返回值是可选的，你可以不设置。但参数列表必须留出位置，也就是函数名后得有()</p>
+<p>function f() {}</p>
 <p>函数的执行需要使用函数名来引用，注意: 必须在函数名后加上();</p>
-<p>f**()**;</p>
+<p>f();</p>
 <ul>
 <li>  定义一个执行用户登陆的函数，模拟点击弹出登陆框的效果</li>
 </ul>
@@ -394,7 +408,11 @@
 </blockquote>
 <p>}</p>
 <h2 id="执行过程"><a href="#执行过程" class="headerlink" title="执行过程"></a>执行过程</h2><p>当函数存在时，我们将整个文件中的代码分为：“<strong>主程序</strong>执行代码”和“<strong>函数体</strong>代码”；当主程序调用函数时，JS会暂停主程序代码的运行，并传递必要的参数给目标函数使用，以执行函数代码片段。在函数执行结束后，函数会回传执行结果，并将执行流程转回原主程序中断的地方继续运行。</p>
-<p>主程序代码</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params">x, y</span>) </span>&#123;</span><br><span class="line"><span class="comment">//函数体代码</span></span><br><span class="line"><span class="keyword">return</span> x + y;</span><br><span class="line">&#125;</span><br><span class="line">f();</span><br></pre></td></tr></table></figure>
+
+
+
+<p>主程序代码 function f(x,y){}</p>
 <blockquote>
 <p>  //函数体代码</p>
 </blockquote>
@@ -465,12 +483,16 @@
 <h3 id="参数默认值"><a href="#参数默认值" class="headerlink" title="参数默认值"></a>参数默认值</h3><p>当形参缺省时，除了使用默认值undefined外，还可以自定义值。ES6中，通过在形参后面赋值来设置它的默认值。带有默认值的形参必须放在参数列表最后的位置。</p>
 <p>function foo(a, b = 2) {</p>
 <p>}</p>
-<p><img src="../../../../images/js(3)/1.jpg" alt="1"></p>
+<p><img src="1.jpg" alt="1"></p>
 <h2 id="可变参数"><a href="#可变参数" class="headerlink" title="可变参数"></a>可变参数</h2><h3 id="arguments对象"><a href="#arguments对象" class="headerlink" title="arguments对象"></a>arguments对象</h3><p>通常用户定义函数时，参数列表是明确的。如果希望函数可以接受任意数目的参数，那么就需要解决一个问题：如何建立形参和实参之间的映射关系。</p>
 <p>不确定参数个数的函数，也叫“可变长度”函数。这样就无法准确的定义形参列表来接收传入的实参值。js内置了名为arguments的局部变量，它是所有实参集合的对象。可以使用arguments[0],<br>arguments[1]….arguments[n]来获取某个实参。</p>
 <p>更加有效的使用arguments还需要明确实参的个数，arguments.length记录了实参的个数。接下来，定义一个计数器，按照数组编号来依次遍历实参值：</p>
+<p><img src="2.png" alt="2"></p>
+<p><img src="3.png" alt="3"></p>
 <ul>
-<li>  求一组不确定数量的数字，它们之中最大的数：max()</li>
+<li><p>求一组不确定数量的数字，它们之中最大的数：max()</p>
+<p><img src="4.png" alt="4"></p>
+</li>
 </ul>
 <h3 id="剩余参数语法糖"><a href="#剩余参数语法糖" class="headerlink" title="剩余参数语法糖"></a>剩余参数语法糖</h3><p>剩余参数（rest）是另一种用来处理不定参数的方法。该语法允许我们将那些不定的参数表示为一个数组，然后通过数组的方式提取。其语法形式如下：</p>
 <p>function(a, b, …theArgs) {</p>
@@ -478,7 +500,8 @@
 <p>}</p>
 <p>在上述形参列表中，如果最后一个命名参数以“…”为前缀，则它代表一个由余下参数组成的真数组。通过定义一个仅包含剩余参数的形参列表，我们可以获取到所有函数调用传入的实参值。</p>
 <ul>
-<li><p>  使用剩余参数计算一组数的最大值</p>
+<li><p>使用剩余参数计算一组数的最大值</p>
+<p><img src="5.png" alt="5"></p>
 </li>
 <li><p>  剩余参数可以被解构，这意味着实参列表可以被分配到不同的变量中</p>
 </li>
@@ -498,6 +521,8 @@
 <p>//再次定义函数f时会覆盖上面的函数</p>
 <p>function f(a) { … }</p>
 <p>function f(a, b) { … }</p>
+<p><img src="6.png" alt="6"></p>
+<p><img src="7.png" alt="7"></p>
 <ul>
 <li>  借助于剩余参数或arguments对象 模拟函数重载的执行效果</li>
 </ul>
@@ -511,10 +536,17 @@
 <p>f(1, 2); //1,2</p>
 <h1 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h1><h2 id="变量范围"><a href="#变量范围" class="headerlink" title="变量范围"></a>变量范围</h2><p>变量的作用域，也叫<strong>变量的能见度</strong>，意指变量在程序中的可作用区域。大致来说变量会依据声明的局部分为下列两种：<strong>局部变量</strong>和<strong>全局变量。</strong></p>
 <p>在函数之中声明的变量就是局部变量，并且该变量只有在函数范围之中才能加以使用。如果其它程序局部需要使用该变量值时，必须透过「return」指令，来将其传回至主程序区块以作后续处理。</p>
+<p><img src="8.png" alt="8"></p>
+<p><img src="9.png" alt="9"></p>
 <p>在函数范围之外所声明的变量就是<strong>全局变量</strong>，全局变量不仅可以在主程序中使用，还可以作用于函数体内。但如果函数体内已有该变量，则优先使用函数体内的变量。简单来说，函数体内引用一个变量时会先从函数体内查找，如果没有则使用全局中的变量。</p>
+<p><img src="10.png" alt="10"></p>
 <h2 id="静态变量"><a href="#静态变量" class="headerlink" title="静态变量"></a>静态变量</h2><p>在通常的编程语言中，<br>存在语法层面的静态定义，即static声明。而js直到es6才出现使用static定义的静态“成员”，而非静态“变量”的语法。尽管如此却丝毫不影响我们“设置”静态变量的操作。静态变量是可以静态保存的变量，它不会因为函数调用结束而销毁<br>这样函数体内的数据得以维持。正常的函数体内的局部变量 在函数执行结束后 就删除了<br>因此数据无法维持。</p>
 <p>在js中的<strong>函数可以给它绑定变量</strong>，这个变量的值不会随<strong>函数执行完毕而消亡</strong>，它在每次调用时都被共享。给函数绑定变量的效果<br>可以模拟出 静态变量的实现。</p>
+<p><img src="11.png" alt="11"></p>
+<p><img src="12.png" alt="12"></p>
 <h1 id="嵌套和递归"><a href="#嵌套和递归" class="headerlink" title="嵌套和递归"></a>嵌套和递归</h1><h2 id="函数嵌套"><a href="#函数嵌套" class="headerlink" title="函数嵌套"></a>函数嵌套</h2><p>可以在一个函数体中再定义一个子函数，称为“<strong>嵌套函数</strong>”。作为宿主的函数称为“包含函数”或者“外围函数”，嵌套函数可能会触发闭包特性，后续论证。</p>
+<p><img src="13.png" alt="13"></p>
+<p><img src="14.png" alt="14"></p>
 <h2 id="函数递归"><a href="#函数递归" class="headerlink" title="函数递归"></a>函数递归</h2><p>函数中<strong>自身调用自身</strong>的编程技巧叫做递归。所谓的递归，就是函数可以在其声明的执行叙述之中调用执行自己。函数递归调用最大的好处在于可以精简程序中繁杂重复调用程序，并且能以这种特性来执行一些较为复杂的运算动作。</p>
 <p>function f() {</p>
 <blockquote>
@@ -529,7 +561,9 @@
 <p>劣势：由于递归执行过程中在快速的调用函数，若处理大量数据，或递归次数过多会造成内存溢出的问题，也就是说递归是很消耗内存的。</p>
 <p>递归快算法：1、出口 2、规律 3、趋势 4、return</p>
 <ul>
-<li>  定义函数f：求1-n之间所有数的和</li>
+<li><p>定义函数f：求1-n之间所有数的和</p>
+<p><img src="15.png" alt="15"></p>
+</li>
 </ul>
 <h1 id="面试练习题"><a href="#面试练习题" class="headerlink" title="面试练习题"></a>面试练习题</h1><ul>
 <li><p>  定义函数sort，给数组[1,10,5,3,7,2,8]从大到小排列</p>
