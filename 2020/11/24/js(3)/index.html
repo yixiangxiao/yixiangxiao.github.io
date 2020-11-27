@@ -33,7 +33,7 @@
 <meta property="og:image" content="http://yixiangxiao.github.io/2020/11/24/js(3)/14.png">
 <meta property="og:image" content="http://yixiangxiao.github.io/2020/11/24/js(3)/15.png">
 <meta property="article:published_time" content="2020-11-24T15:32:52.000Z">
-<meta property="article:modified_time" content="2020-11-25T00:52:33.209Z">
+<meta property="article:modified_time" content="2020-11-27T13:36:27.622Z">
 <meta property="article:author" content="yixiang xiao">
 <meta property="article:tag" content="javascript">
 <meta name="twitter:card" content="summary">
@@ -316,7 +316,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">12分</span>
+      <span class="post-count">13分</span>
     </span>
   </span>
 </div>
@@ -333,11 +333,10 @@
 <li> 这段代码也就是函数，它完成一个功能、业务、任务等</li>
 </ol>
 <p>通过对常用功能进行封装，然后直接调用避免反复重写一段代码。函数是只<strong>定义一次</strong>，但可以被<strong>多调用的</strong>语法<strong>。</strong></p>
-<p>function sum(x, y) {</p>
-<p>document.write(x + y);</p>
-<p>}</p>
-<p>sum(1, 2); //3</p>
-<p>sum(2, 8);</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">x, y</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="built_in">document</span>.write(x + y);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">sum(<span class="number">1</span>, <span class="number">2</span>); <span class="comment">//3</span></span><br><span class="line"></span><br><span class="line">sum(<span class="number">2</span>, <span class="number">8</span>);</span><br></pre></td></tr></table></figure>
+
+
+
 <p>编程中（思想维度）的函数是显现程序<strong>模块</strong>的基本单元，可以将一个大型的功能实现按照<strong>子组件</strong>的形态划分成多个函数单元以此降低代码的<strong>耦合度。</strong>这样呈现出的代码结构更加清晰，利于维护和扩展。对于函数部分的学习，主要有以下几个方面：</p>
 <p>1）函数相关的语法，例如 参数、返回值、作用域、this指向等。</p>
 <p>2）封装常用功能的函数，所谓封装（wrap）是指抽象一个业务或者功能实现为函数的过程。</p>
@@ -346,14 +345,10 @@
 <a id="more"></a>
 
 <h2 id="定义函数"><a href="#定义函数" class="headerlink" title="定义函数"></a>定义函数</h2><p>函数使用<strong>function</strong>声明，一个完整的函数定义包括：<br><strong>函数名</strong>、<strong>参数列表</strong>和<strong>返回值</strong>；语法结构如下，</p>
-<p><strong>function</strong> 函数名 ([参数列表]<strong>)</strong> {</p>
-<blockquote>
-<p>  //业务或者功能实现的代码;</p>
-</blockquote>
-<blockquote>
-<p>  [<strong>return</strong> 返回值]</p>
-</blockquote>
-<p>}</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> 函数名 (<span class="params">[参数列表]</span>)</span>&#123;</span><br><span class="line"><span class="comment">//业务或者功能实现的代码;</span></span><br><span class="line"> <span class="keyword">return</span> 返回值</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
 <p>其中参数列表和返回值是可选的，你可以不设置。但参数列表必须留出位置，也就是函数名后得有()</p>
 <p>function f() {}</p>
 <p>函数的执行需要使用函数名来引用，注意: 必须在函数名后加上();</p>
@@ -361,40 +356,20 @@
 <ul>
 <li>  定义一个执行用户登陆的函数，模拟点击弹出登陆框的效果</li>
 </ul>
-<p>function login() {</p>
-<p>var content = “&lt;form&gt;“;</p>
-<p>content += “&lt;p&gt;账号：&lt;input type=’text’ name=’usrname’ value=’输入账号’<br>/&gt;&lt;/p&gt;“;</p>
-<p>content += “&lt;p&gt;密码：&lt;input type=’password’ name=’password’ value=’’<br>/&gt;&lt;/p&gt;“;</p>
-<p>content += “&lt;p&gt;&lt;input type=’submit’ value=’登陆’ /&gt;&lt;/p&gt;“;</p>
-<p>content += “&lt;/form&gt;“;</p>
-<p>document.write(content);</p>
-<p>}</p>
-<p>//定义好的函数是静态程序，必须调用才会执行</p>
-<p>login();</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">login</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> content = <span class="string">&quot;\&lt;form\&gt;&quot;</span>;</span><br><span class="line"></span><br><span class="line">content += <span class="string">&quot;\&lt;p\&gt;账号：\&lt;input type=&#x27;text&#x27; name=&#x27;usrname&#x27; value=&#x27;输入账号&#x27;</span></span><br><span class="line"><span class="string">/\&gt;\&lt;/p\&gt;&quot;</span>;</span><br><span class="line"></span><br><span class="line">content += <span class="string">&quot;\&lt;p\&gt;密码：\&lt;input type=&#x27;password&#x27; name=&#x27;password&#x27; value=&#x27;&#x27;</span></span><br><span class="line"><span class="string">/\&gt;\&lt;/p\&gt;&quot;</span>;</span><br><span class="line"></span><br><span class="line">content += <span class="string">&quot;\&lt;p\&gt;\&lt;input type=&#x27;submit&#x27; value=&#x27;登陆&#x27; /\&gt;\&lt;/p\&gt;&quot;</span>;</span><br><span class="line"></span><br><span class="line">content += <span class="string">&quot;\&lt;/form\&gt;&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">document</span>.write(content);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//定义好的函数是静态程序，必须调用才会执行</span></span><br><span class="line"></span><br><span class="line">login();</span><br></pre></td></tr></table></figure>
+
+
+
 <h3 id="函数名"><a href="#函数名" class="headerlink" title="函数名"></a>函数名</h3><p>函数名是函数在程序中的识别名称，需要通过名字来区分函数，然后调用。就如同变量定义后要使用变量名来引用它的值；函数的命名同变量一样，遵循标识符命名规范且<strong>不可与内建函数同名</strong>，如定义Number函数。</p>
 <p>function Number() {}; //不可以</p>
 <h3 id="参数列表"><a href="#参数列表" class="headerlink" title="参数列表"></a>参数列表</h3><p>函数在实现时为了最大限度的发挥代码重用性的效果，我们需要对函数功能中的某些<strong>不确定的内容</strong>使用变量来代替，相当于<strong>占位符</strong>的功能，等执行时再传入具体的值；函数中用于占位符的变量，需要声明在<strong>参数列表</strong>上，称为“<strong>形参</strong>”。而调用时传入给形参的值称为“<strong>实参</strong>”。函数的调用执行是将有具体值的实参传递给形参，然后用在函数体中。例如：</p>
-<p>&lt;script&gt;</p>
-<p>//定义函数str的动态内容 作为参数 需要在参数列表上声明该形式参数</p>
-<p>function hello(str) {</p>
-<p>document.write(“hello” + str + “&lt;br /&gt;“);</p>
-<p>}</p>
-<p>//执行时传入一个具体的值叫“实参”</p>
-<p>hello(“world”);</p>
-<p>hello(“javascript”);</p>
-<p>&lt;/script&gt;</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line"><span class="comment">//定义函数str的动态内容 作为参数 需要在参数列表上声明该形式参数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">hello</span>(<span class="params">str</span>) </span>&#123;</span><br><span class="line"><span class="built_in">document</span>.write(<span class="string">&quot;hello&quot;</span> + str + <span class="string">&quot;&lt;br/&gt;&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//执行时传入一个具体的值叫“实参”</span></span><br><span class="line">hello(<span class="string">&quot;world&quot;</span>);</span><br><span class="line">hello(<span class="string">&quot;javascript&quot;</span>);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+
+
 <h3 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h3><p>函数体内运算完成的数据可以直接<strong>输出</strong>到页面，也可以返回到<strong>主程序</strong>中用以交互，返回的数据需要使用<strong>return</strong><br>来声明。</p>
-<p>function f() {</p>
-<blockquote>
-<p>  var a,b,c;</p>
-</blockquote>
-<blockquote>
-<p>  //将b的值使用return返回给主程序</p>
-</blockquote>
-<blockquote>
-<p>  return b; //没有return的数据 在函数执行完毕都会被销毁 外部不可访问</p>
-</blockquote>
-<p>}</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"> <span class="keyword">var</span> a,b,c;</span><br><span class="line"> <span class="comment">//将b的值使用return返回给主程序</span></span><br><span class="line"><span class="keyword">return</span> b; <span class="comment">//没有return的数据 在函数执行完毕都会被销毁 外部不可访问</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>//主程序中调用函数并定义变量接收结果</p>
 <p>var result = f();</p>
 <p>console.log(result); //result为b的值</p>
@@ -402,23 +377,15 @@
 <ul>
 <li>  定义一个求和函数，需要传入两个数（参数），将结果返回主程序（返回值）</li>
 </ul>
-<p>function sum(x, y) {</p>
-<blockquote>
-<p>  return x + y;</p>
-</blockquote>
-<p>}</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">x, y</span>) </span>&#123;</span><br><span class="line"> <span class="keyword">return</span> x + y;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
 <h2 id="执行过程"><a href="#执行过程" class="headerlink" title="执行过程"></a>执行过程</h2><p>当函数存在时，我们将整个文件中的代码分为：“<strong>主程序</strong>执行代码”和“<strong>函数体</strong>代码”；当主程序调用函数时，JS会暂停主程序代码的运行，并传递必要的参数给目标函数使用，以执行函数代码片段。在函数执行结束后，函数会回传执行结果，并将执行流程转回原主程序中断的地方继续运行。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params">x, y</span>) </span>&#123;</span><br><span class="line"><span class="comment">//函数体代码</span></span><br><span class="line"><span class="keyword">return</span> x + y;</span><br><span class="line">&#125;</span><br><span class="line">f();</span><br></pre></td></tr></table></figure>
 
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">主程序代码 <span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params">x,y</span>)</span>&#123;&#125;</span><br><span class="line"><span class="comment">//函数体代码</span></span><br><span class="line"> <span class="keyword">return</span> x + y;</span><br></pre></td></tr></table></figure>
 
-
-<p>主程序代码 function f(x,y){}</p>
-<blockquote>
-<p>  //函数体代码</p>
-</blockquote>
-<blockquote>
-<p>  return x + y;</p>
-</blockquote>
 <p><strong>传入参数</strong></p>
 <p><strong>函数体内代码</strong></p>
 <p>var result = f(1, 2);</p>
@@ -427,59 +394,35 @@
 <p>这里参数和返回值的意义是：完成主程序和函数体内数据的交互。</p>
 <h2 id="封装函数"><a href="#封装函数" class="headerlink" title="封装函数"></a>封装函数</h2><ul>
 <li><p>定义比较两个数a,b大小的函数：<strong>max</strong></p>
-<p>  function max(a, b) {</p>
-<p>  var m; //存放最大值的变量 作为返回值</p>
-<p>  if (a &gt; b) {</p>
-<p>  m = a;</p>
-<p>  } else {</p>
-<p>  m = b;</p>
-<p>  }</p>
-<p>  return m;</p>
-<p>  }</p>
-<p>  //调用并输出返回的结果</p>
-<p>  console.log(_max(1,2)); //2</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">max</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> m; <span class="comment">//存放最大值的变量 作为返回值</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (a &gt; b) &#123;</span><br><span class="line"></span><br><span class="line">m = a;</span><br><span class="line"></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line"></span><br><span class="line">m = b;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> m;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//调用并输出返回的结果</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(_max(<span class="number">1</span>,<span class="number">2</span>)); <span class="comment">//2</span></span><br></pre></td></tr></table></figure>
+
+
+
 </li>
+</ul>
+<ul>
 <li><p>定义一个计算1到n之和的函数：<strong>sum</strong></p>
-<p>  function sum(n) {</p>
-<p>  var sum = 0; //存放和结果也作为返回值</p>
-<p>  //1….n</p>
-<p>  for (var i = 1; i &lt;= n; i++) {</p>
-<p>  sum += i;</p>
-<p>  }</p>
-<p>  return sum;</p>
-<p>  }</p>
-<p>  console.log(sum(100)); //5050</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> sum = <span class="number">0</span>; <span class="comment">//存放和结果也作为返回值</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//1....n</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line"></span><br><span class="line">sum += i;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> sum;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(sum(<span class="number">100</span>)); <span class="comment">//5050</span></span><br></pre></td></tr></table></figure>
+
+
+
 </li>
+</ul>
+<ul>
 <li><p>求1到n(参数)的阶乘和（返回值）的函数：<strong>fn</strong></p>
-<p>  &lt;script&gt;</p>
-<p>  //1! + 2! + 3!… + n!</p>
-<p>  function fn(n) {</p>
-<p>  var sum = 0,</p>
-<p>  num = 1; //初始化1！</p>
-<p>  for (var i = 1; i &lt;= n; i++) {</p>
-<p>  num = num * i;</p>
-<p>  sum += num;</p>
-<p>  }</p>
-<p>  return sum;</p>
-<p>  }</p>
-<p>  var result = fn(10);</p>
-<p>  console.log(result); //4037913</p>
-<p>  &lt;/script&gt;</p>
+  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    </span><br><span class="line"><span class="comment">//1! + 2! + 3!... + n!</span></span><br><span class="line">    </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">    </span><br><span class="line"><span class="keyword">var</span> sum = <span class="number">0</span>,</span><br><span class="line">    </span><br><span class="line">num = <span class="number">1</span>; <span class="comment">//初始化1！</span></span><br><span class="line">    </span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">    </span><br><span class="line">num = num * i;</span><br><span class="line">    </span><br><span class="line">sum += num;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">    </span><br><span class="line"><span class="keyword">return</span> sum;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">    </span><br><span class="line"><span class="keyword">var</span> result = fn(<span class="number">10</span>);</span><br><span class="line">    </span><br><span class="line"><span class="built_in">console</span>.log(result); <span class="comment">//4037913</span></span><br><span class="line">    </span><br><span class="line">    &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+
+
 </li>
 </ul>
 <h1 id="函数参数"><a href="#函数参数" class="headerlink" title="函数参数"></a>函数参数</h1><h2 id="参数声明"><a href="#参数声明" class="headerlink" title="参数声明"></a>参数声明</h2><h3 id="不严格匹配"><a href="#不严格匹配" class="headerlink" title="不严格匹配"></a>不严格匹配</h3><p>通常函数调用时传入的实参个数要和定义时的形参个数相等并按照顺序传递；JS中函数调用时传入的实参个数可以和形参不严格的匹配：</p>
 <p>当传入的实参个数<strong>多于</strong>定义时的形参个数时，多出的实参值会被省略；</p>
 <p>当传入的实参个数<strong>少于</strong>定义时的形参时，缺省值默认为undefined。</p>
-<p>function foo(a, b) {</p>
-<p>//查看形参接收到的值</p>
-<p>console.log(a, b);</p>
-<p>}</p>
-<p>//正常使用</p>
-<p>foo(1, 2);</p>
-<p>//实参多于形参</p>
-<p>foo(1, 2, 3); //1, 2</p>
-<p>//实参少于形参</p>
-<p>foo(1); //1, undefined</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="comment">//查看形参接收到的值</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(a, b);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//正常使用</span></span><br><span class="line"></span><br><span class="line">foo(<span class="number">1</span>, <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//实参多于形参</span></span><br><span class="line"></span><br><span class="line">foo(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>); <span class="comment">//1, 2</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//实参少于形参</span></span><br><span class="line"></span><br><span class="line">foo(<span class="number">1</span>); <span class="comment">//1, undefined</span></span><br></pre></td></tr></table></figure>
+
+
+
 <h3 id="参数默认值"><a href="#参数默认值" class="headerlink" title="参数默认值"></a>参数默认值</h3><p>当形参缺省时，除了使用默认值undefined外，还可以自定义值。ES6中，通过在形参后面赋值来设置它的默认值。带有默认值的形参必须放在参数列表最后的位置。</p>
 <p>function foo(a, b = 2) {</p>
 <p>}</p>
@@ -506,15 +449,10 @@
 <li><p>  剩余参数可以被解构，这意味着实参列表可以被分配到不同的变量中</p>
 </li>
 </ul>
-<p>&lt;script&gt;</p>
-<p>//相当于var [a,b,c] = …args</p>
-<p>function f(…[a, b, c]) {</p>
-<p>return a + b + c;</p>
-<p>}</p>
-<p>//由于析构时固定了接收变量 相当于形参列表</p>
-<p>console.log(f(1, 2)); //NaN c未定义</p>
-<p>console.log(f(1, 2, 3)) // 6</p>
-<p>&lt;/script&gt;</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">//相当于var [a,b,c] = ...args</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params">...[a, b, c]</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> a + b + c;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//由于析构时固定了接收变量 相当于形参列表</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(f(<span class="number">1</span>, <span class="number">2</span>)); <span class="comment">//NaN c未定义</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(f(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)) <span class="comment">// 6</span></span><br><span class="line"></span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+
+
 <p>事实上剩余参数是ES6+的语法，用来替代之前的arguments对象，缘由某些场合下arguments会失效（主要是箭头函数没有自己的arguments）。因此，推荐大家更多的使用rest语法。</p>
 <h2 id="函数重载"><a href="#函数重载" class="headerlink" title="函数重载"></a>函数重载</h2><p>函数的“<strong>重载”</strong>是指：可以定义多个同名的函数，通过设置不同的参数（参数类型或者个数不同）来区分使用，这样的操作就叫“<strong>重载</strong>”。在js中函数不能重载，定义的同名函数会产生覆盖，就如同变量的覆盖：</p>
 <p>function f() { … } //相当于 var f = function () {}</p>
@@ -527,13 +465,10 @@
 <li>  借助于剩余参数或arguments对象 模拟函数重载的执行效果</li>
 </ul>
 <p>虽然语法层面 js不支持重载 但剩余参数可以实现类似的功能 模拟重载的效果：</p>
-<p>function f(…args) {</p>
-<p>if (args.length == 1) { //一个参数的函数调用入口</p>
-<p>} else if (args.length == 2) { //两个参数的函数调用入口</p>
-<p>}</p>
-<p>}</p>
-<p>f(1); //1</p>
-<p>f(1, 2); //1,2</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params">...args</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (args.length == <span class="number">1</span>) &#123; <span class="comment">//一个参数的函数调用入口</span></span><br><span class="line"></span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (args.length == <span class="number">2</span>) &#123; <span class="comment">//两个参数的函数调用入口</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">f(<span class="number">1</span>); <span class="comment">//1</span></span><br><span class="line"></span><br><span class="line">f(<span class="number">1</span>, <span class="number">2</span>); <span class="comment">//1,2</span></span><br></pre></td></tr></table></figure>
+
+
+
 <h1 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h1><h2 id="变量范围"><a href="#变量范围" class="headerlink" title="变量范围"></a>变量范围</h2><p>变量的作用域，也叫<strong>变量的能见度</strong>，意指变量在程序中的可作用区域。大致来说变量会依据声明的局部分为下列两种：<strong>局部变量</strong>和<strong>全局变量。</strong></p>
 <p>在函数之中声明的变量就是局部变量，并且该变量只有在函数范围之中才能加以使用。如果其它程序局部需要使用该变量值时，必须透过「return」指令，来将其传回至主程序区块以作后续处理。</p>
 <p><img src="8.png" alt="8"></p>
@@ -548,11 +483,10 @@
 <p><img src="13.png" alt="13"></p>
 <p><img src="14.png" alt="14"></p>
 <h2 id="函数递归"><a href="#函数递归" class="headerlink" title="函数递归"></a>函数递归</h2><p>函数中<strong>自身调用自身</strong>的编程技巧叫做递归。所谓的递归，就是函数可以在其声明的执行叙述之中调用执行自己。函数递归调用最大的好处在于可以精简程序中繁杂重复调用程序，并且能以这种特性来执行一些较为复杂的运算动作。</p>
-<p>function f() {</p>
-<blockquote>
-<p>  f(); //反复不断的调用自身</p>
-</blockquote>
-<p>}</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">f(); <span class="comment">//反复不断的调用自身</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
 <p><strong>工作流程：</strong></p>
 <p>通常在此类型的函数之中会附加一个条件判断叙述，以判断是否需要执行递归调用，并且在特定条件下终止函数的递归调用动作，把目前流程的主控权交回上一层函数执行。因此当某个执行递归调用的函数，没有附加条件判断叙述时可能会造成无限循环的错误情形。</p>
 <p><strong>实现过程：</strong></p>

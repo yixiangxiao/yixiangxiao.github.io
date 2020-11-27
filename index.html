@@ -263,6 +263,109 @@
             
 
 
+<article id="post-js(4)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class=" article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/11/27/js(4)/" target="_blank">js循环语句</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2020/11/27/js(4)/" class="archive-article-date">
+        <time datetime="2020-11-27T13:32:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-27</time>
+</a>
+
+  
+  
+  
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="内置消息框"><a href="#内置消息框" class="headerlink" title="内置消息框"></a>内置消息框</h1><h2 id="警告框"><a href="#警告框" class="headerlink" title="警告框"></a>警告框</h2><p>alert()方法用来调取浏览器的警告框，输出提示信息；当警告框出现时需要用户点击”<strong>确定</strong>“后才能继续加载页面，它会<strong>阻塞</strong>浏览器的进程。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">//alert()出现后 点击确定 才加载图片</span></span><br><span class="line">alert(<span class="string">&quot;hello world&quot;</span>);</span><br><span class="line"></span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;img src=<span class="string">&quot;meinv.png&quot;</span> width=<span class="number">300</span> /&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src="1.png" alt="1"></p>
+<p>alert()的提示框中内容只能是<strong>纯文本</strong>格式，HTML内容不解析。如果要对内容格式化输出需要使用文本转义字符，例如<br>\n等。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">//给文本内容换行</span></span><br><span class="line"></span><br><span class="line">alert(<span class="string">&quot;hello &lt;br/&gt; world&quot;</span>); <span class="comment">//无效的br</span></span><br><span class="line"></span><br><span class="line">alert(<span class="string">&quot;hello\\nworld&quot;</span>); <span class="comment">//\\n转义换行</span></span><br><span class="line"></span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/11/27/js(4)/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
 <article id="post-shop-app" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -606,11 +709,10 @@
 <li> 这段代码也就是函数，它完成一个功能、业务、任务等</li>
 </ol>
 <p>通过对常用功能进行封装，然后直接调用避免反复重写一段代码。函数是只<strong>定义一次</strong>，但可以被<strong>多调用的</strong>语法<strong>。</strong></p>
-<p>function sum(x, y) {</p>
-<p>document.write(x + y);</p>
-<p>}</p>
-<p>sum(1, 2); //3</p>
-<p>sum(2, 8);</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">x, y</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="built_in">document</span>.write(x + y);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">sum(<span class="number">1</span>, <span class="number">2</span>); <span class="comment">//3</span></span><br><span class="line"></span><br><span class="line">sum(<span class="number">2</span>, <span class="number">8</span>);</span><br></pre></td></tr></table></figure>
+
+
+
 <p>编程中（思想维度）的函数是显现程序<strong>模块</strong>的基本单元，可以将一个大型的功能实现按照<strong>子组件</strong>的形态划分成多个函数单元以此降低代码的<strong>耦合度。</strong>这样呈现出的代码结构更加清晰，利于维护和扩展。对于函数部分的学习，主要有以下几个方面：</p>
 <p>1）函数相关的语法，例如 参数、返回值、作用域、this指向等。</p>
 <p>2）封装常用功能的函数，所谓封装（wrap）是指抽象一个业务或者功能实现为函数的过程。</p>
@@ -1240,122 +1342,6 @@
     
     <p class="article-more-link">
       <a class="article-more-a" href="/2020/11/24/css(1)/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-<article id="post-HTML(3)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class=" article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/11/24/HTML(3)/" target="_blank">html标签,css</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/11/24/HTML(3)/" class="archive-article-date">
-        <time datetime="2020-11-24T04:40:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-24</time>
-</a>
-
-  
-  
-  
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h2 id="列表标签"><a href="#列表标签" class="headerlink" title="列表标签"></a>列表标签</h2><ul>
-<li>ul(unorder list)无序列表，它是声明一个列表的集合（整体），一个封装容器。ul有两个属性：<ul>
-<li>type ：指定列表的项目符号，默认是disc实心圆 可选值有<code>circle、square</code></li>
-<li>contenteditable ：内容是否可编辑，它是H5新增的属性</li>
-</ul>
-</li>
-<li>li(list) 创建列表中的每项内容，每个列表项都有一个项目符号，可以通过type属性来单独设置某个列表的符号</li>
-<li>ol(order list)有序列表，它也是声明一个列表的封装容器。ol支持三个属性：<ul>
-<li>start：列表的起始标号</li>
-<li>type ：编号的类型 可选值是<code>1、a、A、i、I</code></li>
-<li>reverse ：按编号值倒序排列</li>
-</ul>
-</li>
-<li>dl(definition list)定义列表，它和上述列表不同的是 可以给每个（列表项dt）设置（表述信息dd）</li>
-<li>dt：声明列表项，它没有项目符号</li>
-<li>dd：定义列表的描述，它有一个缩进</li>
-</ul>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/11/24/HTML(3)/">展开全文 >></a>
     </p>
     
 
