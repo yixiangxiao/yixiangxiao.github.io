@@ -6,58 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yixiangxiao.github.io">
-  <title>js数组和对象 | yixiangxiao</title>
+  <title>浮动 | yixiangxiao</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="对象从数学的角度出发，对象是命名的数据的无序集合。在数学中集合使用”{}”，js中的对象也是使用{}； 在计算机程序设计中，对象是一个包含了信息存储以及对信息进行处理所组成的整体，是对功能实现过程抽象出的语法模型，其中静态的内容抽象成”属性“，对内容进行操作的动态行为抽象为”方法“。 对象 &#x3D; { 属性1, 属性2, 方法1, 方法2 } 这就是说对象是属性（property）和方法（method">
+  <meta name="description" content="详细的选择器 关系选择器： 后代选择器：S1 S2 选择S1所有的后代的S2元素 子代选择器：S1&gt;S2 选择作为S1子级的S2元素 相邻选择器：S1+S2 选择S1同级且紧挨着的S2元素 兄弟选择器：S1~S2 选择S1同级的所有兄弟节点   属性选择器 [attr]：查找具有attr属性的元素 [attr&#x3D;”aa”] 要求attr属性的值是aa的元素 [attr*&#x3D;”aa”] attr属">
 <meta property="og:type" content="article">
-<meta property="og:title" content="js数组和对象">
-<meta property="og:url" content="http://yixiangxiao.github.io/2021/01/26/js(5)/index.html">
+<meta property="og:title" content="浮动">
+<meta property="og:url" content="http://yixiangxiao.github.io/2020/11/28/css(2)/index.html">
 <meta property="og:site_name" content="yixiangxiao">
-<meta property="og:description" content="对象从数学的角度出发，对象是命名的数据的无序集合。在数学中集合使用”{}”，js中的对象也是使用{}； 在计算机程序设计中，对象是一个包含了信息存储以及对信息进行处理所组成的整体，是对功能实现过程抽象出的语法模型，其中静态的内容抽象成”属性“，对内容进行操作的动态行为抽象为”方法“。 对象 &#x3D; { 属性1, 属性2, 方法1, 方法2 } 这就是说对象是属性（property）和方法（method">
+<meta property="og:description" content="详细的选择器 关系选择器： 后代选择器：S1 S2 选择S1所有的后代的S2元素 子代选择器：S1&gt;S2 选择作为S1子级的S2元素 相邻选择器：S1+S2 选择S1同级且紧挨着的S2元素 兄弟选择器：S1~S2 选择S1同级的所有兄弟节点   属性选择器 [attr]：查找具有attr属性的元素 [attr&#x3D;”aa”] 要求attr属性的值是aa的元素 [attr*&#x3D;”aa”] attr属">
 <meta property="og:locale">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/1.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/2.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/3.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/4.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/5.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/6.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/7.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/8.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/9.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/10.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/11.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/12.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/13.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/14.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/15.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/16.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/17.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/18.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/19.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/20.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/21.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/22.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/23.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/24.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/25.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/26.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/27.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/28.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/29.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/30.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/31.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/32.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/33.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/34.png">
-<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/35.png">
-<meta property="article:published_time" content="2021-01-26T02:39:52.000Z">
-<meta property="article:modified_time" content="2021-01-26T05:04:28.368Z">
+<meta property="article:published_time" content="2020-11-28T12:12:52.000Z">
+<meta property="article:modified_time" content="2021-01-30T02:41:17.117Z">
 <meta property="article:author" content="yixiang xiao">
-<meta property="article:tag" content="javascript">
+<meta property="article:tag" content="html">
+<meta property="article:tag" content="css">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yixiangxiao.github.io/2021/01/26/js(5)/1.png">
   
     <link rel="alternative" href="/atom.xml" title="yixiangxiao" type="application/atom+xml">
   
@@ -300,14 +265,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-js(5)" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-css(2)" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class=" article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      js数组和对象
+      浮动
     </h1>
   
 
@@ -319,8 +284,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2021/01/26/js(5)/" class="archive-article-date">
-        <time datetime="2021-01-26T02:39:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-26</time>
+<a href="/2020/11/28/css(2)/" class="archive-article-date">
+        <time datetime="2020-11-28T12:12:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-28</time>
 </a>
 
   
@@ -333,7 +298,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">2.4k字</span>
+      <span class="post-count">3.5k字</span>
     </span>
   </span>
 
@@ -342,7 +307,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">8分</span>
+      <span class="post-count">13分</span>
     </span>
   </span>
 </div>
@@ -353,338 +318,263 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h1 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h1><p>从数学的角度出发，对象是命名的数据的无序集合。在数学中集合使用”{}”，js中的对象也是使用{}；</p>
-<p>在计算机程序设计中，对象是一个包含了<strong>信息存储</strong>以及对<strong>信息进行处理</strong>所组成的整体，是对功能实现过程抽象出的语法模型，其中静态的内容抽象成”<strong>属性</strong>“，对内容进行操作的动态行为抽象为”<strong>方法</strong>“。</p>
-<p>对象 = { 属性1, 属性2, 方法1, 方法2 }</p>
-<p>这就是说对象是<strong>属性</strong>（property）和<strong>方法</strong>（methods）的集合，它们也被叫做对象的<strong>成员</strong>（member）。</p>
-<p>从语法的角度来说，存放内容的属性就像变量一样，而执行动作的方法由函数来完成。因此，对象也可以看成是变量和函数的有机集合，只不过它是以”<strong>键/值</strong>“的形式呈现：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">name : <span class="string">&quot;张三&quot;</span>, <span class="comment">//相当于 var name = &quot;张三&quot;</span></span><br><span class="line"></span><br><span class="line">sex : <span class="string">&quot;男&quot;</span>,</span><br><span class="line"></span><br><span class="line">age : <span class="number">27</span>,</span><br><span class="line"></span><br><span class="line">hello : <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123; &#125;, <span class="comment">//相当于 function hello() &#123;&#125;</span></span><br><span class="line"></span><br><span class="line">study : <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123; &#125;,</span><br><span class="line"></span><br><span class="line">pratice : <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123; &#125;,</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="创建对象"><a href="#创建对象" class="headerlink" title="创建对象"></a>创建对象</h2><h3 id="字面量对象"><a href="#字面量对象" class="headerlink" title="字面量对象"></a>字面量对象</h3><p>对象使用一对花括号来表示，{ }中以“<strong>键/值”</strong>对（键也叫索引）的形式声明属性和方法：</p>
+    <h2 id="详细的选择器"><a href="#详细的选择器" class="headerlink" title="详细的选择器"></a>详细的选择器</h2><ul>
+<li>关系选择器：<ul>
+<li>后代选择器：<code>S1 S2</code> 选择S1所有的后代的S2元素</li>
+<li>子代选择器：<code>S1&gt;S2</code> 选择作为S1子级的S2元素</li>
+<li>相邻选择器：<code>S1+S2</code> 选择S1同级且紧挨着的S2元素</li>
+<li>兄弟选择器：<code>S1~S2</code> 选择S1同级的所有兄弟节点</li>
+</ul>
+</li>
+<li>属性选择器<ul>
+<li>[attr]：查找具有attr属性的元素</li>
+<li>[attr=”aa”] 要求attr属性的值是aa的元素</li>
+<li>[attr*=”aa”] attr属性值中包含aa即可</li>
+<li>[attr~=”aa”] attr属性值包含aa的单词</li>
+<li>[attr^=”aa”] attr属性的值以aa开头</li>
+<li>[attr$=”aa”] attr属性值以aa来结尾</li>
+</ul>
+</li>
+<li>伪类选择器<ul>
+<li>关于a链接的伪类：<code>:link, :visited, :hover,:active</code></li>
+<li>E:focus：元素（输入框）获取焦点时选中该元素</li>
+<li>子元素伪类：<code>:first-child,:last-child, :nth-child(), :nth-last-child(), :only-child  </code></li>
+<li>其他伪类：<code>:checked,:enabled, :disabled</code></li>
+</ul>
+</li>
+<li>伪元素选择器<ul>
+<li>E::before：在E元素内容区最前面创建一个伪元素</li>
+<li>E::after：在E元素内容区最后面创建一个伪元素</li>
+<li>E::first-letter：将E元素的第一个字母创建成伪元素，设置样式</li>
+<li>E::first-line：将E元素内容的第一行创建为伪元素，设置样式</li>
+<li>E::selection：将E元素内容中 选中部分创建为伪元素，设置样式</li>
+</ul>
+</li>
+<li>组合选择器<ul>
+<li>并列选择器：<code>s1, s2, #ID, .class</code></li>
+</ul>
+</li>
+</ul>
 <a id="more"></a>
 
-<p><img src="1.png" alt="1"></p>
-<p>以花括号形式定义的对象是<strong>字面量形式的对象</strong>。对象中的的成员使用”<strong>对象.成员</strong>“来访问：</p>
-<p><img src="2.png" alt="2"></p>
-<p>对象的成员可以在<strong>所有的方法中共享</strong>方法体内访问对象的成员，可以使用this替代当前对象：</p>
-<p><img src="3.png" alt="3"></p>
-<h3 id="使用构造器"><a href="#使用构造器" class="headerlink" title="使用构造器"></a>使用构造器</h3><p>使用对象的构造函数<strong>Object</strong>显式的创建一个对象，构造函数是专门生产对象的函数，一个构造器：</p>
-<p><img src="4.png" alt="4"></p>
-<p><img src="5.png" alt="5"></p>
-<h3 id="简洁的写法"><a href="#简洁的写法" class="headerlink" title="简洁的写法"></a>简洁的写法</h3><p>es6中，字面量对象的写法更为简洁。当属性值包含在同名的变量时，例如foo属性定义在变量foo中，那么{foo: foo}可以简写成{foo}，称为“简洁属性”事实上它省略了左侧的foo。不仅属性，方法也有更为简洁的写法，且没有任何前提，所有的方法都可以省略掉function声明：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">foo : <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line"></span><br><span class="line">&#125; 简写成：&#123;</span><br><span class="line"></span><br><span class="line">foo () &#123;&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p><img src="6.png" alt="6"></p>
-<p><img src="7.png" alt="7"></p>
-<h2 id="对象的特性"><a href="#对象的特性" class="headerlink" title="对象的特性"></a>对象的特性</h2><h3 id="对象转化"><a href="#对象转化" class="headerlink" title="对象转化"></a>对象转化</h3><p>对象是<strong>复合类型</strong>的数据它不仅有值更有结构，因此不能直接参与运算和输出。当把一个对象用于字符串环境中时<br>js会<strong>隐式</strong>的调用对象的toString()方法 将它转化成一个字符串后再执行；如果没有定义toString()方法则使用继承Object.prototype.toString()方法。</p>
-<p><img src="8.png" alt="8"></p>
-<p><img src="9.png" alt="9"></p>
-<p>当把一个对象用于数学环境中时，js会隐式的调用它的valueOf()方法，查询到相应类型的数值后再进行运算，事实上valueOf()的运算规则要复杂很多。</p>
-<p><img src="10.png" alt="10"></p>
-<h3 id="属性检测"><a href="#属性检测" class="headerlink" title="属性检测"></a>属性检测</h3><ul>
-<li>  in运算</li>
+<h2 id="CSS盒子模型"><a href="#CSS盒子模型" class="headerlink" title="CSS盒子模型"></a>CSS盒子模型</h2><ul>
+<li>盒子模型的概念：CSS中抽象出的一个<strong>块级元素</strong>在页面中占据的空间区域，称为盒子</li>
+<li>盒子相关的属性：<ul>
+<li>border：查看盒子的边框位置</li>
+<li>width：设置盒子内容区的大小</li>
+<li>background：查看盒子的区域<ul>
+<li>background-color：设置容器的背景色</li>
+<li>background-image：设置背景图片地址</li>
+<li>background-repeat：当背景图不能覆盖容器时 选择它在容器的填充方式：<ul>
+<li>no-repeat：不重复填充，默认在左上角显示该图片</li>
+<li>repeat-x ：水平方向铺满</li>
+<li>repeat-y：垂直方向铺满</li>
 </ul>
-<p>in 运算符用来检测对象中是否存在某个属性 返回<strong>布尔值</strong>的结果运算表达式为：<strong>属性 in 对象</strong></p>
-<p>表达式左边为属性名称<strong>字符串</strong>或者能够转化成字符串值的变量，右边为一个<strong>对象类型</strong>的值。</p>
-<p><img src="11.png" alt="11"></p>
-<ul>
-<li>  hasOwnProperty方法</li>
+</li>
+<li>background-position：当背景图只能部分填充时 需要设置它在容器中的位置。该值有两种形式：<ul>
+<li>固定位置：（X）left/center/right  （Y）top/center/bottom</li>
+<li>具体像素：设置一个坐标值，它以左上角为原点</li>
 </ul>
-<p>该方法只能检测对象自身属性，而不能检测继承的属性：o.hasOwnProperty(“toString”)//false</p>
-<p><img src="12.png" alt="12"></p>
-<h2 id="对象应用实例"><a href="#对象应用实例" class="headerlink" title="对象应用实例"></a>对象应用实例</h2><p>实际开发中，我们会经常使用对象来实现功能（把一个功能视为一个对象），通过将功能实现的需求①<br><strong>抽象成一个个方法</strong>，② 方法中要使用的数据 <strong>定义属性</strong>便于在全局中使用。</p>
-<ul>
-<li><p>抽象一个矩形操作的对象rect，能够计算矩形的周长（length）和面积（area）</p>
-<p><img src="13.png" alt="13"></p>
+</li>
+<li>缩写形式：背景图相关的几个属性写在一起，背景色在它们的前/后的位置</li>
+</ul>
+</li>
+<li>padding：盒子的内边距，当设置内边距时 盒子会展开，尺寸放大（外扩）<ul>
+<li>padding-top ：</li>
+<li>padding-right ：</li>
+<li>padding-bottom ：</li>
+<li>padding-left ：</li>
+<li>padding：缩写形式 设置四边的填充<ul>
+<li>padding：10px 四个方向都填充10px</li>
+<li>padding：10px 20px (下 左 )上下填充10px 左右填充20px。左边的缺省值用右边的，下面的缺省值用上面的</li>
+<li>padding ：10px 20px 30px  (20px)</li>
+</ul>
 </li>
 </ul>
-<h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><p>从数学角度出发，数组是经过<strong>编号</strong>的数据的有序<strong>集合</strong>，从这点来看它和对象很相似。而事实上js中的数组本质上就是<strong>对象</strong>，是<strong>具有额外功能层的对象</strong>：在传统的对象基础上经过改造支持通过[]运算来读写对象中<strong>数字下标（键/索引）</strong>的属性并拥有自动更新的length值。当然，这在很多语言中并非如此，勿要轻易模仿！</p>
-<h2 id="创建数组"><a href="#创建数组" class="headerlink" title="创建数组"></a>创建数组</h2><h3 id="字面量数组"><a href="#字面量数组" class="headerlink" title="字面量数组"></a>字面量数组</h3><p><img src="14.png" alt="14"></p>
-<p><img src="15.png" alt="15"></p>
-<h3 id="使用构造器-1"><a href="#使用构造器-1" class="headerlink" title="使用构造器"></a>使用构造器</h3><p>更为显式的创建一个数组（对象），需要使用数组的构造器<strong>Array</strong>（也叫构造函数）。</p>
-<p><img src="16.png" alt="16"></p>
-<p><img src="17.png" alt="17"></p>
-<h2 id="关联数组"><a href="#关联数组" class="headerlink" title="关联数组"></a>关联数组</h2><p>JS中，数组元素除了使用数字编号外，还可以使用<strong>字符串来命名</strong>，称为”<strong>关联数组</strong>“。这点同对象很像<br>因此关联数组也可以使用对象的方式来操作；反之，对象的属性也可以使用数组的方式来取[]。</p>
-<p><img src="18.png" alt="18"></p>
-<p><img src="19.png" alt="19"></p>
-<h3 id="数组的长度"><a href="#数组的长度" class="headerlink" title="数组的长度"></a>数组的长度</h3><p>数组的length属性 用来查看它的长度 也就是元素的个数，注意字符串下标的元素不计入数组中。</p>
-<p><img src="20.png" alt="20"></p>
-<h2 id="数组遍历"><a href="#数组遍历" class="headerlink" title="数组遍历"></a>数组遍历</h2><h3 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h3><p>可以使用for循环数组的下标，然后取数组元素 下标的范围是[0,  <strong>arr.length -1</strong>]。该方法只能打印出所有① <strong>数字下标元素</strong> 且要求 ②<strong>数组元素是连续</strong>的否则会产生undefined值。</p>
-<p><img src="21.png" alt="21"></p>
-<p><img src="22.png" alt="22"></p>
-<h3 id="for-in语句"><a href="#for-in语句" class="headerlink" title="for/in语句"></a>for/in语句</h3><p>for/in用来查看<strong>对象或数组</strong>的内容，它能遍历系统提供全局对象的内容或者用户定义对象的内容，但是对于多数继承的内容属性和全部的内部方法都无法遍历；无论如何，使用for/in是我们调试对象和数组很好的一个工具。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">①<span class="keyword">for</span> (②<span class="keyword">var</span> p <span class="keyword">in</span> o) &#123;</span><br><span class="line"></span><br><span class="line"><span class="comment">//循环体</span></span><br><span class="line"></span><br><span class="line">③ <span class="built_in">console</span>.log(p, o.p); <span class="comment">//在js中“.标识符”为硬编码 不能被按变量解析</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>定义一个变量p或者表达式用来接收<br>每次从对象o中循环出来的属性和方法，接下来通过p检索每个内容<br>属性值则可以通过o[<strong>p</strong>]获取 而不是o.p；</p>
-<p><img src="23.png" alt="23"></p>
-<p><img src="24.png" alt="24"></p>
-<ul>
-<li>  从对象中取出所有的属性保存到数组中</li>
+</li>
+<li>margin：盒子的外边距。它的语法格式和padding是一摸一样</li>
 </ul>
-<p>对象在每次循环时，接收表达式都会重新计算，因此可以<strong>动态的接收</strong>从对象中遍历出的内容。例如，将一个对象的属性值保存到一个数字下标的数组中。</p>
-<p><img src="25.png" alt="25"></p>
-<p><img src="26.png" alt="26"></p>
-<h2 id="数组方法"><a href="#数组方法" class="headerlink" title="数组方法"></a>数组方法</h2><p>数组是<strong>对象</strong> 就有<strong>属性</strong>和<strong>方法</strong>，除了<em>length</em>属性外，常用的方法如下：</p>
-<table>
+</li>
+</ul>
+<h1 id="内外边距"><a href="#内外边距" class="headerlink" title="内外边距"></a>内外边距</h1><h2 id="行内元素"><a href="#行内元素" class="headerlink" title="行内元素"></a>行内元素</h2><ul>
+<li>行内元素设置内边距时，它的上下边距会占据其他行。必须要让它所在的行能够填充边距所占的空间 需要调整它的行高。此时的行高 = 上下边距 + 边框 + 文本高度。文本高度约等于它的字体大小：</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">span</span> &#123;</span><br><span class="line">    <span class="attribute">border </span>: <span class="number">1px</span> solid blue;</span><br><span class="line">    <span class="attribute">padding </span>: <span class="number">10px</span> <span class="number">20px</span>;</span><br><span class="line">    <span class="attribute">font-size </span>: <span class="number">15px</span>;</span><br><span class="line">    <span class="attribute">line-height </span>: <span class="number">37px</span>;<span class="comment">/* 1px + 10px + 15px + 10px + 1px*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>行内元素不具备垂直方向的外边距，水平方向的外边距是==相加==的</li>
+</ul>
+<h2 id="块级元素"><a href="#块级元素" class="headerlink" title="块级元素"></a>块级元素</h2><p>块级元素在内外边距设置时会产生边界坍塌或者边界重叠的现象，具体来说有以下两种情况：</p>
+<ul>
+<li>兄弟关系的块级元素：<br>正常情况下，块级元素在文档流中是垂直分布的。给它们设置外边距时。上面元素的margin-bottom和下面元素的margin-top会塌陷，然后会取上下两者margin里==最大值==来显示。</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">    div &#123;</span><br><span class="line">        width : 100px;</span><br><span class="line">        height : 100px;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="css">    <span class="selector-class">.d1</span> &#123;</span></span><br><span class="line">        margin : 100px;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="css">    <span class="selector-class">.d2</span> &#123;</span></span><br><span class="line"><span class="css">        <span class="selector-tag">margin</span> : 150<span class="selector-tag">px</span>;<span class="comment">/*上下DIV的实际距离是150px*/</span></span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;d1&quot;</span>&gt;</span></span><br><span class="line">    上面的DIV</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;d2&quot;</span>&gt;</span></span><br><span class="line">    下面的DIV</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li><p>父子关系的块级元素：</p>
+<ul>
+<li>当给父盒子的==第一个==子元素 设置margin。它是以父级的边框、边距来设置的。如果父级没有边框或者边距，那么子元素就会一直向上查找，直到某个父元素拥有边框和边距为止，然后参照它来设置边距。可以给父盒子设置一个透明的边框（不影响本身的显示）或者设定一个边距。</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.container</span> &#123;</span></span><br><span class="line"><span class="css">        <span class="selector-tag">background</span> : <span class="selector-id">#000</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="css">    <span class="selector-class">.container</span> <span class="selector-tag">div</span> &#123;</span></span><br><span class="line">        width : 100px;</span><br><span class="line">        height : 100px;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="css">    <span class="selector-class">.d1</span> &#123;</span></span><br><span class="line">        background : pink;</span><br><span class="line">        margin-top : 50px;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="css">    <span class="selector-class">.d2</span> &#123;</span></span><br><span class="line">        background : green;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;d1&quot;</span>&gt;</span></span><br><span class="line">        d1</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;d2&quot;</span>&gt;</span></span><br><span class="line">        d2</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+</li>
+</ul>
+<h1 id="浮动属性"><a href="#浮动属性" class="headerlink" title="浮动属性"></a>浮动属性</h1><p>浮动是css中实现布局的一个重要工具。基本上在页面排版时都要借助于浮动来完成，一个最基本的需求是实现块级元素和行内元素之间的混排，而浮动就是为了解决这些问题的。</p>
+<p>浮动就是让一个元素往左或右边“尽量挤靠”，以使其周边文字（行内元素）可以围绕该浮动元素显示。</p>
+<p>其典型的表现就是一张图片向左对齐（align=”left”）的时候，图片标签前后的文字都能够绕着图片展示。</p>
+<p>这是“浮动”的原本含义和作用，如下图所示：在介绍浮动之前 我们可能已经发现一个问题，块状元素尽管设置了高和宽的属性 但是他总是占据一整行，这样的“造型”会产生大量旁白，显然不是我们希望遇见的，浮动的出现就可以改变这种现状。</p>
+<p>float属性的几个可选值：</p>
+<ul>
+<li><p>left：    元素向左侧浮动</p>
+</li>
+<li><p>right ：元素向右侧浮动，右浮动时 最先在页面中出现的容器 在最右边</p>
+</li>
+<li><p>none：元素不浮动，默认值</p>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.container</span> &#123;</span></span><br><span class="line">        border : 5px solid gray;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="css">    <span class="selector-class">.container</span> <span class="selector-tag">div</span> &#123;</span></span><br><span class="line">        width : 100px;</span><br><span class="line">        height  100px;</span><br><span class="line">        float : right;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="css">    <span class="selector-class">.d1</span> &#123;<span class="attribute">background </span>: pink&#125;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.d2</span> &#123;<span class="attribute">background </span>: green&#125;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.d3</span> &#123;<span class="attribute">background </span>: blue&#125;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;d1&quot;</span>&gt;</span></span><br><span class="line">        d1</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;d2&quot;</span>&gt;</span></span><br><span class="line">        d2</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;d3&quot;</span>&gt;</span></span><br><span class="line">        d3</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="浮动机制"><a href="#浮动机制" class="headerlink" title="浮动机制"></a>浮动机制</h2><ul>
+<li>浮动元素会先于==行内元素==占据浮动方向的水平空间。浮动元素周围的行框被缩短，从而使得文本围绕浮动元素排版显示。如果浮动旁边是块级元素，则它无法挤占块级元素 也就是在其下方显示。</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.container</span> &#123;</span></span><br><span class="line">        border: 5px solid gray;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="css">    <span class="selector-class">.container</span> <span class="selector-tag">div</span> &#123;</span></span><br><span class="line">        width: 100px;</span><br><span class="line">        height: 100px;</span><br><span class="line">        background: pink;</span><br><span class="line"><span class="css">        <span class="comment">/*行内元素some text的空间被挤占，但块级p标签不会*/</span></span></span><br><span class="line">        float: left;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>hello world<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span> some text</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>浮动元素脱离了原来的文档流（普通文档流），出现在其上方的浮动层当中，原来的位置会被后续元素补充。</li>
+</ul>
+<ul>
+<li>浮动的元素也被称之为浮动框，浮动元素会浮动至<strong>包含框边缘</strong>或浮动层的<strong>浮动框之后</strong><ul>
+<li>第一个浮动元素浮动到包含框的边缘，不会超出包含框的范围</li>
+<li>后面的浮动元素到达浮动层之后 会挨着上一个浮动元素排布，当超出时会自动换行</li>
+</ul>
+</li>
+</ul>
+<p><strong>案例演示</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">div &#123;</span><br><span class="line"><span class="css">	 <span class="selector-tag">border</span><span class="selector-pseudo">:1px</span> <span class="selector-tag">solid</span> <span class="selector-tag">white</span>;</span></span><br><span class="line"><span class="css">	 <span class="selector-tag">width</span><span class="selector-pseudo">:100px</span>;</span></span><br><span class="line"><span class="css">	 <span class="selector-tag">height</span><span class="selector-pseudo">:100px</span>;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="css"><span class="selector-class">.d1</span> &#123;</span></span><br><span class="line"><span class="css">	 <span class="selector-tag">background</span><span class="selector-pseudo">:red</span>; </span></span><br><span class="line">&#125;</span><br><span class="line">    </span><br><span class="line"><span class="css"><span class="selector-class">.d2</span> &#123;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">background</span><span class="selector-pseudo">:green</span>; </span></span><br><span class="line">&#125;</span><br><span class="line"><span class="css"><span class="selector-class">.d3</span> &#123;</span></span><br><span class="line"><span class="css">	<span class="selector-tag">background</span><span class="selector-pseudo">:blue</span>; </span></span><br><span class="line">&#125;</span><br><span class="line"><span class="css"><span class="selector-class">.fl</span> &#123;</span></span><br><span class="line">    float : left;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">previous line</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;d1 fl&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;d2 fl&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;d3 fl&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">next line</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>将上例中的d2进行左浮动之后的效果怎样</li>
+<li>将上例中的d1、d2同时进行左浮动之后的效果 怎样</li>
+<li>将上例中的d1、d2、d3全部左浮动之后的效果 怎样</li>
+<li>给上列中文本分别嵌套p标签，观察效果是否发生变化</li>
+</ol>
+<h2 id="浮动特性"><a href="#浮动特性" class="headerlink" title="浮动特性"></a>浮动特性</h2><p>浮动之后的元素无论其原先是何种状态，浮动后都会成为==行内块状==（inline-block）元素。所谓行内块状是指它具有块状元素的<strong>高和宽属性 但是不占据整行</strong> ，可以在行内显示 img就是一个典型的行内块状元素。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">    span &#123;</span><br><span class="line">        border : 1px solid blue;</span><br><span class="line">        width : 100px;</span><br><span class="line">        height : 100px;</span><br><span class="line"><span class="css">        <span class="selector-tag">float</span> : <span class="selector-tag">left</span>;	<span class="comment">/*设置浮动后 span具有高宽属性*/</span></span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span>&gt;</span>some text<span class="tag">&lt;/<span class="name">span</span>&gt;<span class="name">hello</span></span> world</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">    div &#123;</span><br><span class="line">        border : 1px solid blue;</span><br><span class="line"><span class="css">        <span class="selector-tag">float</span> : <span class="selector-tag">left</span>;	<span class="comment">/*浮动之后 div不在整行显示*/</span></span></span><br><span class="line">	&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span>some text<span class="tag">&lt;/<span class="name">div</span>&gt;<span class="name">hello</span></span> world</span><br></pre></td></tr></table></figure>
+
+<p>使用display属性可以设置元素的类型，它有以下几种情况：</p>
+<ul>
+<li>block：将元素以块状显示</li>
+<li>inline：将元素以行内显示</li>
+<li>inline-block：将元素显示成行内块级</li>
+<li>list-item：元素以列表项来显示，通常需要配置<code>list-type</code>属性设置列表项</li>
+<li>none：元素不显示，并且它在页面中的位置会被清除</li>
+</ul>
+<h2 id="容器塌陷"><a href="#容器塌陷" class="headerlink" title="容器塌陷"></a>容器塌陷</h2><p>元素浮动后脱离了普通文档流，“包含框”的内容（元素）会越来越少，导致包含框在文档流中占据的空间越来越小，尤其当包含框中==所有元素都浮动后，整个“框”会出现塌陷==。这样从视觉效果来说是很不友好的，同时它会影响后续元素的排版。</p>
+<h1 id="清除浮动"><a href="#清除浮动" class="headerlink" title="清除浮动"></a>清除浮动</h1><p>若要使得包含框重新包含浮动框，我们可以在包含框中添加一个<strong>不浮动的空元素</strong>，如DIV，设置它的高度或者上外边距和浮动元素的高度一致，重新“撑起”包含框：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;d1&quot;</span>&gt;</span>d1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;d2&quot;</span>&gt;</span>d2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;d3&quot;</span>&gt;</span>d3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 新建一个空DIV 通过设置高度将容器撑起来 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>通过增加上外边距或高度的办法可以帮助我们解决坍塌，但前提是必须掌握好浮动元素的最大高度。CSS为我们提供了一个解决坍塌的办法，就是清除浮动（clear）。使用属性clear，有常见的3个值：</p>
+<ul>
+<li><p>left：表示不允许该元素左边出现左浮动元素；</p>
+</li>
+<li><p>right：表示不允许该元素右边出现右浮动元素；</p>
+</li>
+<li><p>both：表示该元素<strong>两边都不要</strong>出现浮动元素；——这是最常见的需求（场景）。</p>
+</li>
+</ul>
+<p>所谓清除浮动，其实就是让包含框中的==浮动特性终止==（结束） 而浮动框不受影响。这样包含框就具有了正常的高度，可以正常包住其内部的浮动盒子。可以给包含框内部的末尾添加一个“清除浮动”的空的块盒子来清除浮动。</p>
+<p>一个更加灵活的写法是使用伪元素选择器给在父盒子最后位置创建空元素，空元素必须声明为块级类型，然后设置清除浮动。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.container</span><span class="selector-pseudo">::after</span> &#123;</span></span><br><span class="line">        content : &quot;&quot;;</span><br><span class="line">        display : block;</span><br><span class="line">        clear : both;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span>浮动元素1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span>浮动元素2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span>浮动元素3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>最后一种解决塌陷的办法是使用<code>overflow </code>溢出控制，当父元素的高height:auto时（也就是不设置），我们使用<code>overflow：hidden</code>清除浮动（原理是Block Fomatter Context）。当一个盒子里面有浮动元素，则：</p>
+<ol>
+<li>如果该盒子<strong>不设置</strong>高度，就应该清除浮动，overflow：hidden。</li>
+<li>如果该盒子<strong>设置了</strong>高度，此时就应该考虑溢出时的处理效果！</li>
+</ol>
+<p>overflow常用值有：</p>
+<ul>
+<li><p>auto：    自动，按浏览器的默认设置自动处理，各浏览器可能会有所不同。</p>
+</li>
+<li><p>scroll：    滚动，就是超出范围的时候，盒子出现滚动条（像浏览器的滚动条那样）。</p>
+</li>
+<li><p>hidden：    隐藏，就是将超出部分隐藏起来（视觉上不可见）。</p>
+</li>
+<li><p>visible：    显示，就是虽然超出去了，但仍然显示出来，这是这个属性的默认值，无需设置。</p>
+</li>
+</ul>
+<p>此时，虽然可能超出外层盒子，但不会影响外层盒子后续的位置（布局）。</p>
+<h1 id="visibility"><a href="#visibility" class="headerlink" title="visibility"></a>visibility</h1><p>visibility属性用来设置元素的可见性。主要有两个值：visible（可见）和hidden（隐藏）</p>
+<p>设置visibility为hidden，虽然元素不可见了，但元素原本所占的空间仍然存在（效果是一片空白）</p>
+<p>对比：设置display为none，也是隐藏，但此时该元素不但不可见，而且不占版面空间。</p>
+<h1 id="表格属性"><a href="#表格属性" class="headerlink" title="表格属性"></a>表格属性</h1><table>
 <thead>
 <tr>
-<th><strong>方法</strong></th>
-<th><strong>语法示例</strong></th>
-<th><strong>说明</strong></th>
+<th><strong>样式</strong></th>
+<th><strong>可选值</strong></th>
+<th><strong>含义</strong></th>
 </tr>
 </thead>
 <tbody><tr>
-<td>查询索引</td>
-<td>arr.<strong>indexOf</strong>(ele)</td>
-<td>查询ele在数组中初次位置</td>
+<td>border-collapse</td>
+<td>collapse（合并）、separate（分离）</td>
+<td>合并边框</td>
 </tr>
 <tr>
-<td></td>
-<td>arr.<strong>lastIndexOf</strong>(ele)</td>
-<td>查询ele在数组中最后位置</td>
+<td>border-spacing（限边框分离模式）</td>
+<td>Xpx/ Xpx Ypx</td>
+<td>水平和垂直间距为X px</td>
 </tr>
 <tr>
-<td>检测元素</td>
-<td>arr.<strong>includes</strong>(ele)</td>
-<td>检测是否存在ele元素</td>
+<td>text-align</td>
+<td>left、center、right</td>
+<td>单元格水平对齐方式</td>
 </tr>
 <tr>
-<td>截取数组</td>
-<td>arr.<strong>slice</strong>(begin,end)</td>
-<td>截取从begin到end之前的元素</td>
-</tr>
-<tr>
-<td></td>
-<td>arr.<strong>splice</strong>(start, n)</td>
-<td>删除从start位置的n个元素</td>
-</tr>
-<tr>
-<td>队列方法</td>
-<td>arr.<strong>unshift</strong>(ele)</td>
-<td>头部添加一个ele元素</td>
-</tr>
-<tr>
-<td></td>
-<td>arr.<strong>push</strong>(ele)</td>
-<td>尾部添加一个ele元素</td>
-</tr>
-<tr>
-<td></td>
-<td>arr.<strong>shift</strong>()</td>
-<td>删除第一个元素</td>
-</tr>
-<tr>
-<td>其他方法</td>
-<td>arr.<strong>pop</strong>()</td>
-<td>删除最后一个元素</td>
-</tr>
-<tr>
-<td></td>
-<td>arr.<strong>join</strong>(char)</td>
-<td>将数组以char连成字符串</td>
-</tr>
-<tr>
-<td></td>
-<td>arr.<strong>concat</strong>(arr2)</td>
-<td>数组连接另一个数组</td>
+<td>vertical-align（限单元格）</td>
+<td>top、center、middle</td>
+<td>单元格垂直对齐方式</td>
 </tr>
 </tbody></table>
-<p><img src="27.png" alt="27"></p>
-<p><img src="28.png" alt="28"></p>
-<p><img src="29.png" alt="29"></p>
-<h1 id="其他内置对象"><a href="#其他内置对象" class="headerlink" title="其他内置对象"></a>其他内置对象</h1><h2 id="字符串对象"><a href="#字符串对象" class="headerlink" title="字符串对象"></a>字符串对象</h2><p>var str = new String();</p>
-<p>字符串通常被理解成数据类型，然而js中的字符串还存在它们的封装对象，以下它的常用方法：</p>
+<h1 id="列表属性"><a href="#列表属性" class="headerlink" title="列表属性"></a>列表属性</h1><p>给UL和li添加边框，查看其作用效果，我们能得出以下结论<br>ul列表作为块状元素整行显示，并且默认头尾产生空白行，可以视作上下的外边距（margin)<br>ul列表默认具有左内边距，该内边距中包含了项目符号<br>列表项的项目符号处于ul的padding之中，在列表项的外面<br>项目符号设置单一</p>
 <table>
 <thead>
 <tr>
-<th><strong>相关方法</strong></th>
-<th><strong>语法示例</strong></th>
-<th><strong>说明</strong></th>
+<th><strong>样式</strong></th>
+<th><strong>值</strong></th>
+<th><strong>含义</strong></th>
 </tr>
 </thead>
 <tbody><tr>
-<td>字符串查找</td>
-<td>str.<strong>charAt</strong>(idx)</td>
-<td>查找idx位置的子字符</td>
+<td>list-style-type</td>
+<td>none、square、disc、circle</td>
+<td>设置项目符号</td>
 </tr>
 <tr>
-<td>索引的查找</td>
-<td>str.<strong>indexOf</strong>(val)</td>
-<td>val在str中第一次出现的位置</td>
+<td>list-style-position</td>
+<td>inside、outside</td>
+<td>项目符号位置</td>
 </tr>
 <tr>
-<td></td>
-<td>str.<strong>lastIndexOf</strong>(val)</td>
-<td>val在str中最后一次出现的位置</td>
+<td>list-style-image</td>
+<td>url(‘图片位置’)</td>
+<td>将图片设置为项目符号</td>
 </tr>
 <tr>
-<td></td>
-<td>str.<strong>search</strong>(exp)</td>
-<td>exp表达式在str中第一次出现位置</td>
-</tr>
-<tr>
-<td>字符串截取</td>
-<td>str.<strong>substr</strong>(start,length)</td>
-<td>从start位置截取length个字符</td>
-</tr>
-<tr>
-<td></td>
-<td>str.<strong>slice</strong>(start, end)</td>
-<td>截取start到end之前的字符</td>
-</tr>
-<tr>
-<td>字符串检测</td>
-<td>str.<strong>includes</strong>()</td>
-<td>检测字符串是否含有某个子串</td>
-</tr>
-<tr>
-<td></td>
-<td>str.<strong>startsWith</strong>()</td>
-<td>检测字符串是否以某字符开头</td>
-</tr>
-<tr>
-<td></td>
-<td>str.<strong>endsWith</strong>()</td>
-<td>检测字符串是否以某字符结尾</td>
-</tr>
-<tr>
-<td>字符串替换</td>
-<td>str.<strong>replace</strong>(exp, new)</td>
-<td>替换匹配的exp为一个新值new</td>
-</tr>
-<tr>
-<td>字符串分割</td>
-<td>str.<strong>split</strong>(char)</td>
-<td>将字符串打散成<strong>数组</strong></td>
-</tr>
-<tr>
-<td>大小写转换</td>
-<td>str.<strong>toLowerCase</strong>()</td>
-<td>字符串转化成小写</td>
-</tr>
-<tr>
-<td></td>
-<td>str.<strong>toUpperCase</strong>()</td>
-<td>字符串转化成大写</td>
-</tr>
-<tr>
-<td>其他方法</td>
-<td>str.<strong>trim</strong>()</td>
-<td>去除str头尾的空白字符</td>
-</tr>
-<tr>
-<td></td>
-<td>str.<strong>match</strong>(exp)</td>
-<td>返回字符串中匹配exp的子串</td>
+<td>list-style</td>
+<td>list-style: list-style-type list-style-pisition list-style-image</td>
+<td>综合设置（有顺序之分）</td>
 </tr>
 </tbody></table>
-<p><img src="30.png" alt="30"></p>
-<p><img src="31.png" alt="31"></p>
-<h2 id="日期时间对象"><a href="#日期时间对象" class="headerlink" title="日期时间对象"></a>日期时间对象</h2><p>使用new Date() 创建一个日期时间对象：var d = new Date();</p>
-<table>
-<thead>
-<tr>
-<th><strong>方法</strong></th>
-<th><strong>语法示例</strong></th>
-<th><strong>说明</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>查询节点</td>
-<td>d.<strong>getFullYear</strong>()</td>
-<td>查询年份（四位）</td>
-</tr>
-<tr>
-<td></td>
-<td>d.<strong>getMonth</strong>()</td>
-<td>查询月份（0 - 11）</td>
-</tr>
-<tr>
-<td></td>
-<td>d.<strong>getDate</strong>()</td>
-<td>查询日期</td>
-</tr>
-<tr>
-<td></td>
-<td>d.<strong>getDay</strong>()</td>
-<td>查询星期（0 - 6）</td>
-</tr>
-<tr>
-<td>时间戳</td>
-<td>d.<strong>getTime</strong>()</td>
-<td>查询时间戳（单位毫秒）</td>
-</tr>
-</tbody></table>
-<p><img src="32.png" alt="32"></p>
-<ul>
-<li><p>计算当前日期距离北京奥运会（2008:08:08）相差的天数，对结果四舍五入取整。</p>
-<p><img src="33.png" alt="33"></p>
-</li>
-</ul>
-<h2 id="数学对象"><a href="#数学对象" class="headerlink" title="数学对象"></a>数学对象</h2><p>Math是系统的固有对象，无需使用new Math创建，直接使用即可：</p>
-<table>
-<thead>
-<tr>
-<th><strong>方法</strong></th>
-<th><strong>用法示例</strong></th>
-<th><strong>说明</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>取整数值</td>
-<td>Math.<strong>ceil</strong>(number)</td>
-<td>对number进位取整</td>
-</tr>
-<tr>
-<td></td>
-<td>Math.<strong>floor</strong>(number)</td>
-<td>对number下舍取整</td>
-</tr>
-<tr>
-<td></td>
-<td>Math.<strong>round</strong>(number)</td>
-<td>对number四舍五入</td>
-</tr>
-<tr>
-<td>最大最小值</td>
-<td>Math.<strong>max</strong>(n1, n2, n3)</td>
-<td>求n1,n2,n3..的最大值</td>
-</tr>
-<tr>
-<td></td>
-<td>Math.<strong>min</strong>(n1, n2, n3)</td>
-<td>求n1,n2,n3..的最小值</td>
-</tr>
-<tr>
-<td>生成随机数</td>
-<td>Math.<strong>random</strong>()</td>
-<td>返回0-1之间的随机数</td>
-</tr>
-</tbody></table>
-<p><img src="34.png" alt="34"></p>
-<ul>
-<li><p>使用随机数 实现简单的随机点名功能</p>
-<p><img src="35.png" alt="35"></p>
-</li>
-</ul>
-<h1 id="面试练习题"><a href="#面试练习题" class="headerlink" title="面试练习题"></a>面试练习题</h1><ul>
-<li><p>  简述数组和对象的关联性？</p>
-</li>
-<li><p>  查看字符串第三个字母的方法有哪些？</p>
-</li>
-<li><p>  列举运算符 in 的几个使用场景</p>
-</li>
-<li><p>  如何在页面中输出一个对象的内容</p>
-</li>
-<li><p>  简述“.”和“[]”运算的区别</p>
-</li>
-</ul>
 
     
 
@@ -731,8 +621,8 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="http://yixiangxiao.github.io/2021/01/26/js(5)/" title="js数组和对象"
-            target="_blank">http://yixiangxiao.github.io/2021/01/26/js(5)/</a>
+          <a href="http://yixiangxiao.github.io/2020/11/28/css(2)/" title="浮动"
+            target="_blank">http://yixiangxiao.github.io/2020/11/28/css(2)/</a>
         </li>
         
         <li>
@@ -754,7 +644,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
         		</li>
       		
 		</ul>
@@ -821,7 +715,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://yixiangxiao.github.io/2021/01/26/js(5)/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://yixiangxiao.github.io/2020/11/28/css(2)/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -836,18 +730,18 @@
 
 <nav id="article-nav">
   
-    <a href="/2021/01/27/Plants%20V.S.%20Zombies/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/11/29/css(3)/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          植物大战僵尸
+          div+css布局
         
       </div>
     </a>
   
   
-    <a href="/2020/12/03/js(4)/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">js循环语句</div>
+    <a href="/2020/11/27/css(1)/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">html,css选择器</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -888,9 +782,9 @@
     <script src="/lib/gitment.js"></script>
   
   <script>
-    <!-- id: "js数组和对象" -->
+    <!-- id: "浮动" -->
     var gitment = new Gitment({
-      id: "20210126103952",
+      id: "20201128201252",
       owner: 'yixiangxiao',
       repo: 'yixiangxiao.github.io',
       oauth: {
