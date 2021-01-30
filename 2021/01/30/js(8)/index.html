@@ -6,23 +6,69 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yixiangxiao.github.io">
-  <title>植物大战僵尸 | yixiangxiao</title>
+  <title>事件编程 | yixiangxiao</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="植物大战僵尸 This is my resume  预览 使用方法123git clone https:&#x2F;&#x2F;github.com&#x2F;yixiangxiao&#x2F;Plants-V.S.-Zombies.git打开文件夹找到index.htm双击">
+  <meta name="description" content="事件编程事件概述事件是事先给元素绑定的处理程序（一段js代码），当用户输入或者满足语义时执行一段代码发出响应，以达到交互效果（用户输入浏览器响应的过程）。事件的基本要素为：事件源（目标）、触发场景和处理程序（事件句柄）。 例如：当用户点击（情景）按钮（事件源）时 弹出遮罩层（处理程序） 在事件编程中按照对事件定义与响应可以分为：  原始事件模型：0级DOM API的组成部分 所有浏览器均支持  具">
 <meta property="og:type" content="article">
-<meta property="og:title" content="植物大战僵尸">
-<meta property="og:url" content="http://yixiangxiao.github.io/2021/01/27/my-demo%20-%20%E5%89%AF%E6%9C%AC/index.html">
+<meta property="og:title" content="事件编程">
+<meta property="og:url" content="http://yixiangxiao.github.io/2021/01/30/js(8)/index.html">
 <meta property="og:site_name" content="yixiangxiao">
-<meta property="og:description" content="植物大战僵尸 This is my resume  预览 使用方法123git clone https:&#x2F;&#x2F;github.com&#x2F;yixiangxiao&#x2F;Plants-V.S.-Zombies.git打开文件夹找到index.htm双击">
+<meta property="og:description" content="事件编程事件概述事件是事先给元素绑定的处理程序（一段js代码），当用户输入或者满足语义时执行一段代码发出响应，以达到交互效果（用户输入浏览器响应的过程）。事件的基本要素为：事件源（目标）、触发场景和处理程序（事件句柄）。 例如：当用户点击（情景）按钮（事件源）时 弹出遮罩层（处理程序） 在事件编程中按照对事件定义与响应可以分为：  原始事件模型：0级DOM API的组成部分 所有浏览器均支持  具">
 <meta property="og:locale">
-<meta property="article:published_time" content="2021-01-27T03:32:52.000Z">
-<meta property="article:modified_time" content="2021-01-27T05:03:38.621Z">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/1.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/2.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/3.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/4.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/5.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/6.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/7.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/8.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/9.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/10.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/11.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/12.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/13.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/14.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/15.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/16.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/17.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/18.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/19.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/20.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/21.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/22.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/23.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/24.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/25.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/26.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/27.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/28.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/29.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/30.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/31.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/32.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/33.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/34.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/35.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/36.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/37.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/38.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/39.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/40.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/41.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/42.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/43.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/44.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/45.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/46.png">
+<meta property="article:published_time" content="2021-01-30T02:39:52.000Z">
+<meta property="article:modified_time" content="2021-01-30T02:26:10.247Z">
 <meta property="article:author" content="yixiang xiao">
-<meta property="article:tag" content="html">
-<meta property="article:tag" content="js">
+<meta property="article:tag" content="javascript">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yixiangxiao.github.io/2021/01/30/js(8)/1.png">
   
     <link rel="alternative" href="/atom.xml" title="yixiangxiao" type="application/atom+xml">
   
@@ -265,14 +311,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-my-demo - 副本" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-js(8)" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class=" article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      植物大战僵尸
+      事件编程
     </h1>
   
 
@@ -284,8 +330,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2021/01/27/my-demo%20-%20%E5%89%AF%E6%9C%AC/" class="archive-article-date">
-        <time datetime="2021-01-27T03:32:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-27</time>
+<a href="/2021/01/30/js(8)/" class="archive-article-date">
+        <time datetime="2021-01-30T02:39:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-30</time>
 </a>
 
   
@@ -298,7 +344,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">59字</span>
+      <span class="post-count">3k字</span>
     </span>
   </span>
 
@@ -307,7 +353,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">1分</span>
+      <span class="post-count">10分</span>
     </span>
   </span>
 </div>
@@ -318,21 +364,191 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h1 id="植物大战僵尸"><a href="#植物大战僵尸" class="headerlink" title="植物大战僵尸"></a>植物大战僵尸</h1><blockquote>
-<p>This is my resume</p>
-</blockquote>
-<p><a href="https://yixiangxiao.github.io/Plants-V.S.-Zombies/Index.htm">预览</a></p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/yixiangxiao/Plants-V.S.-Zombies.git</span><br><span class="line">打开文件夹找到index.htm</span><br><span class="line">双击</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h2 id="部署方法"><a href="#部署方法" class="headerlink" title="部署方法"></a>部署方法</h2><ol>
-<li><p>上传</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;update&quot;</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+    <h1 id="事件编程"><a href="#事件编程" class="headerlink" title="事件编程"></a>事件编程</h1><h2 id="事件概述"><a href="#事件概述" class="headerlink" title="事件概述"></a>事件概述</h2><p>事件是事先给元素绑定的处理程序（一段js代码），当用户输入或者满足语义时执行一段代码发出响应，以达到交互效果（用户输入浏览器响应的过程）。事件的基本要素为：事件源（目标）、触发场景和处理程序（事件句柄）。</p>
+<p>例如：当用户点击（<strong>情景</strong>）按钮（<strong>事件源</strong>）时 弹出遮罩层（<strong>处理程序</strong>）</p>
+<p><strong>在事件编程中按照对事件定义与响应可以分为：</strong></p>
+<ul>
+<li><p><strong>原始事件模型</strong>：0级DOM API的组成部分 所有浏览器均支持<br>  具有<strong>可移植</strong>性（没有兼容问题）</p>
 </li>
-<li><p>开启 GitHub Pages 功能</p>
+<li><p>  <strong>高级事件模型</strong>：也叫标准事件模型，是标准化DOM后的事件处理，**主流浏览器和IE9+**均支持</p>
 </li>
-</ol>
+<li><p><strong>特殊的IE事件</strong>：在IE4-IE8版本中使用Microsoft定制实现高级事件的方法，也就是对其作兼容性处理。</p>
+<p>  最早的DOM模型称为原始模型，后来W3C标准化之后推出了1，2级DOM，原始模型也就是被纳入0级DOM范围中。</p>
+  <a id="more"></a>
+
+</li>
+</ul>
+<h2 id="事件机制"><a href="#事件机制" class="headerlink" title="事件机制"></a>事件机制</h2><p>事件是Javascript<strong>异步编程</strong>的重要特性，Javascript是一门基于对象和事件驱动的编程语言；</p>
+<p>在浏览器加载页面解析js脚本时注册事件处理程序，通常在页面加载完毕后才触发执行，定义和执行发生在不同的阶段是不同步的操作 也叫异步的进程。异步代码最典型的特征是<strong>回调函数</strong>。</p>
+<p>事件是异步行为的操作 -&gt; 编写异步执行的代码 -&gt; 使用回调函数 -&gt; 先定义 后使用</p>
+<h1 id="原始事件"><a href="#原始事件" class="headerlink" title="原始事件"></a>原始事件</h1><h2 id="绑定事件"><a href="#绑定事件" class="headerlink" title="绑定事件"></a>绑定事件</h2><h3 id="行内绑定，作为HTML属性的事件"><a href="#行内绑定，作为HTML属性的事件" class="headerlink" title="行内绑定，作为HTML属性的事件"></a>行内绑定，作为HTML属性的事件</h3><p>在HTML标签中直接设置HTML事件属性，属性值为一段javascript代码。当JS代码较多时可以将它们放置到函数中去。在HTML标签中的this表示当前DOM元素，而函数中的this则指代window对象。</p>
+<p><img src="1.png" alt="1"></p>
+<p>在HTML特性的事件绑定中 它默认扩展了事件处理函数的作用域 相当于事件句柄中<br>加入这样的语句</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">handler</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> (<span class="built_in">document</span>) &#123; <span class="comment">//初始化document作用域链头</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> (form) &#123; <span class="comment">//添加表单作用域链头</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> (<span class="built_in">this</span>) &#123; <span class="comment">//设置当前DOM对象作用域链</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//在此处的变量 默认作用域链为 document.form.dom</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src="2.png" alt="2"></p>
+<p>当事件执行代码较多时 可以放入一个函数中执行。但事件执行时函数体内的this指向了window。</p>
+<p><img src="3.png" alt="3"></p>
+<h3 id="动态绑定，作为JS属性值的事件"><a href="#动态绑定，作为JS属性值的事件" class="headerlink" title="动态绑定，作为JS属性值的事件"></a>动态绑定，作为JS属性值的事件</h3><p>动态绑定可以将js代码和html分离，做到<strong>无干扰的javascript</strong>。不同于html页面的静态设置，js中可以更好的进行动态处理。动态绑定的事件处理程序（函数），它体内的作用域依附于当前dom环境。</p>
+<p><img src="4.png" alt="4"></p>
+<h3 id="给DOM集合循环绑定事件"><a href="#给DOM集合循环绑定事件" class="headerlink" title="给DOM集合循环绑定事件"></a>给DOM集合循环绑定事件</h3><ul>
+<li><p>给ul中的列表项分别绑定事件 查看每个li的编号</p>
+<p><img src="5.png" alt="5"></p>
+<p><img src="6.png" alt="6"></p>
+<p><img src="7.png" alt="7"></p>
+<p><img src="8.png" alt="8"></p>
+</li>
+</ul>
+<h2 id="调用事件（拓展）"><a href="#调用事件（拓展）" class="headerlink" title="调用事件（拓展）"></a>调用事件（拓展）</h2><p>事件通常是满足语义才执行，你也可以显式的调用事件来模拟事件的执行，例如表单提交等。一般不会显式的调用事件而是通过引用已有的事件 给该事件扩展功能。</p>
+<p><img src="9.png" alt="9"></p>
+<h2 id="取消事件"><a href="#取消事件" class="headerlink" title="取消事件"></a>取消事件</h2><p>通过js动态的给元素添加事件处理程序，可以通过将事件处理程序赋值为null的方式来删除该事件；当删除一个元素时通常会同步删除它所携带的事件。</p>
+<p>btn.onclick = null;</p>
+<p><img src="10.png" alt="10"></p>
+<p><img src="11.png" alt="11"></p>
+<h1 id="高级事件"><a href="#高级事件" class="headerlink" title="高级事件"></a>高级事件</h1><h2 id="事件流"><a href="#事件流" class="headerlink" title="事件流"></a>事件流</h2><p>多个彼此<strong>嵌套</strong>的元素，他们拥有<strong>相同</strong>的事件，最内部元素事件被触发后，外部多个元素的同类型事件也会被触发；多个元素他们同类型事件同时执行的机制称为<strong>“事件流</strong>”，事件流分为“冒泡型”和“捕获型”；“冒泡型事件流”由内部触发的事件源向外部父元素触发，而捕获型事件流则是由外向内依次触发。</p>
+<p><img src="12.png" alt="12"></p>
+<p>IE浏览器从开始到后期的事件流都是“<strong>冒泡型</strong>”，直到IE9以后两种形式都支持；而网景的Navigator浏览器（以Netscape内核渲染的其他浏览器，如FF等）一开始的事件流是“<strong>捕捉型”</strong>。后期事件流有改进，针对捕捉型、冒泡型都可以支持。</p>
+<h3 id="0级DOM事件流"><a href="#0级DOM事件流" class="headerlink" title="0级DOM事件流"></a>0级DOM事件流</h3><p>使用0级DOM方式定义的事件驱动都是“<strong>冒泡型事件流</strong>”，父元素的同类型事件在冒泡阶段被执行。</p>
+<p><img src="13.png" alt="13"></p>
+<p><img src="14.png" alt="14"></p>
+<p><img src="15.png" alt="15"></p>
+<p><img src="16.png" alt="16"></p>
+<h3 id="W3C标准事件流"><a href="#W3C标准事件流" class="headerlink" title="W3C标准事件流"></a>W3C标准事件流</h3><p>鉴于市场上不同浏览器厂商对事件流的差异化处理所存在的兼容性问题，W3C标准化了事件流的机制，一个完整的事件流被分为<strong>三个</strong>阶段，每个阶段都由一个数字来标记：捕获阶段（1）、目标阶段（2）、冒泡阶段（3）。</p>
+<p><img src="17.png" alt="17"></p>
+<h2 id="事件监听"><a href="#事件监听" class="headerlink" title="事件监听"></a>事件监听</h2><p>事件监听是通过添加侦听器预定事件处理程序，首先①它是无干扰的js事件方案,实现了页面表现与行为的完全分离；其次②它支持给元素同时添加多个事件监听程序，③对事件流的处理也更完善。</p>
+<p>dom.addEventListener(事件类型，函数句柄，事件流）//事件类型不用加“on”，例如click</p>
+<p>dom.removeEventListener(事件类型，函数句柄，事件流);//事件函数中的this表示当前DOM</p>
+<p>事件流设置事件触发的阶段，默认值为false表示冒泡阶段会触发的事件流。</p>
+<h3 id="添加多个事件行为"><a href="#添加多个事件行为" class="headerlink" title="添加多个事件行为"></a>添加多个事件行为</h3><p><img src="18.png" alt="18"></p>
+<p><img src="19.png" alt="19"></p>
+<h3 id="取消事件监听程序"><a href="#取消事件监听程序" class="headerlink" title="取消事件监听程序"></a>取消事件监听程序</h3><p><img src="20.png" alt="20"></p>
+<h3 id="设置事件流类型"><a href="#设置事件流类型" class="headerlink" title="设置事件流类型"></a>设置事件流类型</h3><p><img src="21.png" alt="21"></p>
+<p><img src="22.png" alt="22"></p>
+<h2 id="IE事件模型（拓展）"><a href="#IE事件模型（拓展）" class="headerlink" title="IE事件模型（拓展）"></a>IE事件模型（拓展）</h2><p>IE在发展过程中，先后历经多次改版，但多数时期它的更新都远离了W3C，直到IE9之后在很多方面的处理才逐渐向W3C靠拢，因此IE9之前它是使用的另外的方式添加事件监听程序。</p>
+<p><img src="23.png" alt="23"></p>
+<p>在IE8-中使用dom.attachEvent()和dom.detachEvent()来绑定和取消事件，该种事件设置<strong>只支持冒泡</strong>形式的事件流，因此不用设置事件流的方式。</p>
+<p><img src="24.png" alt="24"></p>
+<p><img src="25.png" alt="25"></p>
+<h4 id="跨浏览器事件处理程序"><a href="#跨浏览器事件处理程序" class="headerlink" title="跨浏览器事件处理程序"></a>跨浏览器事件处理程序</h4><p><img src="26.png" alt="26"></p>
+<p><img src="27.png" alt="27"></p>
+<p><img src="28.png" alt="28"></p>
+<h1 id="事件对象"><a href="#事件对象" class="headerlink" title="事件对象"></a>事件对象</h1><p>执行事件的过程就是调用事件句柄函数，在调用事件时，JS还会隐式的传入一个参数叫<strong>事件对象</strong>（event）；事件对象是一个辅助的用来进行事件处理的对象。该对象存储了<strong>事件的特性以及与事件相关的一些信息</strong>例如：点击时鼠标的坐标位置、按键时的键盘值等，这些信息有助于更好的完成对事件的处理。在实际使用时，你只需要在句柄函数中定义形参接收即可。</p>
+<h2 id="标准事件对象"><a href="#标准事件对象" class="headerlink" title="标准事件对象"></a>标准事件对象</h2><p><img src="29.png" alt="29"></p>
+<p><img src="30.png" alt="30"></p>
+<p><img src="31.png" alt="31"></p>
+<p>在事件句柄中定义形参接收传入的事件对象，查看事件对象的内容。此时的事件对象是只存在于<strong>事件函数中</strong>的局部变量，在非事件的函数和事件函数体外无效。</p>
+<h2 id="事件对象特性"><a href="#事件对象特性" class="headerlink" title="事件对象特性"></a>事件对象特性</h2><p>event对象在不同类型的事件中，所存储的事件信息不尽相同，但无论如何它都有如下基本属性：</p>
+<h3 id="事件阶段值"><a href="#事件阶段值" class="headerlink" title="事件阶段值"></a>事件阶段值</h3><p>eventphase属性用来查询当前事件所属阶段的值，每个事件阶段都由一个<strong>数字</strong>来标记，它包括有：</p>
+<p>“1”表示事件处于<strong>捕获</strong>阶段，</p>
+<p>“2”表示事件处于<strong>目标</strong>阶段，</p>
+<p>“3”表示事件处于<strong>冒泡</strong>阶段，</p>
+<p><img src="32.png" alt="32"></p>
+<p><img src="33.png" alt="33"></p>
+<h3 id="事件源（元素）"><a href="#事件源（元素）" class="headerlink" title="事件源（元素）"></a>事件源（元素）</h3><p>event对象的currentTarget属性用来标记当前正在处理事件的元素，target属性则表示事件源。在事件句柄中<br>event.currentTarget总是等于this，而target只在事件源句柄中等于this。这样一来为了防止事件流过程中this发生改变，我们可以使用target和currentTarget来替代。</p>
+<p><img src="34.png" alt="34"></p>
+<p>借助该属性 可以帮助我们实现事件的委托：</p>
+<h4 id="事件委托"><a href="#事件委托" class="headerlink" title="事件委托"></a>事件委托</h4><p>页面的每个元素都可以“无害”的绑定事件处理程序（不报错），这样为了实现更为丰富的交互，很多程序员通常会不分青红皂白的给任意元素绑定事件句柄，这样一来作为事件句柄的函数对象就会过多的占用内存空间；同时 在绑定时<strong>需要事先查询页面元素会延迟页面交互就绪的时间。</strong>最后，每当将事件处理程序指定给元素时<strong>运行中的浏览器代码和支持页面交互的Javascript代码之间需要建立连接</strong> 连接越多页面执行就越慢 通过事件委托限制建立连接的数量事件委托是解决事件绑定过多的替代方案。</p>
+<p>事件委托是利用<strong>事件冒泡</strong>的原理，在<strong>DOM树中尽可能高的层次</strong>上添加事件处理程序，这样无论树中的哪个元素被触发都冒泡到高处，进而执行绑定的事件；接下来 检查当前事件源 为不同的元素执行它相应的处理程序。</p>
+<p><img src="35.png" alt="35"></p>
+<p><img src="36.png" alt="36"></p>
+<p><img src="37.png" alt="37"></p>
+<p><img src="38.png" alt="38"></p>
+<h3 id="阻止事件流"><a href="#阻止事件流" class="headerlink" title="阻止事件流"></a>阻止事件流</h3><p>event对象的stopPropagation方法用来立即停止事件在DOM层次中的传播，即取消事件的捕获或者冒泡；如果不想在外部元素中触发事件，可以使用该方法，它比显式的从父容器上移除的事件局部更为简单，高效、合理。</p>
+<p><img src="39.png" alt="39"></p>
+<p><img src="40.png" alt="40"></p>
+<h3 id="阻止默认行为"><a href="#阻止默认行为" class="headerlink" title="阻止默认行为"></a>阻止默认行为</h3><p>有些html标签在触发时 有自己的默认行为。例如：<br>链接点击会跳转到其他页面；表单submit事件会跳转到服务器等。可以通过event.preventDefault()来阻止元素的默认行为，执行该方法的前提是该元素存在默认行为具有可取消性，需要通过event.cancelable属性值来判断：</p>
+<p><img src="41.png" alt="41"></p>
+<p><img src="42.png" alt="42"></p>
+<h2 id="IE事件对象（拓展）"><a href="#IE事件对象（拓展）" class="headerlink" title="IE事件对象（拓展）"></a>IE事件对象（拓展）</h2><p>不同于主流（兼容性）浏览器，IE中的事件对象有几种不同的形式，在以DOM0级方式添加的事件处理程序中，事件对象event作为了window的<strong>属性</strong>，也就说我们需要通过window.event来访问；而在attachEvent（addEventListener）方式添加的事件处理程序中，会有一个event对象传入，那么<br>我们就需要设置兼容性事件对象：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">dom.onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> event = <span class="built_in">window</span>.event;</span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">dom.addEventListener(<span class="string">&quot;click&quot;</span>, <span class="function"><span class="keyword">function</span> (<span class="params">event</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;, <span class="literal">false</span>);</span><br></pre></td></tr></table></figure>
+
+
+
+<p>除了获取event的方式有别于标准浏览器外，IE的事件对象event中的内容也有很大的区别，cancelBubble属性用来设置事件的冒泡，returnValue用来控制默认行为，srcElement则表示事件源。</p>
+<p><img src="43.png" alt="43"></p>
+<h4 id="创建兼容性事件工具函数"><a href="#创建兼容性事件工具函数" class="headerlink" title="创建兼容性事件工具函数"></a>创建兼容性事件工具函数</h4><p><img src="44.png" alt="44"></p>
+<p><img src="45.png" alt="45"></p>
+<h2 id="事件对象其他属性"><a href="#事件对象其他属性" class="headerlink" title="事件对象其他属性"></a>事件对象其他属性</h2><table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>含义</strong></th>
+<th><strong>值</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>keyCode</strong></td>
+<td>键盘事件中按键的值</td>
+<td>event.keyCode</td>
+</tr>
+<tr>
+<td><strong>clientX</strong></td>
+<td>鼠标在网页<strong>可视区域</strong>的水平坐标</td>
+<td>event.clientX</td>
+</tr>
+<tr>
+<td><strong>clientY</strong></td>
+<td>鼠标在网页<strong>可视区域</strong>的垂直坐标</td>
+<td>event.clientY</td>
+</tr>
+<tr>
+<td><strong>offsetX</strong></td>
+<td>鼠标指针位置相对于触发事件的元素的 x 坐标</td>
+<td>event.offsetX</td>
+</tr>
+<tr>
+<td><strong>offsetY</strong></td>
+<td>鼠标指针位置相对于触发事件的元素的 y 坐标</td>
+<td>event.offsetY</td>
+</tr>
+<tr>
+<td><strong>pageX</strong></td>
+<td>鼠标在网页中的水平位置+窗口滚动的距离</td>
+<td>event.pageX</td>
+</tr>
+<tr>
+<td><strong>pageY</strong></td>
+<td>鼠标在网页中的垂直位置+窗口滚动的距离</td>
+<td>event.pageY</td>
+</tr>
+<tr>
+<td><strong>screenY</strong></td>
+<td>鼠标在<strong>屏幕</strong>中的垂直坐标</td>
+<td>event.screenY</td>
+</tr>
+<tr>
+<td><strong>screenX</strong></td>
+<td>鼠标在<strong>屏幕</strong>中的水平坐标</td>
+<td>event.screenX</td>
+</tr>
+</tbody></table>
+<p><img src="46.png" alt="46"></p>
+<h1 id="面试练习题"><a href="#面试练习题" class="headerlink" title="面试练习题"></a>面试练习题</h1><ul>
+<li><p>  列举三个以上标签的默认行为</p>
+</li>
+<li><p>  简述事件委托以及实现方式</p>
+</li>
+<li><p>  如何获取按键事件的键盘值</p>
+</li>
+<li><p>  如何获取鼠标在页面的坐标</p>
+</li>
+<li><p>  如何在循环绑定事件时获取元素的标号（至少三种）</p>
+</li>
+<li><p>  如何给0级DOM绑定多个同类型事件</p>
+</li>
+<li><p>将DOM集合转化为数组的两种方式</p>
+<p>  [].slice.apply(nodeList)</p>
+<p>  Array.from(nodeList)</p>
+</li>
+<li><p>  阻止表单提交有哪两种方式</p>
+</li>
+</ul>
+<p>form.onsubmit = function (event) {</p>
+<p>return false; 或</p>
+<p>event.preventDefault();</p>
+<p>}</p>
 
     
 
@@ -379,8 +595,8 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="http://yixiangxiao.github.io/2021/01/27/my-demo - 副本/" title="植物大战僵尸"
-            target="_blank">http://yixiangxiao.github.io/2021/01/27/my-demo - 副本/</a>
+          <a href="http://yixiangxiao.github.io/2021/01/30/js(8)/" title="事件编程"
+            target="_blank">http://yixiangxiao.github.io/2021/01/30/js(8)/</a>
         </li>
         
         <li>
@@ -402,11 +618,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
         		</li>
       		
 		</ul>
@@ -418,7 +630,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/作品//" class="article-tag-list-link color3">作品</a>
+        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
         		</li>
       		
 		</ul>
@@ -473,7 +685,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://yixiangxiao.github.io/2021/01/27/my-demo%20-%20%E5%89%AF%E6%9C%AC/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://yixiangxiao.github.io/2021/01/30/js(8)/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -488,18 +700,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2021/01/27/Plants%20V.S.%20Zombies/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          植物大战僵尸
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/01/26/js(5)/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">js数组和对象</div>
+    <a href="/2021/01/29/js(7)/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">DOM对象</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -540,9 +743,9 @@
     <script src="/lib/gitment.js"></script>
   
   <script>
-    <!-- id: "植物大战僵尸" -->
+    <!-- id: "事件编程" -->
     var gitment = new Gitment({
-      id: "20210127113252",
+      id: "20210130103952",
       owner: 'yixiangxiao',
       repo: 'yixiangxiao.github.io',
       oauth: {
