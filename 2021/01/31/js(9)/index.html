@@ -6,20 +6,56 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yixiangxiao.github.io">
-  <title>Archives: 2021 | yixiangxiao</title>
+  <title>UI和焦点事件 | yixiangxiao</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="yixiangxiao_技术博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="yixiangxiao">
-<meta property="og:url" content="http://yixiangxiao.github.io/archives/2021/index.html">
+  <meta name="description" content="事件类型以下是W3C DOM 3级中制定的事件类型    UI事件：用户与页面上的元素交互时触发    焦点事件：元素获得或失去焦点时触发    鼠标事件：用户使用鼠标在页面操作时触发    滚轮事件：用户鼠标滚轮时触发    文本事件：在文档中输入文本时触发    键盘事件：用户通过键盘在页面上操作时触发    合成事件：当为输入编辑器输入字符时触发  变动事件：底层DOM结构发生变化时触发">
+<meta property="og:type" content="article">
+<meta property="og:title" content="UI和焦点事件">
+<meta property="og:url" content="http://yixiangxiao.github.io/2021/01/31/js(9)/index.html">
 <meta property="og:site_name" content="yixiangxiao">
-<meta property="og:description" content="yixiangxiao_技术博客">
+<meta property="og:description" content="事件类型以下是W3C DOM 3级中制定的事件类型    UI事件：用户与页面上的元素交互时触发    焦点事件：元素获得或失去焦点时触发    鼠标事件：用户使用鼠标在页面操作时触发    滚轮事件：用户鼠标滚轮时触发    文本事件：在文档中输入文本时触发    键盘事件：用户通过键盘在页面上操作时触发    合成事件：当为输入编辑器输入字符时触发  变动事件：底层DOM结构发生变化时触发">
 <meta property="og:locale">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/1.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/2.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/3.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/4.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/5.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/6.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/7.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/8.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/9.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/10.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/11.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/12.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/13.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/14.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/15.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/16.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/17.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/18.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/19.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/20.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/21.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/22.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/23.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/24.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/25.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/26.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/27.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/28.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/29.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/30.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/31.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/32.png">
+<meta property="og:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/33.png">
+<meta property="article:published_time" content="2021-01-31T02:39:52.000Z">
+<meta property="article:modified_time" content="2021-01-31T02:38:22.610Z">
 <meta property="article:author" content="yixiang xiao">
-<meta property="article:tag" content="yixiangxiao,yixiangxiao_技术博客">
+<meta property="article:tag" content="javascript">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yixiangxiao.github.io/2021/01/31/js(9)/1.png">
   
     <link rel="alternative" href="/atom.xml" title="yixiangxiao" type="application/atom+xml">
   
@@ -262,41 +298,253 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-
-
-
-
-
-
-<section class="archives-wrap">
-  <div class="archive-year-wrap">
-    <a href="/archives/2021" class="archive-year">2021</a>
-  </div>
-  <div class="archives">
+            <article id="post-js(9)" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+      <header class=" article-header">
+  
+  
+    <h1 class="article-title" itemprop="name">
+      UI和焦点事件
+    </h1>
+  
+
+
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
 <a href="/2021/01/31/js(9)/" class="archive-article-date">
         <time datetime="2021-01-31T02:39:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-31</time>
 </a>
 
+  
+  
+  
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">2k字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">6分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="事件类型"><a href="#事件类型" class="headerlink" title="事件类型"></a>事件类型</h1><p>以下是W3C DOM 3级中制定的事件类型</p>
+<ul>
+<li><p>  <strong>UI事件</strong>：用户与页面上的元素交互时触发</p>
+</li>
+<li><p>  <strong>焦点事件</strong>：元素获得或失去焦点时触发</p>
+</li>
+<li><p>  <strong>鼠标事件</strong>：用户使用鼠标在页面操作时触发</p>
+</li>
+<li><p>  <strong>滚轮事件</strong>：用户鼠标滚轮时触发</p>
+</li>
+<li><p>  <strong>文本事件</strong>：在文档中输入文本时触发</p>
+</li>
+<li><p>  <strong>键盘事件</strong>：用户通过键盘在页面上操作时触发</p>
+</li>
+<li><p>  <strong>合成事件</strong>：当为输入编辑器输入字符时触发</p>
+</li>
+<li><p><strong>变动事件</strong>：底层DOM结构发生变化时触发</p>
+<a id="more"></a>
+
+</li>
+</ul>
+<h1 id="UI事件"><a href="#UI事件" class="headerlink" title="UI事件"></a>UI事件</h1><h2 id="load加载事件"><a href="#load加载事件" class="headerlink" title="load加载事件"></a>load加载事件</h2><p>load是当页面嵌入的资源加载完成时触发的事件，例如：图片、视频、字体、脚本等<strong>。</strong>通俗的来说，只要具有src属性的DOM元素都可以使用该事件。另外，窗口（window）内容加载完毕也会触发该事件。</p>
+<p>load和error事件通常成对出现，load是加载成功时的回调动作而error则是加载失败时的处理。</p>
+<h3 id="窗口加载事件"><a href="#窗口加载事件" class="headerlink" title="窗口加载事件"></a>窗口加载事件</h3><p>窗口加载完毕时（包括HTML文档、CSS样式等）我们可以无碍的查询到页面中的所有内容。如果所要执行的代码<br>需要在页面一切就绪后才有效的话，那么可以将这些执行代码作为load事件的回调函数，这样就可以<strong>无需管理页面内容的加载顺序</strong>了。</p>
+<p><img src="1.png" alt="1"></p>
+<p><img src="2.png" alt="2"></p>
+<ul>
+<li>  使用window.onload管理页面执行代码</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="comment">//所有代码放入该方法中 确保正常运行</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="3.png" alt="3"></p>
+<p><img src="4.png" alt="4"></p>
+<ul>
+<li>  使用window.onerror监听窗口页面中的错误</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onerror = <span class="function"><span class="keyword">function</span> (<span class="params">错误提示, 脚本文件, 行号, 列号</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="comment">//显示页面脚本运行时错误</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>window.onerror是窗口加载发生错误时的回调函数，早期页面中的错误都是通过该方法捕获并输出提示信息。不同于标准化事件处理机制，它触发时传入的参数用来表示错误相关信息。</p>
+<p><img src="5.png" alt="5"></p>
+<p><img src="6.png" alt="6"></p>
+<h3 id="图片加载事件"><a href="#图片加载事件" class="headerlink" title="图片加载事件"></a>图片加载事件</h3><p>通常我们在加载图片或者脚本引入时是直接通过<strong>HTML标签设置</strong>，现在有了这些回调函数后<br>我们可以动态的载入这些文件并实现<strong>过程化控制</strong>：按需加载并验证加载结果。</p>
+<p><img src="7.png" alt="7"></p>
+<p><img src="8.png" alt="8"></p>
+<ul>
+<li><p>使用回调函数管理加载过程，加载失败 自定义显示样式；加载成功 页面中显示</p>
+<p><img src="9.png" alt="9"></p>
+<p><img src="10.png" alt="10"></p>
+<p><img src="11.png" alt="11"></p>
+</li>
+</ul>
+<h3 id="脚本加载事件"><a href="#脚本加载事件" class="headerlink" title="脚本加载事件"></a>脚本加载事件</h3><p><img src="12.png" alt="12"></p>
+<p>不同于img、vedio等标签 script以及link是默认是同步加载：</p>
+<ol>
+<li><p> script和link载入的都是普通的文本文件 不像图片和视频那么大 加载很快 无需等待</p>
+</li>
+<li><p> 在script往往载入的是一个先决的库文件 就是后面的script脚本必须依赖该文件才能执行</p>
+</li>
+</ol>
+<p>同步的线程就是任意时刻 浏览器中只有一个线程在运行，所有的代码都是自上而下执行前面的任务处理完毕后 才能接着往下执行；如果线程中的某个任务发生了等待它就会产生阻塞。</p>
+<h2 id="DOMContentLoaded"><a href="#DOMContentLoaded" class="headerlink" title="DOMContentLoaded"></a>DOMContentLoaded</h2><p>当初始的HTML文档被完全加载和解析完成之后 DOMContentLoaded事件被触发，无需等待样式表、图像和子框架的加载完成。而<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Mozilla_event_reference/load">load</a>应该仅用于检测一个完全加载的页面。<strong>DOMContentLoaded在很多时候是更加合适的选择</strong>。这里我们需要大体了解一个完整的网页加载流程：<br>(1) 解析HTML结构<br>(2) 加载外部脚本script和样式表文件link</p>
+<p>//页面中的多个脚本文件采用同步的方式加载 会产生“线程等待”<br>(3) 解析并执行脚本代码<br>(4) 构建HTML DOM模型 //document.DOMContentLoaded</p>
+<p>(5) 加载图片等外部资源文件 //图片等文件以异步线程的方式加载 不会产生等待<br>(6) 页面加载完毕 //window.onload</p>
+<p><img src="13.png" alt="13"></p>
+<p><img src="14.png" alt="14"></p>
+<p><img src="15.png" alt="15"></p>
+<ul>
+<li><p>DOMContentLoaded 事件必须等待其所属script之前的样式表加载解析完成才会触发。</p>
+<p><img src="16.png" alt="16"></p>
+<p><img src="17.png" alt="17"></p>
+<p><img src="18.png" alt="18"></p>
+</li>
+</ul>
+<h2 id="resize窗口重置事件"><a href="#resize窗口重置事件" class="headerlink" title="resize窗口重置事件"></a>resize窗口重置事件</h2><p>当窗口大小改变时触发的事件，注意：窗口的最大化、最小化 也会触发该事件</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onresize = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="19.png" alt="19"></p>
+<p>通常我们在进行页面布局的时候需要掌握页面的尺寸（主体宽度等）。当用户调整了页面（窗口）的大小时可能会打乱当前页面的布局样式， 这时候就需要我们能够监听到这种状态的改变然后选择使用不同的布局样式来处理，如响应式布局，该事件多用于移动端屏幕切换时加载样式。</p>
+<h2 id="scroll滚动事件"><a href="#scroll滚动事件" class="headerlink" title="scroll滚动事件"></a>scroll滚动事件</h2><p>当窗口（window）或者容器中滚动条发生位移时会触发scroll事件，一般用来检测页面（document）或者容器内容滚动的距离，当到达某种临界条件时执行动作。</p>
+<p>虽然事件源DOM或者浏览器窗口是有底线的，但是scroll事件的触发“没有底线”，它在很短的时间内会重复触发很多次，导致事件函数被执行N多次。因此，在很多时候我们必须考虑在事件执行期间锁定滚动事件，不让其反复执行。</p>
+<p><img src="20.png" alt="20"></p>
+<p><img src="21.png" alt="21"></p>
+<ul>
+<li><p>案例：当网页中的内容较多时 在页面顶部显示进度条 用来提示用户当前阅读的位置控制进度。</p>
+<p>  <img src="22.png" alt="22"></p>
+<p>  <img src="23.png" alt="23"></p>
+<p>  <img src="24.png" alt="24"></p>
+</li>
+</ul>
+<h1 id="焦点事件"><a href="#焦点事件" class="headerlink" title="焦点事件"></a>焦点事件</h1><p>焦点，简单来说就是光标。一般使用鼠标点击或者Tab键来切换焦点。例如<br>当鼠标点进文本框 则文本框获取焦点，鼠标从文本框移出时 文本框失去焦点。</p>
+<p>事件模型中存在两个与焦点相关的事件，分别是元素获取焦点时触发的事件focus以及失去焦点时触发的事件blur。注意：这两个事件都<strong>不冒泡</strong>，如果需要冒泡则需要换成<strong>focusin</strong>和<strong>focusout</strong>这两个事件。</p>
+<ul>
+<li><p>案例：当用户填写完毕时检测输入合法性，账号是否填写、密码长度6-15位</p>
+<p><img src="25.png" alt="25"></p>
+<p><img src="26.png" alt="26"></p>
+<p><img src="27.png" alt="27"></p>
+<p><img src="28.png" alt="28"></p>
+<p><img src="29.png" alt="29"></p>
+</li>
+</ul>
+<h1 id="表单验证"><a href="#表单验证" class="headerlink" title="表单验证"></a>表单验证</h1><h2 id="submit表单事件"><a href="#submit表单事件" class="headerlink" title="submit表单事件"></a>submit表单事件</h2><p>onsubmit是表单提交时触发的事件一般用来验证用户输入的信息是否合法。<strong>该事件函数需要设置一个返回值</strong><br>用来标记是否提交表单，如果为true则提交，false则不提交，onsubmit事件由submit按钮触发,但是定义在表单form上。</p>
+<ul>
+<li><p>在上述验证的基础上 增加表单事件，提交时 输出验证的结果。</p>
+<p><img src="30.png" alt="30"></p>
+</li>
+</ul>
+<h2 id="FormData简介"><a href="#FormData简介" class="headerlink" title="FormData简介"></a>FormData简介</h2><p>内置的FormData可以将表单DOM对象序列化为一个数据对象，它是将表单控件的name和value抽象为键值对集合到一个数据对象中，这样可以更加快速读取表单信息。以下是表单数据对象的方法：</p>
+<p><strong>get</strong>: function get() <strong>读取</strong>一个数据值</p>
+<p><strong>set</strong>: function set() <strong>设置</strong>一个数据值</p>
+<p><strong>getAll</strong>: function getAll() 读取多个数据值 返回<strong>数组</strong>形式,一般用来读取多选框的值</p>
+<p><strong>append</strong>: function append() 在当前数据对象中 <strong>追加</strong>一条数据</p>
+<p><strong>delete</strong>: function delete() 在当前数据对象中 <strong>删除</strong>一条数据</p>
+<p><strong>forEach</strong>: function forEach() <strong>遍历</strong>当前数据对象中的数据</p>
+<p><strong>has</strong>: function has() <strong>检测</strong>当前数据对象中是否含有某个数据</p>
+<p><img src="31.png" alt="31"></p>
+<p><img src="32.png" alt="32"></p>
+<p><img src="33.png" alt="33"></p>
+<p>FormData更为重要的使用是模拟POST表单的提交。使用FormData构造的数据可直接用于HTTP请求中，提交到服务器。多用于Ajax无刷新的操作中，后续论证。</p>
+<h1 id="面试练习题"><a href="#面试练习题" class="headerlink" title="面试练习题"></a>面试练习题</h1><ul>
+<li><p>  load与DOMContentloaded 的区别</p>
+</li>
+<li><p>  简述一个完整的网页内容(样式|脚本|DOM)加载流程</p>
+</li>
+<li><p>  resize事件何时被触发，列举使用场景</p>
+</li>
+<li><p>  用已学过的知识实现页面吸顶效果</p>
+</li>
+<li><p>  试实现商城首页商品楼层展示的效果</p>
+</li>
+</ul>
+
+    
+
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/alipay.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/weixinpay.png">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2021/01/31/js(9)/" target="_blank">UI和焦点事件</a>
-  
-    </h1>
-  
+      </a>
+    </div>
+    
 
-
-        <div class="article-info info-on-right">
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          yixiang xiao
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="http://yixiangxiao.github.io/2021/01/31/js(9)/" title="UI和焦点事件"
+            target="_blank">http://yixiangxiao.github.io/2021/01/31/js(9)/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
           
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -308,7 +556,7 @@
 		</ul>
 	</div>
 
-          
+    
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -321,289 +569,124 @@
 	</div>
 
 
+    
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://yixiangxiao.github.io/2021/01/31/js(9)/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
-    
 
 
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/01/30/js(8)/" class="archive-article-date">
-        <time datetime="2021-01-30T02:39:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-30</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2021/01/30/js(8)/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">事件编程</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="gitment-ctn"></div>
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2021/01/30/js(8)/" target="_blank">事件编程</a>
+    <!-- 中文 -->
+    <link rel="stylesheet" href="/lib/gitment.css">
+    <script src="/lib/gitment.js"></script>
   
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-    
-
-
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/01/29/js(7)/" class="archive-article-date">
-        <time datetime="2021-01-29T02:39:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-29</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2021/01/29/js(7)/" target="_blank">DOM对象</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-    
-
-
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/01/28/js(6)/" class="archive-article-date">
-        <time datetime="2021-01-28T01:39:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-28</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2021/01/28/js(6)/" target="_blank">BOM对象</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-    
-
-
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/01/27/Plants%20V.S.%20Zombies/" class="archive-article-date">
-        <time datetime="2021-01-27T03:32:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-27</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2021/01/27/Plants%20V.S.%20Zombies/" target="_blank">植物大战僵尸</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/作品//" class="article-tag-list-link color3">作品</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-    
-
-
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2021/01/26/js(5)/" class="archive-article-date">
-        <time datetime="2021-01-26T02:39:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-26</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2021/01/26/js(5)/" target="_blank">js数组和对象</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web前端//" class="article-tag-list-link color1">web前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-    
-    
-  </div>
-</section>
+  <script>
+    <!-- id: "UI和焦点事件" -->
+    var gitment = new Gitment({
+      id: "20210131103952",
+      owner: 'yixiangxiao',
+      repo: 'yixiangxiao.github.io',
+      oauth: {
+        client_id: '33599c64285c4edbc8e6',
+        client_secret: '3e5f2f5ee6a1ccae9a732694d477b2f1089c8bf9',
+      },
+    })
+    gitment.render('gitment-ctn')
+  </script>
 
 
 
@@ -647,8 +730,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
