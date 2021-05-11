@@ -45,7 +45,7 @@
 <meta property="og:image" content="http://yixiangxiao.github.io/2020/12/02/js(3)/14.png">
 <meta property="og:image" content="http://yixiangxiao.github.io/2020/12/02/js(3)/15.png">
 <meta property="article:published_time" content="2020-12-02T15:32:52.000Z">
-<meta property="article:modified_time" content="2021-01-30T02:45:41.233Z">
+<meta property="article:modified_time" content="2021-05-11T15:19:11.885Z">
 <meta property="article:author" content="yixiang xiao">
 <meta property="article:tag" content="javascript">
 <meta name="twitter:card" content="summary">
@@ -352,7 +352,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">3.6k字</span>
+      <span class="post-count">3.5k字</span>
     </span>
   </span>
 
@@ -455,25 +455,16 @@
 </ul>
 <ul>
 <li><p>求1到n(参数)的阶乘和（返回值）的函数：<strong>fn</strong></p>
-  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">    </span><br></pre></td></tr></table></figure>
-<script>
-
-</li>
+  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">//1! + 2! + 3!... + n!</span></span><br><span class="line">    </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">    </span><br><span class="line"><span class="keyword">var</span> sum = <span class="number">0</span>,</span><br><span class="line">    </span><br><span class="line">num = <span class="number">1</span>; <span class="comment">//初始化1！</span></span><br><span class="line">    </span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">    </span><br><span class="line">num = num * i;</span><br><span class="line">    </span><br><span class="line">sum += num;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">    </span><br><span class="line"><span class="keyword">return</span> sum;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">    </span><br><span class="line"><span class="keyword">var</span> result = fn(<span class="number">10</span>);</span><br><span class="line">    </span><br><span class="line"><span class="built_in">console</span>.log(result); <span class="comment">//4037913</span></span><br></pre></td></tr></table></figure>
+<h1 id="函数参数"><a href="#函数参数" class="headerlink" title="函数参数"></a>函数参数</h1></li>
 </ul>
-<p>//1! + 2! + 3!… + n!</p>
-<p>function fn(n) {</p>
-<p>var sum = 0,</p>
-<p>num = 1; //初始化1！</p>
-<p>for (var i = 1; i &lt;= n; i++) {</p>
-<p>num = num * i;</p>
-<p>sum += num;</p>
-<p>}</p>
-<p>return sum;</p>
-<p>}</p>
-<p>var result = fn(10);</p>
-<p>console.log(result); //4037913</p>
-<pre><code>&lt;/script&gt;
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">​    </span><br><span class="line"></span><br><span class="line"># 函数参数</span><br><span class="line"></span><br><span class="line">## 参数声明</span><br><span class="line"></span><br><span class="line">### 不严格匹配</span><br><span class="line"></span><br><span class="line">通常函数调用时传入的实参个数要和定义时的形参个数相等并按照顺序传递；JS中函数调用时传入的实参个数可以和形参不严格的匹配：</span><br><span class="line"></span><br><span class="line">当传入的实参个数**多于**定义时的形参个数时，多出的实参值会被省略；</span><br><span class="line"></span><br><span class="line">当传入的实参个数**少于**定义时的形参时，缺省值默认为undefined。</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;js</span><br><span class="line">function foo(a, b) &#123;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;查看形参接收到的值</span><br><span class="line"></span><br><span class="line">console.log(a, b);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;正常使用</span><br><span class="line"></span><br><span class="line">foo(1, 2);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;实参多于形参</span><br><span class="line"></span><br><span class="line">foo(1, 2, 3); &#x2F;&#x2F;1, 2</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;实参少于形参</span><br><span class="line"></span><br><span class="line">foo(1); &#x2F;&#x2F;1, undefined</span><br></pre></td></tr></table></figure></code></pre>
+<h2 id="参数声明"><a href="#参数声明" class="headerlink" title="参数声明"></a>参数声明</h2><h3 id="不严格匹配"><a href="#不严格匹配" class="headerlink" title="不严格匹配"></a>不严格匹配</h3><p>通常函数调用时传入的实参个数要和定义时的形参个数相等并按照顺序传递；JS中函数调用时传入的实参个数可以和形参不严格的匹配：</p>
+<p>当传入的实参个数<strong>多于</strong>定义时的形参个数时，多出的实参值会被省略；</p>
+<p>当传入的实参个数<strong>少于</strong>定义时的形参时，缺省值默认为undefined。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="comment">//查看形参接收到的值</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(a, b);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//正常使用</span></span><br><span class="line"></span><br><span class="line">foo(<span class="number">1</span>, <span class="number">2</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//实参多于形参</span></span><br><span class="line"></span><br><span class="line">foo(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>); <span class="comment">//1, 2</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//实参少于形参</span></span><br><span class="line"></span><br><span class="line">foo(<span class="number">1</span>); <span class="comment">//1, undefined</span></span><br></pre></td></tr></table></figure>
+
+
+
 <h3 id="参数默认值"><a href="#参数默认值" class="headerlink" title="参数默认值"></a>参数默认值</h3><p>当形参缺省时，除了使用默认值undefined外，还可以自定义值。ES6中，通过在形参后面赋值来设置它的默认值。带有默认值的形参必须放在参数列表最后的位置。</p>
 <p>function foo(a, b = 2) {</p>
 <p>}</p>
